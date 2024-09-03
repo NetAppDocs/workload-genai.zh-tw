@@ -5,7 +5,6 @@
   <block id="e3fbe9ea657688c1ff4a86f23c1752c3" category="list-text">* 選取磁碟區 * ：選取資料來源檔案所在的磁碟區、然後選取 * 下一步 * 。</block>
   <block id="3bce906453410b081d8e495b9cf8c9b0" category="paragraph">選取使用 SMB 傳輸協定儲存的檔案時、您需要輸入 Active Directory 資訊、其中包括網域、 IP 位址、使用者名稱和密碼。</block>
   <block id="7028355d43ef8a71ff4d5e7bed32be2b" category="list-text">* 選取資料來源 * ：根據您儲存檔案的位置選取資料來源位置。這可以是整個磁碟區、或只是磁碟區中的特定資料夾或子資料夾、然後選取 * 下一步 * 。</block>
-  <block id="8cb2845f0cbb1e8e9ed75fc969cf512b" category="list-text">* 定義 AI 參數 * ：在 * 區塊定義 * 區段中、定義在查詢 Amazon 基礎所屬的知識庫時、 Amazon 基礎服務如何將資料來源內容分割成區塊。此時、您只能選擇句子。</block>
   <block id="12d073958c6d4922a6f27ae8b5e4b533" category="list-text">在 * 權限感知 * 區段中、只有當您選取的資料來源位於使用 SMB 通訊協定的磁碟區上時、才能使用、您可以啟用或停用選取：</block>
   <block id="751157f855d8f0597671b65bc8ea1301" category="list-text">* 已啟用 * ：存取此知識庫的聊天機器人程式使用者只能從其存取的資料來源取得查詢回應。</block>
   <block id="9969ec0e7476736a130c54f32700611e" category="list-text">* 停用 * ：聊天機器人程式的使用者將會使用所有整合式資料來源的內容接收回應。</block>
@@ -58,9 +57,7 @@
   <block id="3bd4cddbc7a98f5c9632a455eca8c27e" category="section-title">建立及設定知識庫</block>
   <block id="646df03c5fddafc8e9c4ed5aa7036edf" category="paragraph">知識庫定義了您想要用來建立知識庫的特性、例如基礎 AI 模型和內嵌格式。</block>
   <block id="d34fab7936dd110b003945d679bb4133" category="list-text">登入 Workload Factory 。</block>
-  <block id="2775f5aa84cae461b809b629e27e2305" category="list-text">在 AI 工作負載方塊中、選取 * 建立 Chatbot* 。</block>
   <block id="5b20d7e96740200c428376cbb5e7fdb4" category="list-text">從「知識庫」標籤中、選取 * 新增知識庫 * 。</block>
-  <block id="a3efc362347ba241480bf992b9fa4899" category="list-text">在「定義知識庫」頁面中、設定知識庫設定：</block>
   <block id="53bdd4ba55043d3b20fafbaeddced95e" category="list-text">* 名稱 * ：輸入您要用於知識庫的名稱。</block>
   <block id="867a64928002194654eea40509536879" category="list-text">* 說明 * ：輸入知識庫的詳細說明。</block>
   <block id="c37e3f948924097538b621ebbdc79afa" category="list-text">* 內嵌模型 * ：內嵌模型定義如何將資料轉換成知識庫的向量內嵌。Workload Factory 支援下列機型：</block>
@@ -75,7 +72,6 @@
   <block id="c6a0e7101f0906d1498552ff723709e5" category="paragraph">深入瞭解可選擇的機型、協助您選擇：<block ref="56cf03ef03ec9048e7282cdb73fcf2fd" category="inline-link-rx"></block></block>
   <block id="bb75c182eff66bee3c76899d41fc8e8f" category="list-text">* 對話開場白 * ：選擇是否要提供最多四個對話啟動器提示、讓與使用此知識庫的聊天機器人程式互動的使用者看到。建議您啟用此設定。</block>
   <block id="fd6f710773f79577a44d128bb3df27cc" category="inline-link-macro">瞭解如何修改知識庫設定</block>
-  <block id="1010b4e428fbb8fb24725a17eb384f8e" category="paragraph">如果您確實啟動對話啟動器、預設會選取「自動模式」。只有在您將資料來源新增至知識庫之後、才能啟用「手動模式」。<block ref="787b3d64d417e723feebaf5fa5dbfeee" category="inline-link-macro-rx"></block>。</block>
   <block id="7311e81ffb665c2ec2a4c996ce693887" category="list-text">選取 * 建立知識庫 * 、將知識庫新增至 GenAI 。</block>
   <block id="89f815e342683a86616ce06926e87088" category="list-text">在精靈的下一頁中、您可以選擇將資料來源新增至新知識庫、或是在此結束程序而不新增資料來源。建議您選擇 * 新增資料來源 * 、然後立即新增一或多個資料來源。</block>
   <block id="9bd079cbc91b32393983ae28a378c00c" category="section-title">將資料來源新增至知識庫</block>
@@ -118,8 +114,6 @@
   <block id="e36b38f91227e22bbae32a9f84bef25b" category="list-text">* 位置 * ：選取 AWS 區域、 VPC 和子網路。</block>
   <block id="6f2c1c768f2edab4eb318bdb1580f9f7" category="paragraph">GenAI 部署必須位於啟用 Amazon 基礎的 AWS 區域。<block ref="25581c78bc5f676a9b9f4743abf4f06f" category="inline-link-rx"></block></block>
   <block id="49d6fbbfca02733209ee2833d2481e4e" category="list-text">完成 * 基礎架構設定 * 區段中的項目：</block>
-  <block id="54e710456ced46833adf947bc5f6d4d8" category="list-text">* 適用於 ONTAP 檔案系統 * 的 FSX ：選取 ONTAP 檔案系統的 FSX 、以及要部署 GenAI 執行個體資料庫磁碟區的儲存 VM 、然後指定您要用於該磁碟區的名稱。</block>
-  <block id="2d63bd7626a5c75abc0b0ce09d186bf9" category="paragraph">視 Workload Factory 是否擁有適用於 ONTAP 檔案系統的 FSX 認證而定、您可能需要輸入使用者名稱和密碼。</block>
   <block id="3869544f6aa6ccd1570caed7671ca0d6" category="list-text">* 標記 * ：輸入您要套用至此部署中所有 AWS 資源的任何標記金鑰 / 值配對。</block>
   <block id="f445edd51fe9e6a1af8ffd9c30e87f40" category="list-text">* 金鑰配對 * ：選取金鑰配對、讓您安全地連線至 NetApp GenAI 引擎執行個體。</block>
   <block id="6449a99be42d938ed27187e040028634" category="list-text">選擇 * 部署 * 開始部署。</block>
@@ -127,7 +121,6 @@
   <block id="64dea11099d626528fa052576a740de2" category="paragraph">在部署過程中、會設定下列項目：</block>
   <block id="8f3d503d34aa6fe6a66b841b0bdd2996" category="list-text">網路與私有端點一起設定。</block>
   <block id="fc4ab898b1959c931605be5dfe62a71d" category="list-text">隨即建立 IAM 角色、執行個體設定檔和安全性群組。</block>
-  <block id="eac776dd224d1ed33599e26586f981b6" category="list-text">GenAI 引擎資料庫（ LanceDB ）的磁碟區是在 ONTAP 檔案系統的 FSX 上建立。</block>
   <block id="216a480d552bd412d15e51cde6cbbf7a" category="list-text">已部署 GenAI 引擎的虛擬機器執行個體。</block>
   <block id="6b39fa3582a5336c28b4c324f016a9a8" category="summary">當您部署 GenAI 基礎架構時、 Workload Factory 會為 GenAI 引擎建立 EC2 執行個體。它也會為此執行個體建立 IAM 角色、安全性群組和私有端點。您可能想要瞭解有關 Workload Factory 在 AWS 環境中建立的這些元件的更多詳細資料。</block>
   <block id="44f33186e2b6baa4a697e5604c0a3863" category="doc">NetApp GenAI 引擎的元件</block>
@@ -281,11 +274,8 @@
   <block id="24908e355d451004c7525900e1599a1f" category="list-text">選取以檢視每個資料來源的詳細資訊、例如 ONTAP 檔案系統的 FSX 、磁碟區和資料來源所在的路徑、以展開每一列 <block ref="0722c4ff5aff83b42b3212ce6356e926" category="inline-image-macro-rx" type="image"></block> 。</block>
   <block id="e251df112fcfd5ceb227487e3e407e23" category="paragraph">同時也會列出內嵌資訊、以及該資料來源目前是否內嵌於知識庫中。</block>
   <block id="437e83696ee10276f1829979bc2001ee" category="section-title">編輯資料來源設定</block>
-  <block id="20b4ccd92a21762105664927fab1bf0b" category="paragraph">您可以編輯已整合在知識庫中的資料來源相關資訊。將資料來源新增至知識庫之後、大部分的資訊都會修正、但您可以變更區塊定義和權限認知（在資料來源磁碟區上使用 SMB 傳輸協定時）。</block>
   <block id="d2e5a465dda010b6df10e906f7ceebf7" category="list-text">從知識庫庫存頁面中、選取資料來源所在的知識庫、然後選取 <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> 並選取 * 管理知識庫 * 。</block>
   <block id="16a3994ccc4796acb1b8e40635717ec3" category="list-text">在您要編輯的資料來源列中、選取 <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> 並選取 * 編輯資料來源 * 。</block>
-  <block id="d4e6a12cce33b083e0522879b175e10f" category="list-text">在「編輯資料來源」頁面中、選取 <block ref="0722c4ff5aff83b42b3212ce6356e926" category="inline-image-macro-rx" type="image"></block> 以展開區塊定義列。</block>
-  <block id="2be67c88816bb68c39e2b6cb0139de03" category="list-text">更新 Chunk 策略和區塊大小的設定、以及權限認知（ SMB 磁碟區）、然後選取 * 儲存 * 。</block>
   <block id="fcada3664d85dba347df890b564f014e" category="paragraph">資料來源設定會更新、 AI 系統會同步資料來源、以便將其重新索引至知識庫。</block>
   <block id="f0c862596fc0a1dd30faa6b630a0d09b" category="section-title">更新現有資料來源的內容</block>
   <block id="d811eb8aad6aebc071695232fb58c5a5" category="paragraph">您可以隨時變更資料來源的內容、以新增或更新組織資料。如果此資料來源正在知識庫中積極使用、您必須同步資料來源、以便將其重新索引至知識庫。同步是漸進式的、因此 Amazon bedrock 只會處理您的 FSX for ONTAP Volume 中自上次同步以來已新增、修改或刪除的物件。</block>
@@ -304,7 +294,6 @@
   <block id="3263e773b336a912867ed1aeefc4176b" category="list-text">選擇 *Infrastructure* 選項卡。</block>
   <block id="441f8ae1adcfebb474bcc1b899e82a24" category="list-text">檢視基礎架構的相關資訊、其中包含下列元件的詳細資料：</block>
   <block id="fcf0479502455d0702db3f277c9df646" category="list-text">AWS 設定</block>
-  <block id="561e65b11988eaba0ecae49d7b764de1" category="list-text">適用於 ONTAP 檔案系統的 FSX</block>
   <block id="ae83c68afab83f983d4cf40bb5e9197e" category="list-text">AI 引擎</block>
   <block id="6d8dc0b510e717cbe34e53d7fc1097e5" category="list-text">向量資料庫</block>
   <block id="2a118f240daca7e8bd0c3e4bc54a8d77" category="section-title">移除基礎架構</block>
@@ -333,7 +322,6 @@
   <block id="6c81c0a68409ceeffca1a2438dbb831c" category="paragraph">每次您從知識庫新增、修改或移除資料來源時、都必須同步資料來源、以便將其重新索引至知識庫。同步是漸進式的、因此 Amazon bedrock 只會處理您的 FSX for ONTAP Volume 中自上次同步以來已新增、修改或刪除的物件。</block>
   <block id="d21368803fa621b044a871188810b1ac" category="list-text">從「知識庫」清查頁面中、選取您要更新的知識庫。</block>
   <block id="6461d5a78cc7b9cc40e5443635d9112e" category="list-text">選取 * 動作 * 功能表、然後選取 * 編輯知識庫 * 。</block>
-  <block id="0008bdb5b5e3b453e69696b34d9d5d1c" category="list-text">在「編輯知識庫」頁面中、您可以變更知識庫名稱、說明、內嵌模式、聊天模式、以及是自動或手動建立對話啟動器。</block>
   <block id="e57d913eed051be6b0b9406295913487" category="paragraph">如果您使用「手動」模式來啟動對話、也可以在此變更對話的開始者。</block>
   <block id="1302ca167379db1ebc02d198eb7518a3" category="list-text">變更後請選擇 * 儲存 * 。</block>
   <block id="214d48f43c3d0248419d70ccacea9a73" category="section-title">將其他資料來源新增至知識庫</block>
@@ -364,14 +352,9 @@
   <block id="bd5de107e9031f0c3a6ac09d2366a7be" category="list-text">選取 * 動作 * 功能表、然後選取 * 解除發佈 * 。</block>
   <block id="10b42a1e79dbd5f79dd793c2655522b8" category="paragraph">知識庫已停用、無法再由 chatbot 應用程式存取。</block>
   <block id="cc0a404c41a82c6be9de0d64f06fcd89" category="section-title">刪除知識庫</block>
-  <block id="76420e895d8bcbca33f0cf3202997ba2" category="paragraph">如果您不再需要知識庫、可以將其刪除。當您刪除知識庫時、它將從 Workload Factory 中移除、而使用知識庫的任何應用程式或聊天機器人程式都將停止運作。此動作不可還原。</block>
-  <block id="bd1e7a638d401a590a6dfd0683fcab0c" category="paragraph">刪除知識庫時、您也應該執行下列動作、以完全刪除與知識庫相關的所有資源：</block>
-  <block id="d6a62e94706e27186ebc0fbca1c802d4" category="list-text">將知識庫與與其相關的任何代理程式分離。</block>
-  <block id="0581045f098dd9833078169a3178147a" category="list-text">從知識庫建立索引的基礎資料會保留在您設定的向量儲存區中、而且仍可擷取。若要刪除資料、您也需要刪除包含資料嵌入資料的向量索引。</block>
   <block id="26d469c182333c4c1e4800ddcd6d2a61" category="list-text">從「知識庫」清查頁面中、選取您要刪除的知識庫。</block>
   <block id="0e0f1b27ca798d3b3b8154b411215d9a" category="list-text">選取 * 動作 * 功能表、然後選取 * 刪除知識庫 * 。</block>
   <block id="74091f3303c946e291c1c1702ba6d39a" category="list-text">在刪除知識庫對話方塊中、確認您要刪除它、然後選取 * 刪除 * 。</block>
-  <block id="63d56e434f490d0e8d99ce407df90bf6" category="paragraph">知識庫會從 Workload Factory 中刪除。</block>
   <block id="8bbd4e338e42c1350d453ca5c82eb3b3" category="summary">在您在本機建立並測試知識庫之後、您可以發佈知識庫、以便將其與聊天機器人應用程式整合、讓使用者能夠查詢知識庫。</block>
   <block id="70de8e73e84df845f91376c6c0d1188e" category="doc">發佈知識庫並檢視獨特的端點</block>
   <block id="12676fc9338d312de3a6cbb584fa3284" category="paragraph">在您在本機建立並測試知識庫之後、您可以發佈知識庫、以便將其整合至能夠讓使用者查詢知識庫的聊天機器人應用程式。</block>
@@ -571,4 +554,29 @@
   <block id="d59048f21fd887ad520398ce677be586" category="section-title">深入瞭解</block>
   <block id="862b02acae8afc7a8e5ed9bf4c7cb18e" category="inline-link">Workload Factory API 文件</block>
   <block id="39d0fcde59bc31b066cd026cdc9718f8" category="paragraph"><block ref="39d0fcde59bc31b066cd026cdc9718f8" category="inline-link-rx"></block></block>
+  <block id="8f3f613a5094ebfa7c5f531cb356028e" category="list-text">* 定義 AI 參數 * ：在 * 區塊策略 * 區段中、定義當資料來源與知識庫整合時、 GenAI 引擎如何將資料來源內容分割成區塊。您可以選擇下列其中一個策略：</block>
+  <block id="091e1c7957272ab69145f4859b4465d0" category="list-text">* 多重句子區塊 * ：將資料來源中的資訊組織成句子定義的區塊。您可以選擇每個區塊中包含多少句話（最多 100 句）。</block>
+  <block id="87aa4ffcf50084a10651fe7094e75bda" category="list-text">* 重疊區塊 * ：將資料來源中的資訊組織成字元定義區塊、以重疊鄰近區塊。您可以選擇每個區塊的字元大小、以及每個區塊與相鄰區塊重疊的量。您可以設定 50 到 3000 個字元之間的區塊大小、以及介於 1 到 99% 之間的重疊百分比。</block>
+  <block id="18c41e2a8da7a23dcc990da8d7dfe06d" category="admonition">選擇高重疊百分比可大幅增加儲存需求、只需稍微改善擷取準確度。</block>
+  <block id="e2c3c3f9d43a7b053dbca2a0234078b7" category="section-title">例如： chatbot 應用程式</block>
+  <block id="75a337f9fd41608c507045c7429174be" category="paragraph">NetApp Workload Factory GenAI 範例應用程式可讓您在網路型聊天應用程式中直接與已發佈的 NetApp Workload Factory 知識庫互動、藉此測試驗證和擷取。</block>
+  <block id="8fa53177b9fd9cdb460f43ba4be39618" category="doc">其他的分塊策略</block>
+  <block id="a0a464c97ca1835adf3bddc803b001cd" category="paragraph">泛用 AI 工作負載現在支援資料來源的多重句子區塊和重疊區塊。</block>
+  <block id="4cb92325ae7034576f6dff7fe48e3254" category="section-title">每個知識庫的專用磁碟區</block>
+  <block id="a023a8333417a130bf6fb2c729aaa7f1" category="paragraph">現在、泛用 AI 工作負載會為每個新知識庫建立專屬的 Amazon FSX for NetApp ONTAP Volume 、為每個知識庫啟用個別的快照原則、並針對故障和資料中毒提供更好的保護。</block>
+  <block id="a97438cf1c94fe51248083c86ce591c5" category="list-text">在「定義知識庫」頁面上、設定知識庫設定：</block>
+  <block id="b651dafbe972dff3ef00c60a522c2c08" category="paragraph">如果您啟動交談啟動器、預設會選取「自動模式」。只有在您將資料來源新增至知識庫之後、才能啟用「手動模式」。<block ref="787b3d64d417e723feebaf5fa5dbfeee" category="inline-link-macro-rx"></block>。</block>
+  <block id="ce08e73f7c40cf7e58d6371a757d23c6" category="list-text">* 適用於 ONTAP 檔案系統 * 的 FSX ：當您定義新的知識庫時、 Workload Factory 會為 NetApp ONTAP Volume 建立新的 Amazon FSX 以儲存。選擇要在其中建立新磁碟區的現有檔案系統名稱和 SVM （也稱為儲存 VM ）。</block>
+  <block id="305529b9c4df0ab06763778bf46b9449" category="list-text">* Snapshot 原則 * ：從 Workload Factory 儲存資源清冊中定義的現有原則清單中選擇快照原則。</block>
+  <block id="ced63c567878ed01730fce043c8ade96" category="inline-link">建立快照原則</block>
+  <block id="ad36efe6c620944e32785812d09accd6" category="paragraph">如果您需要的快照原則不存在、您可以<block ref="7546e5b5141e2979fa53ccc7106931ca" category="inline-link-rx"></block>在包含該 Volume 的儲存 VM 上執行。</block>
+  <block id="d2efa843fffdf7f0b1400f4edeb08081" category="paragraph">您可以編輯已整合在知識庫中的資料來源相關資訊。將資料來源新增至知識庫之後、大部分的資訊都會修正、但您可以變更區塊定義和組態、以及權限認知（在資料來源磁碟區上使用 SMB 傳輸協定時）。</block>
+  <block id="46f71814ee1d2e5bbe062c91635739cf" category="list-text">在「編輯資料來源」頁面中、選取<block ref="0722c4ff5aff83b42b3212ce6356e926" category="inline-image-macro-rx" type="image"></block>以展開區塊定義列。</block>
+  <block id="c9ee341e3341c054d76e9a00e2455883" category="list-text">更新區塊策略和組態的設定、以及權限認知（ SMB 磁碟區）、然後選取 * 儲存 * 。</block>
+  <block id="f3ee02a23f65c24a5b66f40deaa52796" category="list-text">基礎架構設定</block>
+  <block id="f39b1e8c1922f03eae35d54aa3cc70e1" category="list-text">在「編輯知識庫」頁面中、您可以變更知識庫名稱、說明、內嵌模式、聊天模式、無論是自動或手動建立對話啟動器、以及用於包含知識庫之磁碟區的快照原則。</block>
+  <block id="88f99918375bbf8120b251d975b7e03e" category="paragraph">如果您不再需要知識庫、可以將其刪除。當您刪除知識庫時、它會從 Workload Factory 中移除、並刪除包含知識庫的磁碟區。任何使用知識庫的應用程式或聊天機器人程式都將停止運作。刪除知識庫是不可還原的。</block>
+  <block id="fd33fe22719aed031c8ea822ba866360" category="paragraph">刪除知識庫時、您也應該解除知識庫與任何與其相關的代理程式的關聯、以便完全刪除與知識庫相關的所有資源。</block>
+  <block id="fa20235938197ed878f7da8159917a1d" category="paragraph">知識庫會從 Workload Factory 中移除、並刪除其相關的 Volume 。</block>
+  <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024 年 9 月 1 日</block>
 </blocks>

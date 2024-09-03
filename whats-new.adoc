@@ -15,6 +15,22 @@ summary: 瞭解 Workload Factory 的 AI 工作負載功能的新功能。
 
 
 
+== 2024 年 9 月 1 日
+
+
+
+=== 其他的分塊策略
+
+泛用 AI 工作負載現在支援資料來源的多重句子區塊和重疊區塊。
+
+
+
+=== 每個知識庫的專用磁碟區
+
+現在、泛用 AI 工作負載會為每個新知識庫建立專屬的 Amazon FSX for NetApp ONTAP Volume 、為每個知識庫啟用個別的快照原則、並針對故障和資料中毒提供更好的保護。
+
+
+
 == 2024 年 8 月 4 日
 
 
@@ -22,6 +38,12 @@ summary: 瞭解 Workload Factory 的 AI 工作負載功能的新功能。
 === Amazon CloudWatch 記錄整合
 
 現在、泛用 AI 工作負載已與 Amazon CloudWatch 記錄整合、可讓您監控泛用 AI 工作負載記錄檔。
+
+
+
+=== 例如： chatbot 應用程式
+
+NetApp Workload Factory GenAI 範例應用程式可讓您在網路型聊天應用程式中直接與已發佈的 NetApp Workload Factory 知識庫互動、藉此測試驗證和擷取。
 
 
 
