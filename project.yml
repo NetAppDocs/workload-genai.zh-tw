@@ -63,6 +63,8 @@ sidebar:
     entries:
     - title: 註冊以取得支援
       url: "/support-registration.html"
+    - title: 疑難排解
+      url: "/troubleshooting.html"
     - title: 取得協助
       url: "/get-help.html"
   - title: 法律聲明
