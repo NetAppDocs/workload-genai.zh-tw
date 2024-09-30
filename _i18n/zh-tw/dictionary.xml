@@ -640,4 +640,8 @@
   <block id="75adfeedf06d70e0bc627133f85cd211" category="section-title">將資料來源與知識庫同步</block>
   <block id="44736bad98446163ecd5077653cbd105" category="paragraph">資料來源會每天自動與相關知識庫同步一次、以便在聊天機器人程式中反映任何資料來源變更。如果您變更任何資料來源、而且想要立即同步處理資料、您可以執行隨需同步。</block>
   <block id="26e6f4cc71039ce95ddbb0acdad6891d" category="section-title">2024 年 9 月 29 日</block>
+  <block id="f8016d0e0375ce671e71803692cf105c" category="paragraph"><block ref="f8016d0e0375ce671e71803692cf105c" category="inline-link-rx"></block></block>
+  <block id="340b5c4d996cad6cf6d27d13faf94e89" category="paragraph"><block ref="340b5c4d996cad6cf6d27d13faf94e89" category="inline-link-rx"></block></block>
+  <block id="f951fa0f2608d186cd1f0bd8889ac232" category="paragraph"><block ref="f951fa0f2608d186cd1f0bd8889ac232" category="inline-link-rx"></block></block>
+  <block id="8afd34c2a29e7b6286f3ed0bf9e20c22" category="paragraph"><block ref="8afd34c2a29e7b6286f3ed0bf9e20c22" category="inline-link-rx"></block></block>
 </blocks>
