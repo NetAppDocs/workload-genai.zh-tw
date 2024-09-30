@@ -599,7 +599,6 @@
   <block id="9cbd2c5c5175ed32f13a8e1e7a8198dd" category="list-text">在<block ref="078831e29f354e83fac6da3db6ed6b7b" prefix=" " category="inline-code"></block>區段中、將裝置路徑變更為新的 Volume 路徑。例如：</block>
   <block id="e9813bd2289d9835204f02be0a5d2df6" category="cell">根磁碟區已刪除。</block>
   <block id="358ede72c2c3d3e77baf3ed35b4039f6" category="cell">使用名稱和路徑建立 Volume 、然後從 Amazon EC2 重新啟動後端 Docker 執行個體。</block>
-  <block id="430ea429b454fdc4ea2eb6c6b9cdbd77" category="doc">快照並還原知識庫磁碟區</block>
   <block id="1ae13d57da1c55ee537cb9dc63916d03" category="paragraph">您現在可以取得知識庫的時間點複本、以保護您的泛用 AI 工作負載資料。這可讓您保護資料、避免意外遺失或測試知識庫設定的變更。您可以隨時還原舊版的知識庫磁碟區。</block>
   <block id="073751c61467c5e36c6cc197d92a75c4" category="section-title">暫停排程掃描</block>
   <block id="6c31cb11ffc4d11a5aed0e968bb5f8c9" category="paragraph">您現在可以暫停排程的資料來源掃描。根據預設、泛化 AI 工作負載會每天掃描每個資料來源、以便將新資料擷取到每個知識庫中。如果您不想擷取最新的變更（例如在測試期間或還原快照時）、您可以暫停排程的掃描、並隨時繼續進行。</block>
@@ -644,4 +643,5 @@
   <block id="340b5c4d996cad6cf6d27d13faf94e89" category="paragraph"><block ref="340b5c4d996cad6cf6d27d13faf94e89" category="inline-link-rx"></block></block>
   <block id="f951fa0f2608d186cd1f0bd8889ac232" category="paragraph"><block ref="f951fa0f2608d186cd1f0bd8889ac232" category="inline-link-rx"></block></block>
   <block id="8afd34c2a29e7b6286f3ed0bf9e20c22" category="paragraph"><block ref="8afd34c2a29e7b6286f3ed0bf9e20c22" category="inline-link-rx"></block></block>
+  <block id="4936442e55cb8f837f9616ca6aaf1e92" category="doc">快照與還原支援知識庫磁碟區</block>
 </blocks>
