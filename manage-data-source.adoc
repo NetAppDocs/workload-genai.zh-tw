@@ -56,7 +56,7 @@ summary: 使用適用於 ONTAP 檔案系統的 FSX 上的資料來源建立知�
 
 您可以隨時變更資料來源的內容、以新增或更新組織資料。如果此資料來源正在知識庫中積極使用、您必須同步資料來源、以便將其重新索引至知識庫。同步是漸進式的、因此 Amazon bedrock 只會處理您的 FSX for ONTAP Volume 中自上次同步以來已新增、修改或刪除的物件。
 
-資料來源會每天自動與知識庫同步一次、以便在聊天機器人程式中反映任何資料來源變更。如果您對資料來源進行變更，並且想要立即同步處理資料，您可以 link:manage-knowledgebase.html#synchronize-your-data-sources-with-the-knowledge-base["執行隨需同步"]。
+資料來源會每天自動與知識庫同步一次、以便在聊天機器人程式中反映任何資料來源變更。如果您對資料來源進行變更，並且想要立即同步處理資料，您可以 link:manage-knowledgebase.html#synchronize-your-data-sources-with-a-knowledge-base["執行隨需同步"]。
 
 
 

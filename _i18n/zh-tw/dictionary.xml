@@ -275,7 +275,6 @@
   <block id="f0c862596fc0a1dd30faa6b630a0d09b" category="section-title">更新現有資料來源的內容</block>
   <block id="d811eb8aad6aebc071695232fb58c5a5" category="paragraph">您可以隨時變更資料來源的內容、以新增或更新組織資料。如果此資料來源正在知識庫中積極使用、您必須同步資料來源、以便將其重新索引至知識庫。同步是漸進式的、因此 Amazon bedrock 只會處理您的 FSX for ONTAP Volume 中自上次同步以來已新增、修改或刪除的物件。</block>
   <block id="24f189799b33f2d3f465d0658dcc69e1" category="inline-link-macro">執行隨需同步</block>
-  <block id="424609f726117c0fe50e1034bb197bf7" category="paragraph">資料來源會每天自動與知識庫同步一次、以便在聊天機器人程式中反映任何資料來源變更。如果您對資料來源進行變更，並且想要立即同步處理資料，您可以 <block ref="67b891ffaab1342f4fb267d7cc798f81" category="inline-link-macro-rx"></block>。</block>
   <block id="35198182831e3f9922e23822e3f2e2eb" category="section-title">刪除資料來源</block>
   <block id="19045c987301cc2ddb28f24761554946" category="paragraph">如果您不再需要資料來源作為知識庫的一部分、可以將其刪除。</block>
   <block id="7c25f02bbc30d711041ddd1cc4235dc3" category="list-text">從知識庫庫存頁面中、選取資料來源所在的知識庫、然後選取 <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> 並選取 * 管理知識庫 * 。</block>
@@ -501,7 +500,6 @@
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">版本資訊</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="acbf2b120f060c765cc5fbfef7779840" category="sidebar">識別知識庫的資料來源</block>
-  <block id="2e800147de9688c09f27dae52c542680" category="sidebar">使用 GenAI 建立知識庫</block>
   <block id="b032727d9e00be7e59aefec94a0972c2" category="sidebar">啟動驗證</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識與支援</block>
   <block id="3163a16fc98aa29c5fea8b61c62bb459" category="paragraph">使用 Workload Factory 的 GenAI 功能不需花費任何成本。</block>
@@ -644,4 +642,6 @@
   <block id="f951fa0f2608d186cd1f0bd8889ac232" category="paragraph"><block ref="f951fa0f2608d186cd1f0bd8889ac232" category="inline-link-rx"></block></block>
   <block id="8afd34c2a29e7b6286f3ed0bf9e20c22" category="paragraph"><block ref="8afd34c2a29e7b6286f3ed0bf9e20c22" category="inline-link-rx"></block></block>
   <block id="4936442e55cb8f837f9616ca6aaf1e92" category="doc">快照與還原支援知識庫磁碟區</block>
+  <block id="ef3d62d3a83e208fec16cf94a1c9ef8b" category="paragraph">資料來源會每天自動與知識庫同步一次、以便在聊天機器人程式中反映任何資料來源變更。如果您對資料來源進行變更，並且想要立即同步處理資料，您可以 <block ref="a5f82761b74f2896160929ccd4ead00e" category="inline-link-macro-rx"></block>。</block>
+  <block id="3bd082f2a7c2961a682116b6ed9f43fc" category="sidebar">使用 GenAI 建立知識庫</block>
 </blocks>

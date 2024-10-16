@@ -33,32 +33,30 @@ sidebar:
       url: "/deploy-infrastructure.html"
     - title: 使用外部的 chatbot 應用程式範例
       url: "/example-chatbot-application.html"
+    - title: NetApp GenAI 引擎的元件
+      url: "/genai-engine-instance.html"
   - title: 使用 GenAI 建立知識庫
     entries:
     - title: 建立知識庫
-      entries:
-      - title: 建立知識庫
-        url: "/create-knowledgebase.html"
-      - title: 測試知識庫
-        url: "/test-knowledgebase.html"
-      - title: 啟動驗證
-        url: "/activate-authentication.html"
-      - title: 發佈知識庫
-        url: "/publish-knowledgebase.html"
-      - title: 建立以 RAG 為基礎的 AI 應用程式
-        url: "/create-application.html"
-      - title: 接下來您可以做什麼
-        url: "/whats-next.html"
-    - title: 管理資料來源
-      url: "/manage-data-source.html"
-    - title: 管理知識庫
-      url: "/manage-knowledgebase.html"
+      url: "/create-knowledgebase.html"
+    - title: 測試知識庫
+      url: "/test-knowledgebase.html"
+    - title: 啟動驗證
+      url: "/activate-authentication.html"
+    - title: 發佈知識庫
+      url: "/publish-knowledgebase.html"
+    - title: 建立以 RAG 為基礎的 AI 應用程式
+      url: "/create-application.html"
+    - title: 接下來您可以做什麼
+      url: "/whats-next.html"
   - title: 管理 GenAI
     entries:
     - title: 管理 GenAI 基礎架構
       url: "/manage-infrastructure.html"
-    - title: NetApp GenAI 引擎的元件
-      url: "/genai-engine-instance.html"
+    - title: 管理知識庫
+      url: "/manage-knowledgebase.html"
+    - title: 管理資料來源
+      url: "/manage-data-source.html"
   - title: 知識與支援
     entries:
     - title: 註冊以取得支援
