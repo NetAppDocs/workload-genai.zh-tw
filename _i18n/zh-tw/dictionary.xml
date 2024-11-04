@@ -564,7 +564,6 @@
   <block id="46f71814ee1d2e5bbe062c91635739cf" category="list-text">在「編輯資料來源」頁面中、選取<block ref="0722c4ff5aff83b42b3212ce6356e926" category="inline-image-macro-rx" type="image"></block>以展開區塊定義列。</block>
   <block id="c9ee341e3341c054d76e9a00e2455883" category="list-text">更新區塊策略和組態的設定、以及權限認知（ SMB 磁碟區）、然後選取 * 儲存 * 。</block>
   <block id="f3ee02a23f65c24a5b66f40deaa52796" category="list-text">基礎架構設定</block>
-  <block id="f39b1e8c1922f03eae35d54aa3cc70e1" category="list-text">在「編輯知識庫」頁面中、您可以變更知識庫名稱、說明、內嵌模式、聊天模式、無論是自動或手動建立對話啟動器、以及用於包含知識庫之磁碟區的快照原則。</block>
   <block id="88f99918375bbf8120b251d975b7e03e" category="paragraph">如果您不再需要知識庫、可以將其刪除。當您刪除知識庫時、它會從 Workload Factory 中移除、並刪除包含知識庫的磁碟區。任何使用知識庫的應用程式或聊天機器人程式都將停止運作。刪除知識庫是不可還原的。</block>
   <block id="fd33fe22719aed031c8ea822ba866360" category="paragraph">刪除知識庫時、您也應該解除知識庫與任何與其相關的代理程式的關聯、以便完全刪除與知識庫相關的所有資源。</block>
   <block id="fa20235938197ed878f7da8159917a1d" category="paragraph">知識庫會從 Workload Factory 中移除、並刪除其相關的 Volume 。</block>
@@ -644,4 +643,28 @@
   <block id="4936442e55cb8f837f9616ca6aaf1e92" category="doc">快照與還原支援知識庫磁碟區</block>
   <block id="ef3d62d3a83e208fec16cf94a1c9ef8b" category="paragraph">資料來源會每天自動與知識庫同步一次、以便在聊天機器人程式中反映任何資料來源變更。如果您對資料來源進行變更，並且想要立即同步處理資料，您可以 <block ref="a5f82761b74f2896160929ccd4ead00e" category="inline-link-macro-rx"></block>。</block>
   <block id="3bd082f2a7c2961a682116b6ed9f43fc" category="sidebar">使用 GenAI 建立知識庫</block>
+  <block id="17e908b1a02b6ec45f4e125877322d0f" category="doc">使用資料欄遮罩個人識別資訊</block>
+  <block id="0f21cd7bd10e747bca7894a609acc04b" category="paragraph">泛用型 AI 工作負載採用 BlueXP  分類技術、引進資料 guardrails 功能。資料安全欄功能可識別及遮罩個人識別資訊（ PII ）、協助您維持法規遵循、並強化敏感組織資料的安全性。</block>
+  <block id="8137174f639d391921dfeb8ca6d792d1" category="paragraph"><block ref="8137174f639d391921dfeb8ca6d792d1" category="inline-link-macro-rx"></block></block>
+  <block id="a686d5fa6b6925450f1b7fa2b4245d28" category="inline-link-macro">瞭解 BlueXP 分類</block>
+  <block id="384713a8a1d5a2dd365da2851c50ad93" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block></block>
+  <block id="ee538d8e0203b8c3e9bdb95ebee1162c" category="paragraph">知識庫有兩種資料整合模式： _ 公開模式 _ 和 _ 企業模式 _ 。</block>
+  <block id="3b3458714be1e5c3f76dd200e4227588" category="list-text">公共模式</block>
+  <block id="ab6bcff4b8fb91fe0c83c8ef83da1c6e" category="list-text">企業模式</block>
+  <block id="e168133413009827e06cf1b52bf82d2e" category="paragraph">貴組織的資料來源可能包含私人身分識別資訊（ PII ）。為了保護這項敏感資訊、您可以在建立和設定知識庫時啟用 _data guardardrails 。由 BlueXP  分類技術支援的資料欄可識別及遮罩 PII 、使其無法存取且無法擷取。</block>
+  <block id="2abf45f9ff5a74918b97267cd4e59d6a" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block>。</block>
+  <block id="cf24c0f0066b07e51df4da735abd84e5" category="admonition">資料欄可隨時啟用或停用。如果您切換資料防護功能、 Workload Factory 會從頭開始掃描整個知識庫、這會產生成本。</block>
+  <block id="1be907baab24daef236be08a55d381ce" category="inline-link-macro">瞭解採用 BlueXP  分類技術的資料欄</block>
+  <block id="239980b6c377cd208cd4875dd11871a7" category="list-text">* 資料欄 * ：選擇是否要啟用或停用資料欄。<block ref="705e589dc60832aba1b9593eb1d26a9a" category="inline-link-macro-rx"></block>。</block>
+  <block id="5d78af30e91e495d74cbd3cac7a282db" category="paragraph">必須完成下列先決條件、才能啟用資料欄。</block>
+  <block id="069e9a4c876c108cc9f27ee13170ed16" category="inline-link-macro">瞭解如何在 BlueXP  中新增角色至成員</block>
+  <block id="f271e30d6a375057fa3075f037ab44e5" category="list-text">必須有服務帳戶才能與 BlueXP  分類通訊。您必須在 BlueXP  租賃帳戶上擁有 _ 組織管理員 _ 角色、才能建立服務帳戶。擁有組織管理員角色的成員可以在 BlueXP  中完成所有動作。<block ref="9ba9a2df720ef49e9efc4ba4af6ca608" category="inline-link-macro-rx"></block></block>
+  <block id="44b34442167c9611792529867ee76d90" category="inline-link-macro">BlueXP 分類文件</block>
+  <block id="bc2f4df95fcf66983b127abe7caa7a0a" category="list-text">您需要執行下列步驟、如所述<block ref="0e478e925fb96541eb2f7d657ca01cb8" category="inline-link-macro-rx"></block>：</block>
+  <block id="a5085066220b6bc77291e8a3ba481c5a" category="list-text">建立 BlueXP Connector</block>
+  <block id="3e3c8a56035df76e06772f4505dc58c7" category="list-text">確保您的環境符合先決條件</block>
+  <block id="0ce4d42838344488f607ff306088fae9" category="list-text">部署 BlueXP 分類</block>
+  <block id="b91895758c5a35a75fd3e87dc1fa0741" category="list-text">在「編輯知識庫」頁面中、您可以變更知識庫名稱、說明、內嵌模式、聊天模式、資料規範啟用、選擇是自動或手動建立對話啟動器、以及用於包含知識庫之 Volume 的快照原則。</block>
+  <block id="fde00ba8f64d2c57d64a163698fd6f03" category="admonition">每次知識庫掃描、包括內嵌、成本。如果在建立知識庫之後啟用資料 guardrails 、則會再次掃描知識庫並產生成本。</block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024 年 11 月 3 日</block>
 </blocks>

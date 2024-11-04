@@ -13,9 +13,22 @@ summary: 在您部署 AI 基礎架構、並從適用於 ONTAP 資料存放區的
 [role="lead"]
 在您部署 AI 基礎架構、並從適用於 ONTAP 資料存放區的 FSX 中找出要整合到知識庫的資料來源之後、您就可以使用 Workload Factory 來建置知識庫。在本步驟中、您也將定義 AI 特性、並建立對話前人。
 
-您可以使用知識庫、而無需整合組織的資料來源。在這種情況下、與知識庫整合的應用程式只會提供來自網際網路上公開資訊的結果。這稱為 _public 模式 _ 整合。
+.關於這項工作
+知識庫有兩種資料整合模式： _ 公開模式 _ 和 _ 企業模式 _ 。
 
-在大多數情況下、您會想要將組織的資料來源整合到知識庫中。這稱為 _ 企業模式 _ 整合、因為它能提供企業的知識。
+公共模式:: 您可以使用知識庫、而無需整合組織的資料來源。在這種情況下、與知識庫整合的應用程式只會提供來自網際網路上公開資訊的結果。這稱為 _public 模式 _ 整合。
+企業模式:: 在大多數情況下、您會想要將組織的資料來源整合到知識庫中。這稱為 _ 企業模式 _ 整合、因為它能提供企業的知識。
++
+--
+貴組織的資料來源可能包含私人身分識別資訊（ PII ）。為了保護這項敏感資訊、您可以在建立和設定知識庫時啟用 _data guardardrails 。由 BlueXP  分類技術支援的資料欄可識別及遮罩 PII 、使其無法存取且無法擷取。
+
+link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["瞭解 BlueXP 分類"^]。
+
+
+NOTE: 資料欄可隨時啟用或停用。如果您切換資料防護功能、 Workload Factory 會從頭開始掃描整個知識庫、這會產生成本。
+
+--
+
 
 
 
@@ -47,6 +60,21 @@ https://aws.amazon.com/bedrock/titan/["深入瞭解 Amazon Titan"^]
 .. * 聊天模式 * ：選擇與 Amazon bedrock 整合的 Claude 聊天模式。請注意、您必須已啟用 Amazon Bedrock 的聊天模式。
 +
 深入瞭解可選擇的機型、協助您選擇： https://aws.amazon.com/bedrock/claude/["Anthropic 在 Amazon bedrock 的 Claude"^]
+
+.. * 資料欄 * ：選擇是否要啟用或停用資料欄。link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["瞭解採用 BlueXP  分類技術的資料欄"^]。
++
+必須完成下列先決條件、才能啟用資料欄。
+
++
+*** 必須有服務帳戶才能與 BlueXP  分類通訊。您必須在 BlueXP  租賃帳戶上擁有 _ 組織管理員 _ 角色、才能建立服務帳戶。擁有組織管理員角色的成員可以在 BlueXP  中完成所有動作。link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["瞭解如何在 BlueXP  中新增角色至成員"^]
+*** 您需要執行下列步驟、如所述link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html#quick-start["BlueXP 分類文件"^]：
++
+.... 建立 BlueXP Connector
+.... 確保您的環境符合先決條件
+.... 部署 BlueXP 分類
+
+
+
 
 .. * 對話開場白 * ：選擇是否要提供最多四個對話啟動器提示、讓與使用此知識庫的聊天機器人程式互動的使用者看到。建議您啟用此設定。
 +
