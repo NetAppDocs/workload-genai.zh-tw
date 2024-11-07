@@ -667,4 +667,8 @@
   <block id="b91895758c5a35a75fd3e87dc1fa0741" category="list-text">在「編輯知識庫」頁面中、您可以變更知識庫名稱、說明、內嵌模式、聊天模式、資料規範啟用、選擇是自動或手動建立對話啟動器、以及用於包含知識庫之 Volume 的快照原則。</block>
   <block id="fde00ba8f64d2c57d64a163698fd6f03" category="admonition">每次知識庫掃描、包括內嵌、成本。如果在建立知識庫之後啟用資料 guardrails 、則會再次掃描知識庫並產生成本。</block>
   <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024 年 11 月 3 日</block>
+  <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link-macro">BlueXP主控台</block>
+  <block id="402ae08ce46f82670c0313312e504ad7" category="list-text">AI 引擎必須能夠存取 <block ref="046fd603b18837f482287e5ec741e5ed" category="inline-link-macro-rx"></block></block>
+  <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">Amazon FSX for NetApp ONTAP 產品</block>
+  <block id="4b88d56bd65ef92611ac63064c38369f" category="list-text">Amazon CloudWatch</block>
 </blocks>

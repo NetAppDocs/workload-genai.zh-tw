@@ -42,6 +42,8 @@ IAM角色:: GenAI 引擎執行個體需要權限、才能將資料區塊傳送�
 * Amazon Elastic Container 登錄（ ECR ）
 * Amazon S3
 * AWS Systems Manager （ SSM ）
+* Amazon FSX for NetApp ONTAP 產品
+* Amazon CloudWatch
 
 
 --

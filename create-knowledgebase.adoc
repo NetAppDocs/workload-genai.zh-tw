@@ -67,6 +67,7 @@ https://aws.amazon.com/bedrock/titan/["深入瞭解 Amazon Titan"^]
 
 +
 *** 必須有服務帳戶才能與 BlueXP  分類通訊。您必須在 BlueXP  租賃帳戶上擁有 _ 組織管理員 _ 角色、才能建立服務帳戶。擁有組織管理員角色的成員可以在 BlueXP  中完成所有動作。link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["瞭解如何在 BlueXP  中新增角色至成員"^]
+*** AI 引擎必須能夠存取 link:https://console.bluexp.netapp.com/["BlueXP主控台"^]
 *** 您需要執行下列步驟、如所述link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html#quick-start["BlueXP 分類文件"^]：
 +
 .... 建立 BlueXP Connector
