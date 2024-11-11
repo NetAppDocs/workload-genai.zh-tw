@@ -22,4 +22,4 @@ summary: 現在您已經使用企業資料建立知識庫、並將其部署給�
 * 備份並保護適用於 ONTAP 檔案系統的 FSX 上的重要資料、確保您的知識庫資料和其他基礎架構元件隨時可用。
 
 
-如需管理適用於 ONTAP 檔案系統的 FSX 的相關資訊、請移至 https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Workload Factory for Amazon FSX for NetApp ONTAP 文件"^] 以檢視您可以使用的備份與保護功能。
+如需管理適用於 ONTAP 檔案系統的 FSX 的相關資訊、請移至 https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Amazon FSX for NetApp ONTAP 工作負載工廠文件"^] 以檢視您可以使用的備份與保護功能。

@@ -14,6 +14,7 @@ summary: 啟動知識庫的驗證、以便在將知識庫與 chatbot 應用程�
 啟動知識庫的驗證、以便在使用 API 端點將知識庫與 chatbot 應用程式整合時、需要權杖驗證和 ACL 。當您啟動驗證時、您可以設定 JSON Web Token 的設定、用於從 chatbot 用戶端向知識庫提出 API 要求。
 
 .步驟
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
 . 從「知識庫」清查頁面中、選取您要啟動驗證的知識庫。
 . 選取 image:icon-action.png["選項按鈕"] 並選取 * 管理知識庫 * 。
 . 選取 * 動作 * 功能表、然後選取 * 管理驗證設定 * 。

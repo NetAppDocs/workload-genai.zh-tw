@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: troubleshooting.html 
 keywords: support registration, register for support, support, nss account, add nss account, 
-summary: 在開啟支援案例之前、 NetApp 您必須先將 NetApp 支援網站帳戶新增至工作負載工廠、然後註冊取得支援。 
+summary: 您必須先將 NetApp 支援網站帳戶新增至工作負載工廠，然後註冊取得支援，才能使用 NetApp 技術支援開啟支援案例。 
 ---
 = 疑難排解
 :allow-uri-read: 
@@ -24,15 +24,15 @@ summary: 在開啟支援案例之前、 NetApp 您必須先將 NetApp 支援網�
 | 區域 | 問題 | 原因 | 因應措施 
 
 
-| 部署 | 部署失敗、因為磁碟區已經存在。 | GenAI 的 Workload Factory 需要在部署過程中建立新的 Volume 、但已使用您指定的名稱存在一個 Volume 。 | 指定新磁碟區使用的唯一名稱、然後再次嘗試部署。 
+| 部署 | 部署失敗、因為磁碟區已經存在。 | GenAI 的工作負載工廠需要在部署程序期間建立新的磁碟區，但已使用您指定的名稱存在磁碟區。 | 指定新磁碟區使用的唯一名稱、然後再次嘗試部署。 
 
 
-| 部署 | 由於 GenAI 的 Workload Factory 無法裝載磁碟區、因此部署失敗。 | NetApp ONTAP 的 FSX 所需的一或多個輸入連接埠會關閉或篩選。  a| 
+| 部署 | 由於 GenAI 的工作負載工廠無法裝載磁碟區，因此部署失敗。 | NetApp ONTAP 的 FSX 所需的一或多個輸入連接埠會關閉或篩選。  a| 
 打開中列出的端口 https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/reference-security-groups-fsx.html#inbound-rules["FSXfor ONTAP Sfor Sf.的安全群組規則"^]。
 
 
 
-| 維護 | 由 Workload Factory for GenAI 使用的後端 Docker 執行個體無法啟動。 | 磁碟區已刪除、 EC2 執行個體已重新啟動。  a| 
+| 維護 | GenAI 的工作負載工廠所使用的後端 Docker 執行個體無法啟動。 | 磁碟區已刪除、 EC2 執行個體已重新啟動。  a| 
 請使用下列還原步驟：
 
 .步驟
@@ -68,5 +68,5 @@ volumes:
 
 
 
-| 維護 | 由 Workload Factory for GenAI 使用的後端 Docker 執行個體無法啟動。 | 根磁碟區已刪除。 | 使用名稱和路徑建立 Volume 、然後從 Amazon EC2 重新啟動後端 Docker 執行個體。 
+| 維護 | GenAI 的工作負載工廠所使用的後端 Docker 執行個體無法啟動。 | 根磁碟區已刪除。 | 使用名稱和路徑建立 Volume 、然後從 Amazon EC2 重新啟動後端 Docker 執行個體。 
 |===

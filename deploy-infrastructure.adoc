@@ -56,7 +56,7 @@ image:diagram-chatbot-infrastructure.png["AI chatbot 元件的圖表。"]
 開始此程序之前、請確定您的環境符合 link:requirements.html["需求"] 要求。
 
 .步驟
-. 登入 Workload Factory 。
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
 . 在 AI 工作負載方塊中、選取 * 部署與管理 * 。
 . 檢閱基礎架構圖表、然後選取 * 下一步 * 。
 . 完成「 * AWS 設定 * 」區段中的項目：
@@ -78,7 +78,7 @@ GenAI 部署必須位於啟用 Amazon 基礎的 AWS 區域。 https://docs.aws.a
 
 
 .結果
-Workload Factory 開始部署 chatbot 基礎架構。此程序最多可能需要10分鐘。
+工作負載工廠開始部署 chatbot 基礎架構。此程序最多可能需要10分鐘。
 
 在部署過程中、會設定下列項目：
 

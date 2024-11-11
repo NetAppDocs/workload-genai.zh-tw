@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: requirements.html 
 keywords: ai, chatbot, prerequisites, bedrock, fsx for ontap, prerequisites, requirements 
-summary: 在您建置知識庫之前、請確保已正確設定 Workload Factory 和 AWS 。這包括擁有 AWS 登入認證、部署的 ONTAP 檔案系統 FSX 、其中包含您想要整合至知識庫的資料來源、存取 Amazon bedrock AI 服務等。 
+summary: 在您建置知識庫之前，請先確定工作負載工廠和 AWS 已正確設定。這包括擁有 AWS 登入認證、部署的 ONTAP 檔案系統 FSX 、其中包含您想要整合至知識庫的資料來源、存取 Amazon bedrock AI 服務等。 
 ---
 = GenAI 需求
 :allow-uri-read: 
@@ -11,15 +11,10 @@ summary: 在您建置知識庫之前、請確保已正確設定 Workload Factory
 
 
 [role="lead"]
-在您建置知識庫之前、請確保已正確設定 Workload Factory 和 AWS 。這包括擁有 AWS 登入認證、部署的 ONTAP 檔案系統 FSX 、其中包含您想要整合至知識庫的資料來源、存取 Amazon bedrock AI 服務等。
+在您建置知識庫之前，請先確定工作負載工廠和 AWS 已正確設定。這包括擁有 AWS 登入認證、部署的 ONTAP 檔案系統 FSX 、其中包含您想要整合至知識庫的資料來源、存取 Amazon bedrock AI 服務等。
 
-Workload Factory 登入與帳戶:: 您必須登入 Workload Factory 並建立帳戶。
-+
---
-https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["深入瞭解登入及建立帳戶"^]
-
---
-AWS 認證與權限:: 您需要使用自動化權限將 AWS 認證新增至 Workload Factory 、這表示您將在 GenAI 的工作負載工廠模式中使用工作負載工廠。
+工作負載工廠登入與帳戶:: 您需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在工作負載工廠設定帳戶"^]使用其中一項登入 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+AWS 認證與權限:: 您需要使用自動化權限將 AWS 認證新增至工作負載工廠，這表示您將在 GenAI 的工作負載工廠中使用 _AIL_ 模式。
 +
 --
 目前不支援 _ 基本 _ 模式和 _ 讀取 _ 模式權限。
@@ -34,7 +29,7 @@ https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["瞭解�
 Amazon bedrock:: Amazon 基礎架構可讓您使用基礎模型、並提供建置泛用 AI 應用程式的功能。
 +
 --
-在開始使用適用於 GenAI 的 Workload Factory 之前、您必須先設定 Amazon 基礎。您的 GenAI 部署必須位於啟用 Amazon 基礎的 AWS 區域。
+在開始使用 GenAI 的工作負載工廠之前，您必須先設定 Amazon 基礎。您的 GenAI 部署必須位於啟用 Amazon 基礎的 AWS 區域。
 
 * https://docs.aws.amazon.com/bedrock/latest/userguide/setting-up.html["AWS 文件：設定 Amazon bedrock"^]
 * https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["AWS 文件： Amazon bedrock 知識庫支援的區域和模型"^]

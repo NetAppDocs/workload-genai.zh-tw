@@ -12,4 +12,4 @@
 
 === 例如： chatbot 應用程式
 
-NetApp Workload Factory GenAI 範例應用程式可讓您在網路型聊天應用程式中直接與已發佈的 NetApp Workload Factory 知識庫互動、藉此測試驗證和擷取。
+NetApp 工作負載工廠 GenAI 範例應用程式可讓您在網路型的聊天應用程式中直接與 IT 互動，從已發佈的 NetApp 工作負載工廠知識庫測試驗證和擷取。

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: create-knowledgebase.html 
 keywords: ai, chatbot, creating, knowledge base 
-summary: 在您部署 AI 基礎架構、並從適用於 ONTAP 資料存放區的 FSX 中找出要整合到知識庫的資料來源之後、您就可以使用 Workload Factory 來建置知識庫。在本步驟中、您也將定義 AI 特性、並建立對話前人。 
+summary: 在您部署 AI 基礎架構，並從適用於 ONTAP 資料存放區的 FSX 中找出要整合到知識庫的資料來源之後，您就可以使用工作負載工廠來建置知識庫。在本步驟中、您也將定義 AI 特性、並建立對話前人。 
 ---
 = 建立知識庫
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 在您部署 AI 基礎架構、並從適用於 ONTAP 資料存放區的
 
 
 [role="lead"]
-在您部署 AI 基礎架構、並從適用於 ONTAP 資料存放區的 FSX 中找出要整合到知識庫的資料來源之後、您就可以使用 Workload Factory 來建置知識庫。在本步驟中、您也將定義 AI 特性、並建立對話前人。
+在您部署 AI 基礎架構，並從適用於 ONTAP 資料存放區的 FSX 中找出要整合到知識庫的資料來源之後，您就可以使用工作負載工廠來建置知識庫。在本步驟中、您也將定義 AI 特性、並建立對話前人。
 
 .關於這項工作
 知識庫有兩種資料整合模式： _ 公開模式 _ 和 _ 企業模式 _ 。
@@ -37,14 +37,14 @@ NOTE: 資料欄可隨時啟用或停用。如果您切換資料防護功能、 W
 知識庫定義了您想要用來建立知識庫的特性、例如基礎 AI 模型和內嵌格式。
 
 .步驟
-. 登入 Workload Factory 。
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
 . 在 AI 工作負載方塊中、選取 * 部署與管理 * 。
 . 從「知識庫」標籤中、選取 * 新增知識庫 * 。
 . 在「定義知識庫」頁面上、設定知識庫設定：
 +
 .. * 名稱 * ：輸入您要用於知識庫的名稱。
 .. * 說明 * ：輸入知識庫的詳細說明。
-.. * 內嵌模型 * ：內嵌模型定義如何將資料轉換成知識庫的向量內嵌。Workload Factory 支援下列機型：
+.. * 內嵌模型 * ：內嵌模型定義如何將資料轉換成知識庫的向量內嵌。工作負載工廠支援下列機型：
 +
 *** Titan 嵌入式 G1 - 文字
 *** Titan 內嵌文字 v2
@@ -81,8 +81,8 @@ https://aws.amazon.com/bedrock/titan/["深入瞭解 Amazon Titan"^]
 +
 如果您啟動交談啟動器、預設會選取「自動模式」。只有在您將資料來源新增至知識庫之後、才能啟用「手動模式」。link:manage-knowledgebase.html["瞭解如何修改知識庫設定"]。
 
-.. * 適用於 ONTAP 檔案系統 * 的 FSX ：當您定義新的知識庫時、 Workload Factory 會為 NetApp ONTAP Volume 建立新的 Amazon FSX 以儲存。選擇要在其中建立新磁碟區的現有檔案系統名稱和 SVM （也稱為儲存 VM ）。
-.. * Snapshot 原則 * ：從 Workload Factory 儲存資源清冊中定義的現有原則清單中選擇快照原則。知識庫的週期性快照將根據您選擇的快照原則、以頻率自動建立。
+.. * 適用於 ONTAP 檔案系統 * 的 FSX ：當您定義新的知識庫時，工作負載工廠會為 NetApp ONTAP Volume 建立新的 Amazon FSX 以儲存它。選擇要在其中建立新磁碟區的現有檔案系統名稱和 SVM （也稱為儲存 VM ）。
+.. * Snapshot 原則 * ：從工作負載原廠儲存設備庫存中定義的現有原則清單中選擇快照原則。知識庫的週期性快照將根據您選擇的快照原則、以頻率自動建立。
 +
 如果您需要的快照原則不存在、您可以 https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html["建立快照原則"]在包含該 Volume 的儲存 VM 上執行。
 

@@ -1,13 +1,13 @@
 ---
 indexpage:
-  title: Workload Factory for GenAI 文件
+  title: GenAI 文件的工作負載工廠
   summary: 將適用於 ONTAP 檔案系統的 FSX 資料與 MLOps 平台和 GenAI 基礎模型整合、以使用組織資料建立功能性的聊天機器人程式。
   keywords: AI, GenAI, ML, Chatbot, FSx, FSx for ONTAP, knowledge base
   lead: 將適用於 ONTAP 檔案系統的 FSX 資料與 MLOps 平台和 GenAI 基礎模型整合、以使用組織資料建立功能性的聊天機器人程式。
   tiles:
   - title: 開始使用
     links:
-    - title: 深入瞭解 GenAI 的 Workload Factory
+    - title: 瞭解 GenAI 的工作負載工廠
       url: ai-workloads-overview.html
     - title: 快速入門
       url: quick-start.html

@@ -20,7 +20,8 @@ summary: 建立知識庫之後、您可以檢視知識庫詳細資料、修改�
 您可以檢視有關知識庫設定和整合資料來源的資訊。
 
 .步驟
-. 從導覽功能表中、選取 * AI * 。
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+. 從工作負載原廠導覽功能表中，選取 * AI * 。
 . 選取您要檢視的知識庫。
 +
 如果已定義、目前正在使用的對話啟動器會顯示在右窗格中。
@@ -43,6 +44,7 @@ summary: 建立知識庫之後、您可以檢視知識庫詳細資料、修改�
 每次您從知識庫新增、修改或移除資料來源時、都必須同步資料來源、以便將其重新索引至知識庫。同步是漸進式的、因此 Amazon bedrock 只會處理您的 FSX for ONTAP Volume 中自上次同步以來已新增、修改或刪除的物件。
 
 .步驟
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
 . 從「知識庫」清查頁面中、選取您要更新的知識庫。
 . 選取 image:icon-action.png["選項按鈕"] 並選取 * 管理知識庫 * 。
 +
@@ -80,6 +82,7 @@ NOTE: 每次知識庫掃描、包括內嵌、成本。如果在建立知識庫�
 您可以手動擷取知識庫磁碟區的快照、以儲存知識庫的狀態。
 
 .步驟
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
 . 從「知識庫」清查頁面中、選取您要保護的知識庫。
 . 選取 image:icon-action.png["選項按鈕"] 並選取 * 管理知識庫 * 。
 +
@@ -101,6 +104,7 @@ NOTE: 每次知識庫掃描、包括內嵌、成本。如果在建立知識庫�
 NOTE: 如果儲存在磁碟區上的資料庫毀損或已刪除、則無法使用泛用 AI 工作負載 UI 還原快照。因應措施是、您可以使用託管磁碟區的 ONTAP 叢集上的來還原快照 https://docs.netapp.com/us-en/ontap-cli/volume-snapshot-restore.html["CLI ONTAP"^]。
 
 .步驟
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
 . 從「知識庫」清查頁面中、選取您要還原的知識庫。
 . 選取 image:icon-action.png["選項按鈕"] 並選取 * 管理知識庫 * 。
 +
@@ -125,6 +129,7 @@ NOTE: 如果儲存在磁碟區上的資料庫毀損或已刪除、則無法使�
 您可以在知識庫中內嵌其他資料來源、以便將其他組織資料填入其中。
 
 .步驟
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
 . 從「知識庫」清查頁面中、選取您要新增資料來源的知識庫。
 . 選取 image:icon-action.png["選項按鈕"] 並選取 * 新增資料來源 * 。
 . * 選取檔案系統 * ：選取資料來源檔案所在的 ONTAP 檔案系統的 FSX ，然後選取 * 下一步 * 。
@@ -164,6 +169,7 @@ NOTE: 選擇高重疊百分比可大幅增加儲存需求、只需稍微改善�
 同步是漸進式的、所以 Amazon bedrock 只會處理資料來源中自上次同步以來已新增、修改或刪除的物件。
 
 .步驟
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
 . 從「知識庫」清查頁面中、選取您要同步的知識庫。
 . 選取 image:icon-action.png["選項按鈕"] 並選取 * 管理知識庫 * 。
 . 選取 * 動作 * 功能表、然後選取 * 立即掃描 * 。
@@ -185,6 +191,7 @@ NOTE: 選擇高重疊百分比可大幅增加儲存需求、只需稍微改善�
 NOTE: 只有在知識庫庫存頁面中沒有知識庫時、才能使用此功能。
 
 .步驟
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
 . 您可以在「知識庫」的庫存頁面上、選擇交談模式的選項、就在交談機器人的頁面右側。
 . 從清單中選取聊天模式、然後在提示區域中輸入一組問題、以查看聊天機器人如何回應。
 . 請嘗試多種模式、看看哪種模式最適合您的實作。
@@ -202,6 +209,7 @@ NOTE: 只有在知識庫庫存頁面中沒有知識庫時、才能使用此功�
 解除發佈知識庫會停止任何聊天應用程式的運作。可存取知識庫的唯一 API 端點會停用。
 
 .步驟
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
 . 從「知識庫」清查頁面中、選取您要解除發佈的知識庫。
 . 選取 image:icon-action.png["選項按鈕"] 並選取 * 管理知識庫 * 。
 +
@@ -217,11 +225,12 @@ NOTE: 只有在知識庫庫存頁面中沒有知識庫時、才能使用此功�
 
 == 刪除知識庫
 
-如果您不再需要知識庫、可以將其刪除。當您刪除知識庫時、它會從 Workload Factory 中移除、並刪除包含知識庫的磁碟區。任何使用知識庫的應用程式或聊天機器人程式都將停止運作。刪除知識庫是不可還原的。
+如果您不再需要知識庫、可以將其刪除。當您刪除知識庫時，知識庫會從工作負載原廠移除，並刪除內含知識庫的磁碟區。任何使用知識庫的應用程式或聊天機器人程式都將停止運作。刪除知識庫是不可還原的。
 
 刪除知識庫時、您也應該解除知識庫與任何與其相關的代理程式的關聯、以便完全刪除與知識庫相關的所有資源。
 
 .步驟
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
 . 從「知識庫」清查頁面中、選取您要刪除的知識庫。
 . 選取 image:icon-action.png["選項按鈕"] 並選取 * 管理知識庫 * 。
 . 選取 * 動作 * 功能表、然後選取 * 刪除知識庫 * 。
@@ -229,4 +238,4 @@ NOTE: 只有在知識庫庫存頁面中沒有知識庫時、才能使用此功�
 
 
 .結果
-知識庫會從 Workload Factory 中移除、並刪除其相關的 Volume 。
+知識庫會從工作負載工廠移除，並刪除其相關的磁碟區。

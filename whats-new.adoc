@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: 瞭解 Workload Factory 的 AI 工作負載功能的新功能。 
+summary: 瞭解工作負載工廠的 AI 工作負載功能有哪些新功能。 
 ---
 = 新功能
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 瞭解 Workload Factory 的 AI 工作負載功能的新功能。
 
 
 [role="lead"]
-瞭解 Workload Factory 的泛用 AI 工作負載功能有哪些新功能。
+瞭解工作負載工廠的通用 AI 工作負載功能有哪些新功能。
 
 
 
@@ -87,7 +87,7 @@ https://docs.netapp.com/us-en/workload-genai/identify-data-sources.html["識別�
 
 === 例如： chatbot 應用程式
 
-NetApp Workload Factory GenAI 範例應用程式可讓您在網路型聊天應用程式中直接與已發佈的 NetApp Workload Factory 知識庫互動、藉此測試驗證和擷取。
+NetApp 工作負載工廠 GenAI 範例應用程式可讓您在網路型的聊天應用程式中直接與 IT 互動，從已發佈的 NetApp 工作負載工廠知識庫測試驗證和擷取。
 
 
 

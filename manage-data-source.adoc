@@ -20,7 +20,8 @@ summary: 使用適用於 ONTAP 檔案系統的 FSX 上的資料來源建立知�
 您可以檢視資料來源內容的相關資訊、也可以使用知識庫檢視其內嵌狀態。由於資料來源是知識庫的一部分、因此您必須先開啟知識庫、才能檢視資料來源詳細資料。
 
 .步驟
-. 從導覽功能表中、選取 * AI * 。
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+. 從工作負載原廠導覽功能表中，選取 * AI * 。
 . 選取資料來源所在的知識庫、然後選取 image:icon-action.png["選項按鈕"] 並選取 * 管理知識庫 * 。
 +
 頁面底部會列出屬於此知識庫的資料來源。
@@ -38,6 +39,7 @@ summary: 使用適用於 ONTAP 檔案系統的 FSX 上的資料來源建立知�
 您可以編輯已整合在知識庫中的資料來源相關資訊。將資料來源新增至知識庫之後、大部分的資訊都會修正、但您可以變更區塊定義和組態、以及權限認知（在資料來源磁碟區上使用 SMB 傳輸協定時）。
 
 .步驟
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
 . 從知識庫庫存頁面中、選取資料來源所在的知識庫、然後選取 image:icon-action.png["選項按鈕"] 並選取 * 管理知識庫 * 。
 +
 頁面底部會列出屬於此知識庫的資料來源。
@@ -65,6 +67,7 @@ summary: 使用適用於 ONTAP 檔案系統的 FSX 上的資料來源建立知�
 如果您不再需要資料來源作為知識庫的一部分、可以將其刪除。
 
 .步驟
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
 . 從知識庫庫存頁面中、選取資料來源所在的知識庫、然後選取 image:icon-action.png["選項按鈕"] 並選取 * 管理知識庫 * 。
 +
 頁面底部會列出屬於此知識庫的資料來源。

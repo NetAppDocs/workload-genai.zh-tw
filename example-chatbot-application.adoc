@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: example-chatbot-application.html 
 keywords: ai, example, sample, chatbot, app, application, local 
-summary: 您可以安裝並執行範例 chatbot 應用程式來測試您的知識庫、並瞭解如何使用 Workload Factory API 來建立您自己的泛用 AI 應用程式。 
+summary: 您可以安裝並執行範例 chatbot 應用程式來測試您的知識庫，並瞭解如何使用工作負載原廠 API 來建立您自己的泛用 AI 應用程式。 
 ---
 = 使用外部的 chatbot 應用程式範例
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 您可以安裝並執行範例 chatbot 應用程式來測試您的知�
 
 
 [role="lead"]
-在您設定、啟動及發佈知識庫之後、外部應用程式開發人員可以設定並執行 NetApp 提供的開放原始碼範例 chatbot 應用程式、與您的知識庫互動、並學習如何使用工作負載工廠 API 來建立自己的泛化 AI 應用程式。
+在您設定，啟動及發佈知識庫之後，外部應用程式開發人員可以設定及執行 NetApp 提供的開放原始碼範例 chatbot 應用程式，與您的知識庫互動，並瞭解如何使用工作負載工廠 API 來建立自己的泛化 AI 應用程式。
 
 .步驟
 . link:create-knowledgebase.html["建立知識庫"]。
@@ -39,4 +39,4 @@ NOTE: 與此知識庫整合的外部聊天應用程式需要使用您在知識�
 
 == 深入瞭解
 
-https://console.workloads.netapp.com/api-doc["Workload Factory API 文件"]
+https://console.workloads.netapp.com/api-doc["工作負載原廠 API 文件"]
