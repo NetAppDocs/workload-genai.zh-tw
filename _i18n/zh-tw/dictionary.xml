@@ -686,5 +686,5 @@
   <block id="34734891f639d2ae1ecbbaab22157fe2" category="paragraph">瞭解工作負載工廠的通用 AI 工作負載功能有哪些新功能。</block>
   <block id="81ff996ef963d9805259d4a6c9bafac8" category="inline-link">Amazon FSX for NetApp ONTAP 工作負載工廠文件</block>
   <block id="07e2e5eecff8fe1dbb4712055f0055f1" category="paragraph">如需管理適用於 ONTAP 檔案系統的 FSX 的相關資訊、請移至<block ref="3845b9852e43f2af9ae621ea5bb328c1" category="inline-link-rx"></block> 以檢視您可以使用的備份與保護功能。</block>
-  <block id="ae734fb1e6d4e05106a10b963ef2ee25" category="sidebar">GenAI 文件的工作負載工廠</block>
+  <block id="2b6b3d10fe7ba8590618a95b1cc96a1a" category="sidebar">BlueXP  Workload Factory for GenAI 文件</block>
 </blocks>

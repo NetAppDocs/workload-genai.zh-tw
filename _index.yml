@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: GenAI 文件的工作負載工廠
+  title: BlueXP  Workload Factory for GenAI 文件
   summary: 將適用於 ONTAP 檔案系統的 FSX 資料與 MLOps 平台和 GenAI 基礎模型整合、以使用組織資料建立功能性的聊天機器人程式。
   keywords: AI, GenAI, ML, Chatbot, FSx, FSx for ONTAP, knowledge base
   lead: 將適用於 ONTAP 檔案系統的 FSX 資料與 MLOps 平台和 GenAI 基礎模型整合、以使用組織資料建立功能性的聊天機器人程式。
