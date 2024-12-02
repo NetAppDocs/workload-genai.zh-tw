@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: ai-workloads-overview.html 
 keywords: overview, concepts, features, use case, workloads, AI, Bedrock, knowledge base, chatbot 
-summary: GenAI 的工作負載工廠可讓您將適用於 NetApp ONTAP 檔案系統的 Amazon FSX 與 GenAI 基礎模型整合。這可為您提供高效能儲存設備、並針對 AI 資料集提供豐富的保護、安全性和成本最佳化功能。 
+summary: BlueXP  Workload Factory for GenAI 可讓您將適用於 NetApp ONTAP 檔案系統的 Amazon FSX 與 GenAI 基礎模型整合。這可為您提供高效能儲存設備、並針對 AI 資料集提供豐富的保護、安全性和成本最佳化功能。 
 ---
-= 瞭解 GenAI 的工作負載工廠
+= 瞭解 GenAI 的 BlueXP  工作負載工廠
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -15,9 +15,9 @@ GenAI 的工作負載工廠可讓您將適用於 NetApp ONTAP 檔案系統的 Am
 
 
 
-== 什麼是 GenAI 的工作負載工廠？
+== 什麼是 GenAI 的 BlueXP  工作負載工廠？
 
-GenAI 的工作負載工廠可讓您將 Amazon FSX for NetApp ONTAP 上的企業資料來源與泛用 AI 應用程式搭配使用。利用擷取螺旋產生（ RAG ）架構、您可以將資料來源快速連線至 Amazon 基礎模型、以開發採用 AI 技術的泛用應用程式、例如虛擬助理、問答聊天機器人程式、文件摘要、內容建立等
+BlueXP  Workload Factory for GenAI 可讓您在 Amazon FSX for NetApp ONTAP 上使用企業資料來源，搭配泛用 AI 應用程式。利用擷取螺旋產生（ RAG ）架構、您可以將資料來源快速連線至 Amazon 基礎模型、以開發採用 AI 技術的泛用應用程式、例如虛擬助理、問答聊天機器人程式、文件摘要、內容建立等
 
 將泛用 AI 與組織資料搭配使用、可讓您充分運用自己的知識和專業技能、而不只是仰賴模型所訓練的公開資料所提供的情報。使用 RAG 自訂模型可確保正確且相關地回應組織特定的問題、並使用泛化 AI 來提高應用程式使用者的生產力與效率。
 
@@ -29,7 +29,7 @@ GenAI 的工作負載工廠可讓您將 Amazon FSX for NetApp ONTAP 上的企業
 
 == 使用 GenAI 建立泛用 AI 應用程式的優點
 
-GenAI 的工作負載工廠使用擷取擴增產生（ RAG ）來簡化部署基礎架構所需的程序，以建置泛用 AI 應用程式。具體而言、 GenAI 提供下列優點：
+適用於 GenAI 的 BlueXP  工作負載工廠，利用擷取擴增產生（ RAG ）來簡化部署基礎架構所需的程序，以建置泛用 AI 應用程式。具體而言、 GenAI 提供下列優點：
 
 * 無需深入瞭解資料基礎架構、基礎和語言模型、 IT 管理員和開發人員就能利用 GenAI 提供的自動化功能來加速應用程式開發。資料管理員和開發人員可以輕鬆快速地建立企業知識庫、將組織的非結構化資料內嵌在其中、供泛化 AI 應用程式使用。
 * 保留內嵌於知識庫之檔案的使用者權限、以確保資料安全性與隱私權得以維持、進而提升安全性。開發應用程式（例如 chatbot ）時、只能根據使用者存取的資料、提供經過驗證的使用者答案。
@@ -49,7 +49,7 @@ image:diagram-chatbot-processing.png["顯示 GenAI 關鍵元件、其功能及�
 
 
 
-== GenAI 的工作負載工廠如何協助建構泛用 AI 應用程式
+== GenAI 的 BlueXP  工作負載工廠如何協助建置泛用 AI 應用程式
 
 GenAI 以下列方式協助使用 RAG 建置泛型 AI 應用程式：
 

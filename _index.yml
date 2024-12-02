@@ -7,7 +7,7 @@ indexpage:
   tiles:
   - title: 開始使用
     links:
-    - title: 瞭解 GenAI 的工作負載工廠
+    - title: 瞭解 GenAI 的 BlueXP  工作負載工廠
       url: ai-workloads-overview.html
     - title: 快速入門
       url: quick-start.html

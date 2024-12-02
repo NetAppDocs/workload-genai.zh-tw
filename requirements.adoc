@@ -29,7 +29,7 @@ https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["瞭解�
 Amazon bedrock:: Amazon 基礎架構可讓您使用基礎模型、並提供建置泛用 AI 應用程式的功能。
 +
 --
-在開始使用 GenAI 的工作負載工廠之前，您必須先設定 Amazon 基礎。您的 GenAI 部署必須位於啟用 Amazon 基礎的 AWS 區域。
+在開始使用 GenAI 的 BlueXP  工作負載工廠之前，您必須先設定 Amazon 基礎。您的 GenAI 部署必須位於啟用 Amazon 基礎的 AWS 區域。
 
 * https://docs.aws.amazon.com/bedrock/latest/userguide/setting-up.html["AWS 文件：設定 Amazon bedrock"^]
 * https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["AWS 文件： Amazon bedrock 知識庫支援的區域和模型"^]

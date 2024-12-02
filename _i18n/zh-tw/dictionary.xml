@@ -91,7 +91,6 @@
   <block id="cc573650532041ff5d41735ee141eab8" category="paragraph">下圖顯示 GenAI 基礎架構。編號 1 、 2 和 3 的元件會在此程序中部署。開始部署之前、必須先具備其他元素。</block>
   <block id="ce783b25723548b58b44d3dde715476f" category="inline-image-macro">AI chatbot 元件的圖表。</block>
   <block id="b7cef2c498d21a11e9176de11360774c" category="paragraph"><block ref="b7cef2c498d21a11e9176de11360774c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b2e0047ff352d3aae4c45b40d2f7cc05" category="paragraph">您需要輸入 AWS 認證資料、然後選取適用於 ONTAP 檔案系統的 FSX 、以部署擷取強化（ RAG ）基礎架構。</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">開始之前</block>
   <block id="567dcfd6302e5511c1b546a4df21a679" category="inline-link-macro">需求</block>
   <block id="48b1a64ea0f002f28680bb1b8a8c87b2" category="paragraph">開始此程序之前、請確定您的環境符合 <block ref="b537f86d93b89f494a26572d1a60f4ef" category="inline-link-macro-rx"></block> 要求。</block>
@@ -236,14 +235,6 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開放原始碼</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
-  <block id="22e5a7336ebe77138f0282cedcb069ab" category="inline-link">工作負載工廠</block>
-  <block id="7ffcbeca3b450b8d05f9cf0eedb617f8" category="list-text"><block ref="7ffcbeca3b450b8d05f9cf0eedb617f8" category="inline-link-rx"></block></block>
-  <block id="887f800d53dc2cd5a7894464a6f60a6b" category="inline-link">適用於資料庫的 Workload Factory</block>
-  <block id="7e505d4c691d86e5bd415f9ccb849966" category="list-text"><block ref="7e505d4c691d86e5bd415f9ccb849966" category="inline-link-rx"></block></block>
-  <block id="9591e2d54c998ae1c9d48fd5be7762e9" category="inline-link">GenAI 的工作負載工廠</block>
-  <block id="f38c7416013fc239c3dd3288d40a40c0" category="list-text"><block ref="f38c7416013fc239c3dd3288d40a40c0" category="inline-link-rx"></block></block>
-  <block id="404a5efb62a3a3f22b02593091042608" category="inline-link">VMware 工作負載工廠</block>
-  <block id="9a211183d3fa82368d76fdbab5abdeda" category="list-text"><block ref="9a211183d3fa82368d76fdbab5abdeda" category="inline-link-rx"></block></block>
   <block id="a76746a54be32982bbd6b113b4d88d95" category="summary">使用適用於 ONTAP 檔案系統的 FSX 上的資料來源建立知識庫之後、您可以檢視資料來源詳細資料、更新或變更資料來源內容、編輯資料來源設定、或刪除資料來源。</block>
   <block id="a184e20ed5e6a5b8da09e0b40c163e0c" category="doc">管理資料來源</block>
   <block id="185887c3ad19744e76bc5a84165858d0" category="section-title">檢視資料來源的相關資訊</block>
@@ -528,8 +519,6 @@
   <block id="c7ffd0cab67a601554ae934436d644d8" category="cell">部署失敗、因為磁碟區已經存在。</block>
   <block id="c116d59189f49ad24327d9067ef9806e" category="cell">指定新磁碟區使用的唯一名稱、然後再次嘗試部署。</block>
   <block id="8f3392d21c1e23f002f42fd0394d7c80" category="cell">NetApp ONTAP 的 FSX 所需的一或多個輸入連接埠會關閉或篩選。</block>
-  <block id="e87d6ed459b274ad7c388e0797013c9f" category="inline-link">FSXfor ONTAP Sfor Sf.的安全群組規則</block>
-  <block id="5503cb2b17f74a27a0085d8499cd3f60" category="paragraph">打開中列出的端口<block ref="127df24588c6526408fa1a708579050d" category="inline-link-rx"></block>。</block>
   <block id="10d0de28911c5f66463b9c8783f8148a" category="cell">維護</block>
   <block id="f1e0872518e98f8295b8550491f79850" category="cell">磁碟區已刪除、 EC2 執行個體已重新啟動。</block>
   <block id="35df13c892646e1e41e065276ead0cee" category="paragraph">請使用下列還原步驟：</block>
@@ -620,13 +609,8 @@
   <block id="dcafe9cce796ce855e87b270f0a5af59" category="inline-link-macro">主控台體驗</block>
   <block id="eb788a90862825cc147ed3f85612a8cc" category="list-text">使用其中一項登入工作負載工廠<block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>。</block>
   <block id="ba069bdc38a1ce5022a1e6d8b69882b8" category="summary">GenAI 的工作負載工廠可讓您將適用於 NetApp ONTAP 檔案系統的 Amazon FSX 與 GenAI 基礎模型整合。這可為您提供高效能儲存設備、並針對 AI 資料集提供豐富的保護、安全性和成本最佳化功能。</block>
-  <block id="8746750042cf20aa9acdb3cd89b6448b" category="doc">瞭解 GenAI 的工作負載工廠</block>
-  <block id="ac1e1d326a41d16c68d8f5d08e1dbfe0" category="section-title">什麼是 GenAI 的工作負載工廠？</block>
-  <block id="40a89d6e158f3dbec860ab6d35794644" category="paragraph">GenAI 的工作負載工廠可讓您將 Amazon FSX for NetApp ONTAP 上的企業資料來源與泛用 AI 應用程式搭配使用。利用擷取螺旋產生（ RAG ）架構、您可以將資料來源快速連線至 Amazon 基礎模型、以開發採用 AI 技術的泛用應用程式、例如虛擬助理、問答聊天機器人程式、文件摘要、內容建立等</block>
   <block id="70cb57a8d5d75d8762d6b082d319dec7" category="inline-link">工作負載原廠總覽</block>
   <block id="41dde101808f5228034390c3766fcad7" category="paragraph">如需工作負載工廠的詳細資訊，請<block ref="5b162ed7e5df7e2d72a6505743e2b555" category="inline-link-rx"></block>參閱。</block>
-  <block id="4a7de00a0cde12ad329c366ef21a723d" category="paragraph">GenAI 的工作負載工廠使用擷取擴增產生（ RAG ）來簡化部署基礎架構所需的程序，以建置泛用 AI 應用程式。具體而言、 GenAI 提供下列優點：</block>
-  <block id="c7fb8bbb17373e98570b6e60b217343a" category="section-title">GenAI 的工作負載工廠如何協助建構泛用 AI 應用程式</block>
   <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">使用工作負載工廠的工具</block>
   <block id="b5a374f3f5b31b5057808689d26fe2c4" category="paragraph">您可以搭配下列工具使用 BlueXP  工作負載工廠：</block>
   <block id="becd2c66a018e594b787abb509da2fcb" category="list-text">* 工作負載原廠主控台 * ：工作負載原廠主控台提供視覺化介面，可讓您全面檢視應用程式和專案。</block>
@@ -676,15 +660,89 @@
   <block id="c3c0f7069bfe59c5a67dd6f1fd5d2301" category="list-text">您需要使用自動化權限將 AWS 認證新增至工作負載工廠，這表示您將在 GenAI 的工作負載工廠中使用 _AIL_ 模式。</block>
   <block id="5145374f219e1c177ab5588a5344aa6e" category="inline-link">瞭解如何將 AWS 認證新增至工作負載工廠</block>
   <block id="ced1a4827b1ea3c1da0273c3d73fdd46" category="paragraph"><block ref="ced1a4827b1ea3c1da0273c3d73fdd46" category="inline-link-rx"></block></block>
-  <block id="e75accc1948bab24f6bde8f2716d9465" category="paragraph">在開始使用 GenAI 的工作負載工廠之前，您必須先設定 Amazon 基礎。您的 GenAI 部署必須位於啟用 Amazon 基礎的 AWS 區域。</block>
   <block id="056634bec4a153903ebb9b769277f4d7" category="summary">您必須先將 NetApp 支援網站帳戶新增至工作負載工廠，然後註冊取得支援，才能使用 NetApp 技術支援開啟支援案例。</block>
   <block id="3616889860b75d784463bb497e34e82f" category="paragraph">您將在工作負載工廠內執行大部分的測試，然後再將知識庫部署到使用者適用的應用程式中。如果您需要變更資料來源或 chatbot 作業、您現在就想要在發佈知識庫之前進行變更。</block>
-  <block id="448a7638f78d8e27c82dc4eb9cfffaa5" category="cell">GenAI 的工作負載工廠需要在部署程序期間建立新的磁碟區，但已使用您指定的名稱存在磁碟區。</block>
-  <block id="9db9426b923f79f37245bd6e27517b75" category="cell">由於 GenAI 的工作負載工廠無法裝載磁碟區，因此部署失敗。</block>
-  <block id="3b93973bf09251ccbc76e14631d727e0" category="cell">GenAI 的工作負載工廠所使用的後端 Docker 執行個體無法啟動。</block>
   <block id="1862818cbcef0536011835283968bd91" category="summary">瞭解工作負載工廠的 AI 工作負載功能有哪些新功能。</block>
   <block id="34734891f639d2ae1ecbbaab22157fe2" category="paragraph">瞭解工作負載工廠的通用 AI 工作負載功能有哪些新功能。</block>
   <block id="81ff996ef963d9805259d4a6c9bafac8" category="inline-link">Amazon FSX for NetApp ONTAP 工作負載工廠文件</block>
   <block id="07e2e5eecff8fe1dbb4712055f0055f1" category="paragraph">如需管理適用於 ONTAP 檔案系統的 FSX 的相關資訊、請移至<block ref="3845b9852e43f2af9ae621ea5bb328c1" category="inline-link-rx"></block> 以檢視您可以使用的備份與保護功能。</block>
   <block id="2b6b3d10fe7ba8590618a95b1cc96a1a" category="sidebar">BlueXP  Workload Factory for GenAI 文件</block>
+  <block id="f8a21101d47aa852f29a4be35904736e" category="doc">從快照複製知識庫</block>
+  <block id="c711d2f72cc16ad2c0919ebe70292834" category="paragraph">GenAI 的 BlueXP  工作負載工廠現在支援從快照複製知識庫。這可快速恢復知識庫，並利用現有資料來源建立新的知識庫，有助於資料恢復與開發。</block>
+  <block id="53ea9e78bbaa3e1c3ead030a954216c8" category="inline-link-macro">複製知識庫</block>
+  <block id="23899d33da818933cc59017a222d3f1f" category="paragraph"><block ref="23899d33da818933cc59017a222d3f1f" category="inline-link-macro-rx"></block></block>
+  <block id="aadb8a2a44b75c1333f5a52c2ceb1516" category="section-title">內部部署 ONTAP 叢集探索與複寫</block>
+  <block id="490a30e9496a9d55f2cfdb934812658b" category="paragraph">探索內部部署的 ONTAP 叢集資料，並將其複寫至適用於 ONTAP 檔案系統的 FSX ，以便用於豐富 AI 知識庫。所有內部部署探索和複寫工作流程都可以從儲存設備詳細目錄中的全新 * 內部部署 ONTAP （ * ）標籤中進行。</block>
+  <block id="c6f905e067bdaa7ba33a58a907e59477" category="inline-link-macro">探索內部部署 ONTAP 的叢集</block>
+  <block id="b169507cd10826b5a52f573e2f75ad2c" category="paragraph"><block ref="b169507cd10826b5a52f573e2f75ad2c" category="inline-link-macro-rx"></block></block>
+  <block id="b83113ab8d9d4c69dfb32e9034617513" category="summary">BlueXP  Workload Factory for GenAI 可讓您將適用於 NetApp ONTAP 檔案系統的 Amazon FSX 與 GenAI 基礎模型整合。這可為您提供高效能儲存設備、並針對 AI 資料集提供豐富的保護、安全性和成本最佳化功能。</block>
+  <block id="77c129bd3271a24d7bdf27f4904c52f4" category="doc">瞭解 GenAI 的 BlueXP  工作負載工廠</block>
+  <block id="766c4de0717e832db67cb7e35ee5df4b" category="section-title">什麼是 GenAI 的 BlueXP  工作負載工廠？</block>
+  <block id="847fc7565e14d8fa93f26cd789e29cb5" category="paragraph">BlueXP  Workload Factory for GenAI 可讓您在 Amazon FSX for NetApp ONTAP 上使用企業資料來源，搭配泛用 AI 應用程式。利用擷取螺旋產生（ RAG ）架構、您可以將資料來源快速連線至 Amazon 基礎模型、以開發採用 AI 技術的泛用應用程式、例如虛擬助理、問答聊天機器人程式、文件摘要、內容建立等</block>
+  <block id="586d1c82027100a85b2c840e10585fd4" category="paragraph">適用於 GenAI 的 BlueXP  工作負載工廠，利用擷取擴增產生（ RAG ）來簡化部署基礎架構所需的程序，以建置泛用 AI 應用程式。具體而言、 GenAI 提供下列優點：</block>
+  <block id="daadd89cd1fba3fd8665e4d598faa29e" category="section-title">GenAI 的 BlueXP  工作負載工廠如何協助建置泛用 AI 應用程式</block>
+  <block id="6849617ada590bcd67ec5c42f527dbca" category="paragraph">您需要輸入 AWS 認證資料，然後選取適用於 ONTAP 檔案系統的 FSX ，以部署擷取擴增產生（ RAG ）基礎架構。</block>
+  <block id="29c02ba7cbd3c64fafa4c7eab2de837a" category="admonition">如果部署失敗並出現認證錯誤，您可以選取錯誤訊息中的超連結，以取得進一步的錯誤詳細資料。您可以查看遺失或封鎖的權限清單，以及 GenAI 工作負載需要的權限清單，以便部署 GenAI 基礎架構。</block>
+  <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">BlueXP  工作負載工廠</block>
+  <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
+  <block id="3797e84a3c9da31524b0e5a526fb59cb" category="paragraph">您可以從知識庫快照建立新的知識庫。如果原始知識庫毀損或遺失，這項功能就很實用。</block>
+  <block id="e83bec71ebafaf78ee9064dcfcc19f67" category="list-text">選取 * 動作 * 功能表，然後選取 * 快照 &gt; 複製知識庫 * 。</block>
+  <block id="8b6829f6ee0ef3bfbe0ab0540f326557" category="paragraph">此時將出現 Clone （克隆）對話框。</block>
+  <block id="e9a021d7afe855c5ba056c07000e7027" category="list-text">或者，如果您想要在複製快照之後繼續排程及目前執行的資料來源掃描，請取消選取 * 在複製快照後暫停執行和排程掃描 * 選項。</block>
+  <block id="0568052f85119ac83d89df964e8851c0" category="list-text">從清單中選取您要複製的快照。</block>
+  <block id="136dc09835924029e4299fa28f17233d" category="list-text">選擇*繼續*。</block>
+  <block id="86de75270b79ca51ee2b62cc69460393" category="list-text">輸入新知識庫的名稱。</block>
+  <block id="0ddebe34caa600a9062280228e099952" category="list-text">為新知識庫選擇檔案系統 SVM 和 Volume 名稱。</block>
+  <block id="9de0e2b17d7e1e2da6c0ce7e9dc6e377" category="list-text">選擇* Clone（克隆）*。</block>
+  <block id="f895e26ca8de37d350a247e7eae1987c" category="paragraph">在開始使用 GenAI 的 BlueXP  工作負載工廠之前，您必須先設定 Amazon 基礎。您的 GenAI 部署必須位於啟用 Amazon 基礎的 AWS 區域。</block>
+  <block id="96f6c1844fa04dad54f5ced764d5d751" category="cell">GenAI 的 BlueXP  工作負載工廠需要在部署過程中建立新的 Volume ，但已使用您指定的名稱存在一個 Volume 。</block>
+  <block id="efc3cdef33c078d242eaa096c1a9da3d" category="cell">由於 GenAI 的 BlueXP  工作負載工廠無法裝載磁碟區，因此部署失敗。</block>
+  <block id="407b33bc44b7fc7c0c4648bcaeff2a44" category="paragraph">開啟下列輸入連接埠：</block>
+  <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">傳輸協定</block>
+  <block id="60aaf44d4b562252c04db7f98497e9aa" category="cell">連接埠</block>
+  <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">目的</block>
+  <block id="d4b4ed7579a4f9267cc7dff8a948018e" category="cell">所有 ICMP</block>
+  <block id="b1c94ca2fbc3e78fc30069c8d0f01680" category="cell">全部</block>
+  <block id="fbabb5b35538d91f91e0e1d4f56ff5a4" category="cell">Ping 執行個體</block>
+  <block id="0e8433f9a404f1f3ba601c14b026d321" category="cell">HTTPS</block>
+  <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443</block>
+  <block id="1960d6022dcb5a2b9a687d1f6cbd8931" category="cell">從Connector存取fsxadmin管理LIF、將API呼叫傳送至FSX</block>
+  <block id="765553e6c7ac8592c389acb9878a050a" category="cell">SSH</block>
+  <block id="b6d767d2f8ed5d21a44b0e5886680cb9" category="cell">22</block>
+  <block id="68e68bb8029eb3e7ed079fea7b679d99" category="cell">SSH 存取叢集管理 LIF 的 IP 位址或節點管理 LIF</block>
+  <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
+  <block id="698d51a19d8a121ce581499d7b701668" category="cell">111</block>
+  <block id="42309a274997c44da61b489d9df7edc8" category="cell">遠端程序需要 NFS</block>
+  <block id="e00da03b685a0dd18fb6a08af0923de0" category="cell">139</block>
+  <block id="f578101933ae5aa506411a00b33b06ec" category="cell">CIFS 的 NetBios 服務工作階段</block>
+  <block id="ff86b94aeb68e2de5387c9dbf865b3b9" category="cell">161-162</block>
+  <block id="e0215167b05004bf68d7d23d0a15605c" category="cell">簡單的網路管理傳輸協定</block>
+  <block id="67f7fb873eaf29526a11a9b7ac33bfac" category="cell">445</block>
+  <block id="100c97ce556d60c86e5d8b424c3ed3ad" category="cell">Microsoft SMB/CIFS over TCP 搭配 NetBios 架構</block>
+  <block id="6a10bbd480e4c5573d8f3af73ae0454b" category="cell">635</block>
+  <block id="718b3fb251c2987c99ce9d2d23eb38b6" category="cell">NFS 掛載</block>
+  <block id="b056eb1587586b71e2da9acfe4fbd19e" category="cell">749</block>
+  <block id="87b3695bfd6f672e2c7c4da7ca2b46a8" category="cell">Kerberos</block>
+  <block id="06b1338ba02add2b5d2da67663b19ebe" category="cell">2049</block>
+  <block id="02c69a3a7485c8d2f899c2eb58f8be50" category="cell">NFS 伺服器精靈</block>
+  <block id="d54ce9de9df77c579775a7b6b1a4bdc0" category="cell">3260</block>
+  <block id="decc72453fd5881c6144ead65577abe0" category="cell">透過 iSCSI 資料 LIF 存取 iSCSI</block>
+  <block id="ee0e95249268b86ff2053bef214bfeda" category="cell">4045</block>
+  <block id="3efa34cc491e9e34264231984db1c224" category="cell">NFS 鎖定精靈</block>
+  <block id="354ac345fd8c6d7ef634d9a8e3d47b83" category="cell">4046</block>
+  <block id="6e1768e34172523fffe5e878d95f0f1a" category="cell">NFS 的網路狀態監控</block>
+  <block id="b7a782741f667201b54880c925faec4b" category="cell">10000</block>
+  <block id="9f6c516b5f5492bbbe0bfa8167ac3c38" category="cell">使用 NDMP 備份</block>
+  <block id="bf03faf089665754a8af5dce381a42ca" category="cell">11104</block>
+  <block id="0f98f191f6139c531c1435214b55de48" category="cell">管理 SnapMirror 的叢集間通訊工作階段</block>
+  <block id="f0f07e680de407b0f12abf15bd520097" category="cell">11105</block>
+  <block id="d03bcbb93f8e29ffb08772b43b55d234" category="cell">使用叢集間生命體進行 SnapMirror 資料傳輸</block>
+  <block id="f5ef036b4d8b630721e51fe23489fbc9" category="cell">UDP</block>
+  <block id="89a4779d3836ea432f7ea074e522a17e" category="cell">4049</block>
+  <block id="ec29b09319bcf28d103f2dda2dae3590" category="cell">NFS rquotad 傳輸協定</block>
+  <block id="edd9b7b1aa59153309a4116720911246" category="cell">AI 引擎無法啟動，您會在 * 知識庫 * 頁面上看到「 AI engine instance error 」（ AI 引擎執行個體錯誤）錯誤。</block>
+  <block id="b7542ca3c48aa928fdf94d78371dd834" category="cell">AI 引擎執行個體毀損或不存在。</block>
+  <block id="849293736c770408f68a35f4fcdf9592" category="cell">選擇 * 重建 * 按鈕。GenAI 的 BlueXP  工作負載工廠會重建基礎架構，並顯示重建進度。完成後，您的知識庫會重新連線至重建的基礎架構，並顯示知識庫清單。</block>
+  <block id="d1955ee5035af265f471c1debd693717" category="cell">GenAI 的 BlueXP  工作負載工廠所使用的後端 Docker 執行個體無法啟動。</block>
+  <block id="6ad17d07338dffda7982d8efdad3a276" category="section-title">2024 年 12 月 01 日</block>
 </blocks>

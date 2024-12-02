@@ -24,15 +24,91 @@ summary: 您必須先將 NetApp 支援網站帳戶新增至工作負載工廠，
 | 區域 | 問題 | 原因 | 因應措施 
 
 
-| 部署 | 部署失敗、因為磁碟區已經存在。 | GenAI 的工作負載工廠需要在部署程序期間建立新的磁碟區，但已使用您指定的名稱存在磁碟區。 | 指定新磁碟區使用的唯一名稱、然後再次嘗試部署。 
+| 部署 | 部署失敗、因為磁碟區已經存在。 | GenAI 的 BlueXP  工作負載工廠需要在部署過程中建立新的 Volume ，但已使用您指定的名稱存在一個 Volume 。 | 指定新磁碟區使用的唯一名稱、然後再次嘗試部署。 
 
 
-| 部署 | 由於 GenAI 的工作負載工廠無法裝載磁碟區，因此部署失敗。 | NetApp ONTAP 的 FSX 所需的一或多個輸入連接埠會關閉或篩選。  a| 
-打開中列出的端口 https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/reference-security-groups-fsx.html#inbound-rules["FSXfor ONTAP Sfor Sf.的安全群組規則"^]。
+| 部署 | 由於 GenAI 的 BlueXP  工作負載工廠無法裝載磁碟區，因此部署失敗。 | NetApp ONTAP 的 FSX 所需的一或多個輸入連接埠會關閉或篩選。  a| 
+開啟下列輸入連接埠：
+
+[cols="10,10,80"]
+|===
+| 傳輸協定 | 連接埠 | 目的 
 
 
+| 所有 ICMP | 全部 | Ping 執行個體 
 
-| 維護 | GenAI 的工作負載工廠所使用的後端 Docker 執行個體無法啟動。 | 磁碟區已刪除、 EC2 執行個體已重新啟動。  a| 
+
+| HTTPS | 443 | 從Connector存取fsxadmin管理LIF、將API呼叫傳送至FSX 
+
+
+| SSH | 22 | SSH 存取叢集管理 LIF 的 IP 位址或節點管理 LIF 
+
+
+| TCP | 111 | 遠端程序需要 NFS 
+
+
+| TCP | 139 | CIFS 的 NetBios 服務工作階段 
+
+
+| TCP | 161-162 | 簡單的網路管理傳輸協定 
+
+
+| TCP | 445 | Microsoft SMB/CIFS over TCP 搭配 NetBios 架構 
+
+
+| TCP | 635 | NFS 掛載 
+
+
+| TCP | 749 | Kerberos 
+
+
+| TCP | 2049 | NFS 伺服器精靈 
+
+
+| TCP | 3260 | 透過 iSCSI 資料 LIF 存取 iSCSI 
+
+
+| TCP | 4045 | NFS 鎖定精靈 
+
+
+| TCP | 4046 | NFS 的網路狀態監控 
+
+
+| TCP | 10000 | 使用 NDMP 備份 
+
+
+| TCP | 11104 | 管理 SnapMirror 的叢集間通訊工作階段 
+
+
+| TCP | 11105 | 使用叢集間生命體進行 SnapMirror 資料傳輸 
+
+
+| UDP | 111 | 遠端程序需要 NFS 
+
+
+| UDP | 161-162 | 簡單的網路管理傳輸協定 
+
+
+| UDP | 635 | NFS 掛載 
+
+
+| UDP | 2049 | NFS 伺服器精靈 
+
+
+| UDP | 4045 | NFS 鎖定精靈 
+
+
+| UDP | 4046 | NFS 的網路狀態監控 
+
+
+| UDP | 4049 | NFS rquotad 傳輸協定 
+|===
+
+
+| 維護 | AI 引擎無法啟動，您會在 * 知識庫 * 頁面上看到「 AI engine instance error 」（ AI 引擎執行個體錯誤）錯誤。 | AI 引擎執行個體毀損或不存在。 | 選擇 * 重建 * 按鈕。GenAI 的 BlueXP  工作負載工廠會重建基礎架構，並顯示重建進度。完成後，您的知識庫會重新連線至重建的基礎架構，並顯示知識庫清單。 
+
+
+| 維護 | GenAI 的 BlueXP  工作負載工廠所使用的後端 Docker 執行個體無法啟動。 | 磁碟區已刪除、 EC2 執行個體已重新啟動。  a| 
 請使用下列還原步驟：
 
 .步驟
@@ -68,5 +144,8 @@ volumes:
 
 
 
-| 維護 | GenAI 的工作負載工廠所使用的後端 Docker 執行個體無法啟動。 | 根磁碟區已刪除。 | 使用名稱和路徑建立 Volume 、然後從 Amazon EC2 重新啟動後端 Docker 執行個體。 
+| 維護 | GenAI 的 BlueXP  工作負載工廠所使用的後端 Docker 執行個體無法啟動。 | 根磁碟區已刪除。 | 使用名稱和路徑建立 Volume 、然後從 Amazon EC2 重新啟動後端 Docker 執行個體。 
+
+
+| 維護 | GenAI 的 BlueXP  工作負載工廠所使用的後端 Docker 執行個體無法啟動。 | 根磁碟區已刪除。 | 使用名稱和路徑建立 Volume 、然後從 Amazon EC2 重新啟動後端 Docker 執行個體。 
 |===

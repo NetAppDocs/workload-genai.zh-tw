@@ -50,7 +50,7 @@ image:diagram-chatbot-infrastructure.png["AI chatbot 元件的圖表。"]
 
 == 部署 GenAI 基礎架構
 
-您需要輸入 AWS 認證資料、然後選取適用於 ONTAP 檔案系統的 FSX 、以部署擷取強化（ RAG ）基礎架構。
+您需要輸入 AWS 認證資料，然後選取適用於 ONTAP 檔案系統的 FSX ，以部署擷取擴增產生（ RAG ）基礎架構。
 
 .開始之前
 開始此程序之前、請確定您的環境符合 link:requirements.html["需求"] 要求。
@@ -75,6 +75,10 @@ GenAI 部署必須位於啟用 Amazon 基礎的 AWS 區域。 https://docs.aws.a
 
 
 . 選擇 * 部署 * 開始部署。
++
+
+NOTE: 如果部署失敗並出現認證錯誤，您可以選取錯誤訊息中的超連結，以取得進一步的錯誤詳細資料。您可以查看遺失或封鎖的權限清單，以及 GenAI 工作負載需要的權限清單，以便部署 GenAI 基礎架構。
+
 
 
 .結果
