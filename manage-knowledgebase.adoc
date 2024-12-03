@@ -4,7 +4,7 @@ permalink: manage-knowledgebase.html
 keywords: ai, chatbot, managing, knowledge base 
 summary: 建立知識庫之後、您可以檢視知識庫詳細資料、修改知識庫、整合其他資料來源、或刪除知識庫。 
 ---
-= 管理知識庫
+= 管理 GenAI 知識庫
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

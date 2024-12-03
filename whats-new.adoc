@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
 summary: 瞭解工作負載工廠的 AI 工作負載功能有哪些新功能。 
 ---
-= 新功能
+= GenAI BlueXP  工作負載工廠的新功能
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

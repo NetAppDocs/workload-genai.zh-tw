@@ -4,7 +4,7 @@ permalink: manage-data-source.html
 keywords: ai, chatbot, creating, knowledge base, data source 
 summary: 使用適用於 ONTAP 檔案系統的 FSX 上的資料來源建立知識庫之後、您可以檢視資料來源詳細資料、更新或變更資料來源內容、編輯資料來源設定、或刪除資料來源。 
 ---
-= 管理資料來源
+= 管理 GenAI 資料來源
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

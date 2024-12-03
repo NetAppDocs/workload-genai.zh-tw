@@ -4,7 +4,7 @@ permalink: test-knowledgebase.html
 keywords: ai, chatbot, creating, knowledge base 
 summary: 建立知識庫之後、您就可以使用 chatbot 模擬器在本機進行測試、並在您透過 chatbot 應用程式將知識庫提供給使用者之前進行任何必要的變更。 
 ---
-= 測試知識庫
+= 測試 GenAI 知識庫
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

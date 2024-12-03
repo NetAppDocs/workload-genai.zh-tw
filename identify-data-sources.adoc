@@ -4,7 +4,7 @@ permalink: identify-data-sources.html
 keywords: data sources, chatbot, documents, knowledge base 
 summary: 識別或建立位於您的 FSX for ONTAP 檔案系統上的文件（資料來源）、這些文件將整合到您的知識庫中。這些資料來源可讓知識庫根據與組織相關的資料、為使用者查詢提供準確且個人化的答案。 
 ---
-= 識別要整合到知識庫中的資料來源
+= 識別要整合至 GenAI 知識庫的資料來源
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

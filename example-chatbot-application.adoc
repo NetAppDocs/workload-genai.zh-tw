@@ -4,7 +4,7 @@ permalink: example-chatbot-application.html
 keywords: ai, example, sample, chatbot, app, application, local 
 summary: 您可以安裝並執行範例 chatbot 應用程式來測試您的知識庫，並瞭解如何使用工作負載原廠 API 來建立您自己的泛用 AI 應用程式。 
 ---
-= 使用外部的 chatbot 應用程式範例
+= 使用 GenAI 外部範例 chatbot 應用程式
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

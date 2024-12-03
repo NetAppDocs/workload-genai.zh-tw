@@ -4,7 +4,7 @@ permalink: activate-authentication.html
 keywords: ai, chatbot, publishing, knowledge base 
 summary: 啟動知識庫的驗證、以便在將知識庫與 chatbot 應用程式整合時、需要權杖驗證和 ACL 。 
 ---
-= 啟動知識庫的外部驗證
+= 啟動 GenAI 知識庫的外部驗證
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

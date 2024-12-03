@@ -4,7 +4,7 @@ permalink: troubleshooting.html
 keywords: support registration, register for support, support, nss account, add nss account, 
 summary: 您必須先將 NetApp 支援網站帳戶新增至工作負載工廠，然後註冊取得支援，才能使用 NetApp 技術支援開啟支援案例。 
 ---
-= 疑難排解
+= GenAI 疑難排解
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

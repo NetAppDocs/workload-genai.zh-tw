@@ -10,7 +10,6 @@
   <block id="9969ec0e7476736a130c54f32700611e" category="list-text">* 停用 * ：聊天機器人程式的使用者將會使用所有整合式資料來源的內容接收回應。</block>
   <block id="65f706122d6156fd52b6cb2ff2214944" category="list-text">選取 * 新增 * 將此資料來源新增至您的知識庫。</block>
   <block id="f1af0b71f33a2e37e9e17b100f3c0b1e" category="summary">啟動知識庫的驗證、以便在將知識庫與 chatbot 應用程式整合時、需要權杖驗證和 ACL 。</block>
-  <block id="970a6e4ed60b5e3eb0f25c2ab67433fe" category="doc">啟動知識庫的外部驗證</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步驟</block>
   <block id="958a8f384aa34f23244386f38ed3aeab" category="list-text">從「知識庫」清查頁面中、選取您要發佈的知識庫。</block>
   <block id="2041999f6b6b70199d1267ee84f453a6" category="inline-image-macro">選項按鈕</block>
@@ -321,7 +320,6 @@
   <block id="0e0f1b27ca798d3b3b8154b411215d9a" category="list-text">選取 * 動作 * 功能表、然後選取 * 刪除知識庫 * 。</block>
   <block id="74091f3303c946e291c1c1702ba6d39a" category="list-text">在刪除知識庫對話方塊中、確認您要刪除它、然後選取 * 刪除 * 。</block>
   <block id="8bbd4e338e42c1350d453ca5c82eb3b3" category="summary">在您在本機建立並測試知識庫之後、您可以發佈知識庫、以便將其與聊天機器人應用程式整合、讓使用者能夠查詢知識庫。</block>
-  <block id="70de8e73e84df845f91376c6c0d1188e" category="doc">發佈知識庫並檢視獨特的端點</block>
   <block id="12676fc9338d312de3a6cbb584fa3284" category="paragraph">在您在本機建立並測試知識庫之後、您可以發佈知識庫、以便將其整合至能夠讓使用者查詢知識庫的聊天機器人應用程式。</block>
   <block id="079d0a527f117f9fde217668d7359a20" category="paragraph">您發佈的每個知識庫都有獨特的端點。</block>
   <block id="850b9475ef66eeb78335c085f71bae31" category="list-text">選取 * 動作 * 功能表、然後選取 * 發佈 * 。</block>
@@ -427,7 +425,6 @@
   <block id="c61f79c1724a3bab0885dbbd3b2e87ea" category="inline-image-macro">執行按鈕</block>
   <block id="ccd43d06a7b1187d2ac93471de4a9b64" category="list-text">在 chatbot 項目欄位中、輸入提示或問題、然後選取 <block ref="4673f7ece64f88d1999f6ef93db80a3b" category="inline-image-macro-rx" type="image"></block> 以查看您的 chatbot 如何回應您的組織知識。</block>
   <block id="2625a68b73d2dae552cbcc7be08396fc" category="list-text">如果您需要更新任何資料來源、以便知識庫提供更集中的答案、請立即進行這些變更、然後重新測試知識庫。</block>
-  <block id="490414e0366b091220802d406e52c076" category="doc">新功能</block>
   <block id="1d949c7c5600289e10795f178278edd1" category="section-title">2024 年 7 月 7 日</block>
   <block id="3d2b63396c87b28180a4d9d0ba951b0d" category="paragraph">初始版本包含開發知識庫的功能、可藉由內嵌組織資料來自訂。使用者可透過聊天機器人應用程式存取知識庫。這項功能可確保針對組織特定問題做出準確且相關的回應、提高所有使用者的滿意度與生產力。</block>
   <block id="a9273ae35bbdb787574410a5cd552892" category="summary">現在您已經使用企業資料建立知識庫、並將其部署給使用者、您可以管理知識庫、資料來源和 RAG 基礎架構、包括 ONTAP 檔案系統的 FSX 。</block>
@@ -600,8 +597,6 @@
   <block id="b91895758c5a35a75fd3e87dc1fa0741" category="list-text">在「編輯知識庫」頁面中、您可以變更知識庫名稱、說明、內嵌模式、聊天模式、資料規範啟用、選擇是自動或手動建立對話啟動器、以及用於包含知識庫之 Volume 的快照原則。</block>
   <block id="fde00ba8f64d2c57d64a163698fd6f03" category="admonition">每次知識庫掃描、包括內嵌、成本。如果在建立知識庫之後啟用資料 guardrails 、則會再次掃描知識庫並產生成本。</block>
   <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024 年 11 月 3 日</block>
-  <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link-macro">BlueXP主控台</block>
-  <block id="402ae08ce46f82670c0313312e504ad7" category="list-text">AI 引擎必須能夠存取 <block ref="046fd603b18837f482287e5ec741e5ed" category="inline-link-macro-rx"></block></block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">Amazon FSX for NetApp ONTAP 產品</block>
   <block id="4b88d56bd65ef92611ac63064c38369f" category="list-text">Amazon CloudWatch</block>
   <block id="1ee7c829860de53ba4857ad78b7aadef" category="doc">GenAI 工作負載工廠的初始版本</block>
@@ -745,4 +740,20 @@
   <block id="849293736c770408f68a35f4fcdf9592" category="cell">選擇 * 重建 * 按鈕。GenAI 的 BlueXP  工作負載工廠會重建基礎架構，並顯示重建進度。完成後，您的知識庫會重新連線至重建的基礎架構，並顯示知識庫清單。</block>
   <block id="d1955ee5035af265f471c1debd693717" category="cell">GenAI 的 BlueXP  工作負載工廠所使用的後端 Docker 執行個體無法啟動。</block>
   <block id="6ad17d07338dffda7982d8efdad3a276" category="section-title">2024 年 12 月 01 日</block>
+  <block id="e8293cb4f1909d8329e31cefdfb4dba4" category="doc">啟動 GenAI 知識庫的外部驗證</block>
+  <block id="b05735c6e4c6d503ad9f93af6e740fa9" category="doc">建立 RAG 型 GenAI 應用程式</block>
+  <block id="16cb0b733a26e9afa11f388e6d83aec1" category="doc">建立 GenAI 知識庫</block>
+  <block id="79cee61f29eb5a0e2dd156871eb70a40" category="list-text">AI 引擎必須能夠存取 BlueXP  API 端點： \https://api ， BlueXP  ， NetApp 。</block>
+  <block id="e63e0ed616c63ed724e592b04e608826" category="doc">使用 GenAI 外部範例 chatbot 應用程式</block>
+  <block id="52f26f0fff3bae61240c4b3a43f3624d" category="doc">取得 GenAI BlueXP  工作負載工廠的協助</block>
+  <block id="e1cdd82a2918ba1a2c0ff51770aad51e" category="doc">識別要整合至 GenAI 知識庫的資料來源</block>
+  <block id="fe1e8231ce0909884a561100cafd30a8" category="doc">GenAI 法律聲明的 BlueXP  工作負載工廠</block>
+  <block id="dd3ed9192bf4d0d55741ed48bf8a6695" category="doc">管理 GenAI 資料來源</block>
+  <block id="10f8936c8a58bcff3825995f8d31ea40" category="doc">管理 GenAI 知識庫</block>
+  <block id="335c0c9583885e1f231604b7fa10819a" category="doc">發佈 GenAI 知識庫，並檢視獨特的端點</block>
+  <block id="97641902b7a17c72d34451f4f1417531" category="doc">註冊以取得 GenAI BlueXP  工作負載工廠的支援</block>
+  <block id="d9965afe654edc6d99fd1a5080f10f27" category="doc">測試 GenAI 知識庫</block>
+  <block id="69065fcb8a054a77edd3d2da74b89c6e" category="doc">GenAI 疑難排解</block>
+  <block id="1e7bcc0dba826f450b3684e2a2c6f04e" category="doc">GenAI BlueXP  工作負載工廠的新功能</block>
+  <block id="988a487756dcb4e1605a4e07dc7dbd42" category="doc">GenAI 的後續功能</block>
 </blocks>
