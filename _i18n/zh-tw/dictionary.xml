@@ -100,7 +100,6 @@
   <block id="e36b38f91227e22bbae32a9f84bef25b" category="list-text">* 位置 * ：選取 AWS 區域、 VPC 和子網路。</block>
   <block id="6f2c1c768f2edab4eb318bdb1580f9f7" category="paragraph">GenAI 部署必須位於啟用 Amazon 基礎的 AWS 區域。<block ref="25581c78bc5f676a9b9f4743abf4f06f" category="inline-link-rx"></block></block>
   <block id="49d6fbbfca02733209ee2833d2481e4e" category="list-text">完成 * 基礎架構設定 * 區段中的項目：</block>
-  <block id="3869544f6aa6ccd1570caed7671ca0d6" category="list-text">* 標記 * ：輸入您要套用至此部署中所有 AWS 資源的任何標記金鑰 / 值配對。</block>
   <block id="f445edd51fe9e6a1af8ffd9c30e87f40" category="list-text">* 金鑰配對 * ：選取金鑰配對、讓您安全地連線至 NetApp GenAI 引擎執行個體。</block>
   <block id="6449a99be42d938ed27187e040028634" category="list-text">選擇 * 部署 * 開始部署。</block>
   <block id="64dea11099d626528fa052576a740de2" category="paragraph">在部署過程中、會設定下列項目：</block>
@@ -121,28 +120,21 @@
   <block id="270fcb785810d0206945029bb05f4e97" category="list-text">Amazon S3</block>
   <block id="0072b242011f459b57b0768dceac82f8" category="list-text">AWS Systems Manager （ SSM ）</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">取得協助</block>
-  <block id="3c6efe0ce159fb5b8ee4882bcf3ad973" category="paragraph">NetApp 以多種方式支援工作負載工廠及其雲端服務。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
   <block id="6a7b2c9c4cec65ad972b108fa0a1192b" category="section-title">取得適用於 ONTAP 的 FSX 支援</block>
-  <block id="4435b263dd1a35bcd8dfda050db92b3b" category="paragraph">如需與適用於 ONTAP 的 FSX 、其基礎架構或使用服務的任何解決方案相關的技術支援、請參閱該產品的工作負載工廠文件中的「取得說明」。</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSX for ONTAP Sf</block>
   <block id="9d06990508d25d367d9158c6558eb9c8" category="paragraph"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
   <block id="35f9849ffdd809bda11d0fc56e1e3583" category="paragraph">若要獲得工作負載工廠及其儲存解決方案與服務的專屬技術支援、請使用下列支援選項。</block>
   <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">使用自我支援選項</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">這些選項可供免費使用、一天24小時、一週7天：</block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">文件</block>
-  <block id="d935525f4850c4638cbf48ae53fb4686" category="paragraph">您目前正在檢視的 Workload Factory 文件。</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">知識庫</block>
   <block id="436f63b446dba5a418c698d49bd39718" category="list-text"><block ref="436f63b446dba5a418c698d49bd39718" category="inline-link-rx"></block></block>
-  <block id="ba6274b9c9d1f81bb3a648fa289986b8" category="paragraph">搜尋 Workload Factory 知識庫、尋找有助於疑難排解問題的文章。</block>
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">社群</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
-  <block id="7faef90df03399696ba9d4815b37171a" category="paragraph">加入 Workload Factory 社群、追蹤後續的討論或建立新的討論。</block>
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">利用NetApp支援建立案例</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述的自我支援選項、您也可以在啟動支援之後、與NetApp支援專家合作解決任何問題。</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">開始之前</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">瞭解如何註冊以取得支援</block>
-  <block id="a12ea39ddf1c98adfd7f751299705efa" category="paragraph">若要使用 * 建立案例 * 功能、您必須先註冊以取得支援。 將您的 NetApp 支援網站認證與工作負載工廠登入建立關聯。<block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>。</block>
-  <block id="356c88ac4b0ec3f7689cc91f54701fef" category="list-text">在 Workload Factory 主控台的右上角、選取 * 說明 &gt; Support* 。</block>
   <block id="aadd86a3fadf19221852692c6e4adc2f" category="paragraph">選取此選項會開啟 BlueXP 主控台新的瀏覽器索引標籤、並載入支援儀表板。</block>
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">在「*資源*」頁面上、選擇「技術支援」下的其中一個可用選項：</block>
   <block id="6a1b74969231967ed071d465206b15c7" category="list-text">如果您想與電話上的某人通話、請選取 * 致電 * 。您將會被導向netapp.com上的頁面、其中列出您可以撥打的電話號碼。</block>
@@ -372,8 +364,6 @@
   <block id="d5858b81edfda50f75f7994c971764f0" category="inline-link">瞭解如何部署及管理適用於 ONTAP 檔案系統的 FSX</block>
   <block id="7d57ea8255b8142e76fbb442ea9a782f" category="paragraph"><block ref="7d57ea8255b8142e76fbb442ea9a782f" category="inline-link-rx"></block></block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">註冊以取得支援</block>
-  <block id="996ad73a480311d4f86d6946935389d2" category="paragraph">需要註冊支援、才能獲得工作負載工廠及其儲存解決方案與服務專屬的技術支援。您必須從 BlueXP 主控台註冊以取得支援、該主控台是與 Workload Factory 分開的網路型主控台。</block>
-  <block id="c552970fd4dc8118ba1806da596acad9" category="paragraph">註冊支援並不會啟用雲端供應商檔案服務的 NetApp 支援。如需有關雲端供應商檔案服務、其基礎架構或任何使用服務的解決方案的技術支援、請參閱該產品的 Workload Factory 文件中的「取得說明」。</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">支援登錄總覽</block>
   <block id="d7e4bb081bf4ec4814d83edcfbdb8b96" category="paragraph">註冊您的帳戶 ID 支援訂閱（您的 20 位數 960xxxxxxxxx 序號位於 BlueXP 的「支援資源」頁面）、即為您的單一支援訂閱 ID 。每個BlueXP帳戶層級的支援訂閱都必須註冊。</block>
   <block id="f9e05c2b383e3f11e3b4bebbe8952225" category="paragraph">註冊可提供開啟支援服務單和自動產生個案等功能。如下列所述、將 NetApp 支援網站 （ NSS ）帳戶新增至 BlueXP 即可完成登錄。</block>
@@ -565,7 +555,6 @@
   <block id="f77361b272ce81d8275727f7b1a756a8" category="list-text">選擇*還原*。</block>
   <block id="75adfeedf06d70e0bc627133f85cd211" category="section-title">將資料來源與知識庫同步</block>
   <block id="44736bad98446163ecd5077653cbd105" category="paragraph">資料來源會每天自動與相關知識庫同步一次、以便在聊天機器人程式中反映任何資料來源變更。如果您變更任何資料來源、而且想要立即同步處理資料、您可以執行隨需同步。</block>
-  <block id="26e6f4cc71039ce95ddbb0acdad6891d" category="section-title">2024 年 9 月 29 日</block>
   <block id="f8016d0e0375ce671e71803692cf105c" category="paragraph"><block ref="f8016d0e0375ce671e71803692cf105c" category="inline-link-rx"></block></block>
   <block id="340b5c4d996cad6cf6d27d13faf94e89" category="paragraph"><block ref="340b5c4d996cad6cf6d27d13faf94e89" category="inline-link-rx"></block></block>
   <block id="f951fa0f2608d186cd1f0bd8889ac232" category="paragraph"><block ref="f951fa0f2608d186cd1f0bd8889ac232" category="inline-link-rx"></block></block>
@@ -583,7 +572,6 @@
   <block id="ab6bcff4b8fb91fe0c83c8ef83da1c6e" category="list-text">企業模式</block>
   <block id="e168133413009827e06cf1b52bf82d2e" category="paragraph">貴組織的資料來源可能包含私人身分識別資訊（ PII ）。為了保護這項敏感資訊、您可以在建立和設定知識庫時啟用 _data guardardrails 。由 BlueXP  分類技術支援的資料欄可識別及遮罩 PII 、使其無法存取且無法擷取。</block>
   <block id="2abf45f9ff5a74918b97267cd4e59d6a" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block>。</block>
-  <block id="cf24c0f0066b07e51df4da735abd84e5" category="admonition">資料欄可隨時啟用或停用。如果您切換資料防護功能、 Workload Factory 會從頭開始掃描整個知識庫、這會產生成本。</block>
   <block id="1be907baab24daef236be08a55d381ce" category="inline-link-macro">瞭解採用 BlueXP  分類技術的資料欄</block>
   <block id="239980b6c377cd208cd4875dd11871a7" category="list-text">* 資料欄 * ：選擇是否要啟用或停用資料欄。<block ref="705e589dc60832aba1b9593eb1d26a9a" category="inline-link-macro-rx"></block>。</block>
   <block id="5d78af30e91e495d74cbd3cac7a282db" category="paragraph">必須完成下列先決條件、才能啟用資料欄。</block>
@@ -756,4 +744,42 @@
   <block id="69065fcb8a054a77edd3d2da74b89c6e" category="doc">GenAI 疑難排解</block>
   <block id="1e7bcc0dba826f450b3684e2a2c6f04e" category="doc">GenAI BlueXP  工作負載工廠的新功能</block>
   <block id="988a487756dcb4e1605a4e07dc7dbd42" category="doc">GenAI 的後續功能</block>
+  <block id="a117d99fd0597e840921767ec50fe791" category="doc">自訂快照名稱</block>
+  <block id="34df51ccce053f8aef051fe069f6004a" category="paragraph">您現在可以為臨機操作快照提供快照名稱。</block>
+  <block id="2cbaa1be80e354895c4d9e497cad82ad" category="paragraph"><block ref="2cbaa1be80e354895c4d9e497cad82ad" category="inline-link-macro-rx"></block></block>
+  <block id="63713d130d6ced83e06b8a2f84ca4236" category="section-title">自訂 AI 引擎執行個體名稱</block>
+  <block id="5a22f1756638135653917db715aeec43" category="paragraph">您現在可以在部署期間為 AI 引擎執行個體提供自訂名稱。</block>
+  <block id="c3e29d6f9db8b5f89b548e4659ce60ad" category="paragraph"><block ref="c3e29d6f9db8b5f89b548e4659ce60ad" category="inline-link-macro-rx"></block></block>
+  <block id="cc78f676d3193b6273b428bb17c26dd7" category="section-title">重建毀損或遺失的 GenAI 基礎架構</block>
+  <block id="1691fa3a19bfaa3082dd2f6e01934960" category="paragraph">如果您的 AI 引擎執行個體毀損或遭到刪除，您可以讓工作負載在出廠時重新建置。工作負載原廠會在重建完成後，自動將您的知識庫重新附加到基礎架構，以便準備好使用。</block>
+  <block id="b23e4d787bd591292c1d5f10247e0e53" category="paragraph"><block ref="b23e4d787bd591292c1d5f10247e0e53" category="inline-link-macro-rx"></block></block>
+  <block id="22d9005388d9e535daefed3f2e693f8c" category="inline-link-macro">敏感個人資料的類型</block>
+  <block id="9c5f697c48859cff8ee185f1b8ac3722" category="admonition">GenAI 的 BlueXP  工作負載工廠不會遮罩敏感的個人資訊（ SPii ）。如需此類型資料的詳細資訊，請參閱<block ref="0cdb750dab1dfb2fce5dd1cc6f558f0e" category="inline-link-macro-rx"></block>。</block>
+  <block id="634af6b3fd334eee66435e4f2e04ce47" category="admonition">資料欄可隨時啟用或停用。如果您切換資料防護功能，工作負載工廠會從頭開始掃描整個知識庫，這會產生成本。</block>
+  <block id="a7bb1a72ba5daec3d8a1d19df6b6bfdf" category="list-text">* 標記 * ：輸入您要套用至此部署中所有 AWS 資源的任何標記金鑰 / 值配對。這些標籤可在 AWS 管理主控台和工作負載工廠內的基礎架構資訊區域中看到，並可協助您追蹤工作負載原廠資源。</block>
+  <block id="9792e49b2f9fed0238e75a434a13725e" category="list-text">完成 *Connectivity* 部分：</block>
+  <block id="dcb1e9c4a6d6ef362f734666c01d318f" category="list-text">完成「 *AI 引擎 * 」一節：</block>
+  <block id="da34ad28948952faf2270d1bcce9b360" category="list-text">* 執行個體名稱 * ：選擇性地選取 * 定義執行個體名稱 * ，然後輸入 AI 引擎執行個體的自訂名稱。執行個體名稱會出現在 AWS 管理主控台，以及工作負載工廠內的基礎架構資訊區域，可協助您追蹤工作負載原廠資源。</block>
+  <block id="b6a4501cc05e54e2e5a513c3b552183a" category="paragraph">NetApp 以多種方式支援 BlueXP  工作負載工廠及其雲端服務。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
+  <block id="261966eaf033c38f6934f2c8fc36d79c" category="paragraph">如需與適用於 ONTAP 的 FSX ，其基礎架構或使用服務的任何解決方案相關的技術支援，請參閱該產品工作負載原廠文件中的「取得說明」。</block>
+  <block id="5b49df4e58e2a4750acd8bfa8687ccd6" category="paragraph">您目前正在檢視的工作負載原廠文件。</block>
+  <block id="ba51332e265e54eb4295d6e7d057bad8" category="paragraph">搜尋工作負載原廠知識庫，找出有助於疑難排解問題的文章。</block>
+  <block id="fc3e8f3c2017c33d444d483913a485ba" category="paragraph">加入工作負載工廠社群，追蹤後續討論或建立新討論。</block>
+  <block id="ffa18fada5deeeb1e533786297855e7d" category="paragraph">若要使用 * 建立案例 * 功能，您必須先註冊以取得支援。將您的 NetApp 支援網站認證與工作負載原廠登入建立關聯。<block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>。</block>
+  <block id="e13a5649dfef3a1c76c4be8e463226d7" category="list-text">在工作負載原廠主控台的右上角，選取 * 說明 &gt; 支援 * 。</block>
+  <block id="e6a72011ca1d5b86a45e139dca7d8c59" category="list-text">（可選）選擇 * 定義快照名稱 * 並輸入快照的自定義名稱。</block>
+  <block id="2fd69cb6fb890f515a9ee75ec3abef3e" category="paragraph">定義自訂名稱可協助您在未來需要還原快照時，更有效地判斷快照的內容。</block>
+  <block id="bf18811faac9b8e4fcaebab51afd1113" category="list-text">選擇* Create *（建立*）。</block>
+  <block id="ce638fcfafd4d79a49524062225d7fbc" category="paragraph">需要註冊支援，才能獲得 BlueXP  工作負載工廠及其儲存解決方案與服務的專屬技術支援。您必須向 BlueXP  主控台註冊以取得支援，該主控台是獨立於工作負載工廠的網路型主控台。</block>
+  <block id="2cbcc262b0a39ec19c5f69bffccb70fb" category="paragraph">註冊支援並不會啟用雲端供應商檔案服務的 NetApp 支援。如需雲端供應商檔案服務，其基礎架構或任何使用服務的解決方案的相關技術支援，請參閱該產品工作負載原廠文件中的「取得說明」。</block>
+  <block id="414ff5fbb1dedd0a94eaf89dd63e0d56" category="cell">AI 引擎無法啟動，您會在 * 知識庫 * 頁面上看到錯誤「 GenAI 引擎執行個體已停止」。</block>
+  <block id="350597e8589fb52f516cea4c281e8b5c" category="cell">AI 引擎執行個體未執行。</block>
+  <block id="00ab0abb4e492e5b332d431d1fc71f64" category="cell">使用 AWS 管理主控台或 AWS CLI 啟動 AI 引擎執行個體。</block>
+  <block id="1b6165f62ab07b6de85b6692fb2f09d6" category="cell">AI 引擎無法啟動，您會在 * 知識庫 * 頁面上看到錯誤「 GenAI 引擎伺服器沒有回應」。</block>
+  <block id="b3135b75f2a1f3333ef049b35ad90616" category="cell">AI 引擎執行個體沒有回應。</block>
+  <block id="f085d4610c632e532de19159fa803edf" category="list-text">修改 GenAI 引擎執行個體安全性群組，以啟用對 GenAI 引擎執行個體的 SSH 存取。</block>
+  <block id="2c6cb4e03314c724c32217626f17bd37" category="list-text">使用 SSH 登入執行個體。</block>
+  <block id="337d79852891a37d41285c9101c3fff4" category="list-text">執行下列命令：</block>
+  <block id="37b8354fe553b0151888468751ea8eb0" category="section-title">2025 年 1 月 05 日</block>
+  <block id="0fdf33109843473a96b84acfe576030a" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block>= 2024 年 9 月 29 日</block>
 </blocks>

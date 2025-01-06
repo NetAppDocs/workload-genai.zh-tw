@@ -25,7 +25,10 @@ summary: 在您部署 AI 基礎架構，並從適用於 ONTAP 資料存放區的
 link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["瞭解 BlueXP 分類"^]。
 
 
-NOTE: 資料欄可隨時啟用或停用。如果您切換資料防護功能、 Workload Factory 會從頭開始掃描整個知識庫、這會產生成本。
+NOTE: GenAI 的 BlueXP  工作負載工廠不會遮罩敏感的個人資訊（ SPii ）。如需此類型資料的詳細資訊，請參閱link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-data["敏感個人資料的類型"^]。
+
+
+NOTE: 資料欄可隨時啟用或停用。如果您切換資料防護功能，工作負載工廠會從頭開始掃描整個知識庫，這會產生成本。
 
 --
 
