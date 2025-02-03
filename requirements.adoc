@@ -35,6 +35,8 @@ Amazon bedrock:: Amazon 基礎架構可讓您使用基礎模型、並提供建�
 * https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["AWS 文件： Amazon bedrock 知識庫支援的區域和模型"^]
 
 
+GenAI 預設會重新排列搜尋結果，以改善結果相關性。為獲得最佳結果，請確保 Amazon 基礎模型組態包括存取重新排名模型，例如 Cohere Rerank 或 Amazon Rerank （如果您所在地區有）。
+
 --
 內嵌模型:: 建立知識庫之前、您必須先啟用您計畫使用的內嵌模型。支援下列內嵌模型：
 +

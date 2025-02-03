@@ -5,7 +5,6 @@
   <block id="e3fbe9ea657688c1ff4a86f23c1752c3" category="list-text">* 選取磁碟區 * ：選取資料來源檔案所在的磁碟區、然後選取 * 下一步 * 。</block>
   <block id="3bce906453410b081d8e495b9cf8c9b0" category="paragraph">選取使用 SMB 傳輸協定儲存的檔案時、您需要輸入 Active Directory 資訊、其中包括網域、 IP 位址、使用者名稱和密碼。</block>
   <block id="7028355d43ef8a71ff4d5e7bed32be2b" category="list-text">* 選取資料來源 * ：根據您儲存檔案的位置選取資料來源位置。這可以是整個磁碟區、或只是磁碟區中的特定資料夾或子資料夾、然後選取 * 下一步 * 。</block>
-  <block id="12d073958c6d4922a6f27ae8b5e4b533" category="list-text">在 * 權限感知 * 區段中、只有當您選取的資料來源位於使用 SMB 通訊協定的磁碟區上時、才能使用、您可以啟用或停用選取：</block>
   <block id="751157f855d8f0597671b65bc8ea1301" category="list-text">* 已啟用 * ：存取此知識庫的聊天機器人程式使用者只能從其存取的資料來源取得查詢回應。</block>
   <block id="9969ec0e7476736a130c54f32700611e" category="list-text">* 停用 * ：聊天機器人程式的使用者將會使用所有整合式資料來源的內容接收回應。</block>
   <block id="65f706122d6156fd52b6cb2ff2214944" category="list-text">選取 * 新增 * 將此資料來源新增至您的知識庫。</block>
@@ -115,9 +114,7 @@
   <block id="36d8c0d0c9711e8ac7a5bbcbe9b96008" category="list-text">傳出規則會對所有流量開放、而傳入規則則會完全關閉。</block>
   <block id="1f171bab0b26254e4c58e536973c5c09" category="list-text">私有端點</block>
   <block id="34048930da0f8b448828d6774b139b17" category="list-text">Amazon bedrock</block>
-  <block id="c421d122321bec48d6b30858f4e7b515" category="list-text">Amazon EC2</block>
   <block id="719ffca696aa714ef090fce0aca97bd2" category="list-text">Amazon Elastic Container 登錄（ ECR ）</block>
-  <block id="270fcb785810d0206945029bb05f4e97" category="list-text">Amazon S3</block>
   <block id="0072b242011f459b57b0768dceac82f8" category="list-text">AWS Systems Manager （ SSM ）</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">取得協助</block>
   <block id="6a7b2c9c4cec65ad972b108fa0a1192b" category="section-title">取得適用於 ONTAP 的 FSX 支援</block>
@@ -475,7 +472,6 @@
   <block id="4fc1d0607a3fe50db5ef612a2c4a178e" category="list-text">瀏覽至<block ref="0e14f9ffc1d2673bd92f13a4ac79e32e" category="inline-link-rx"></block> 以登入應用程式。</block>
   <block id="5f62c285aea87618ed1381c43c7ae2cf" category="paragraph">此時會出現 chatbot 應用程式範例。</block>
   <block id="d59048f21fd887ad520398ce677be586" category="section-title">深入瞭解</block>
-  <block id="8f3f613a5094ebfa7c5f531cb356028e" category="list-text">* 定義 AI 參數 * ：在 * 區塊策略 * 區段中、定義當資料來源與知識庫整合時、 GenAI 引擎如何將資料來源內容分割成區塊。您可以選擇下列其中一個策略：</block>
   <block id="091e1c7957272ab69145f4859b4465d0" category="list-text">* 多重句子區塊 * ：將資料來源中的資訊組織成句子定義的區塊。您可以選擇每個區塊中包含多少句話（最多 100 句）。</block>
   <block id="87aa4ffcf50084a10651fe7094e75bda" category="list-text">* 重疊區塊 * ：將資料來源中的資訊組織成字元定義區塊、以重疊鄰近區塊。您可以選擇每個區塊的字元大小、以及每個區塊與相鄰區塊重疊的量。您可以設定 50 到 3000 個字元之間的區塊大小、以及介於 1 到 99% 之間的重疊百分比。</block>
   <block id="18c41e2a8da7a23dcc990da8d7dfe06d" category="admonition">選擇高重疊百分比可大幅增加儲存需求、只需稍微改善擷取準確度。</block>
@@ -583,7 +579,6 @@
   <block id="3e3c8a56035df76e06772f4505dc58c7" category="list-text">確保您的環境符合先決條件</block>
   <block id="0ce4d42838344488f607ff306088fae9" category="list-text">部署 BlueXP 分類</block>
   <block id="b91895758c5a35a75fd3e87dc1fa0741" category="list-text">在「編輯知識庫」頁面中、您可以變更知識庫名稱、說明、內嵌模式、聊天模式、資料規範啟用、選擇是自動或手動建立對話啟動器、以及用於包含知識庫之 Volume 的快照原則。</block>
-  <block id="fde00ba8f64d2c57d64a163698fd6f03" category="admonition">每次知識庫掃描、包括內嵌、成本。如果在建立知識庫之後啟用資料 guardrails 、則會再次掃描知識庫並產生成本。</block>
   <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024 年 11 月 3 日</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">Amazon FSX for NetApp ONTAP 產品</block>
   <block id="4b88d56bd65ef92611ac63064c38369f" category="list-text">Amazon CloudWatch</block>
@@ -781,5 +776,47 @@
   <block id="2c6cb4e03314c724c32217626f17bd37" category="list-text">使用 SSH 登入執行個體。</block>
   <block id="337d79852891a37d41285c9101c3fff4" category="list-text">執行下列命令：</block>
   <block id="37b8354fe553b0151888468751ea8eb0" category="section-title">2025 年 1 月 05 日</block>
-  <block id="0fdf33109843473a96b84acfe576030a" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block>= 2024 年 9 月 29 日</block>
+  <block id="2b33992406857bfe64aea3c375dfd0f3" category="list-text">* 組態 * ：設定資料來源如何從檔案中擷取資訊，以及其包含在掃描中的檔案：</block>
+  <block id="556d69e48e56f7282433b4470f9fc985" category="list-text">* 定義資料來源 * ：在 * 區塊策略 * 區段中，定義當資料來源與知識庫整合時， GenAI 引擎如何將資料來源內容分割成區塊。您可以選擇下列其中一個策略：</block>
+  <block id="441ffcb2a5deb53b096bf6da09532c3c" category="list-text">* 檔案篩選 * ：設定掃描中包含哪些檔案：</block>
+  <block id="fbf5c3d1e175475dce2b6f27f23e342c" category="list-text">在「 * 檔案類型支援 * 」區段中，選擇要包含所有類型的檔案，或選擇要包含在資料來源掃描中的個別檔案類型。</block>
+  <block id="9c91ae043d4f1fed127449b7d9f56f1a" category="paragraph">如果您包含影像或 PDF 檔案，則 GenAI 的 BlueXP  工作負載工廠會剖析影像中的文字（包括 PDF 文件中的影像），這會產生較高的成本。</block>
+  <block id="cdc5210ee55660ad12576b6b12e53505" category="paragraph">當包含影像的文字資料時，當掃描的文字資料從您的環境傳送至 AWS 時， GenAI 無法從影像中遮罩個人識別資訊（ PII ）。然而，一旦儲存資料， GenAI 資料庫就會隱藏所有 PII 。</block>
+  <block id="527140faa5b9a355e269287e721ad95b" category="admonition">您選擇在掃描中包含影像檔案，與知識庫聊天模式有關。如果您在掃描中包含影像檔案，則聊天模式必須支援影像。如果在此選取映像檔案類型，您就無法將知識庫切換至不支援映像檔案的聊天模式。</block>
+  <block id="2af4913e8e59a092d414744be9ae44d2" category="list-text">在 * 檔案修改時間篩選器 * 區段中，選擇根據檔案的修改時間來啟用或停用檔案的包含。如果啟用修改時間篩選，請從清單中選取日期範圍。</block>
+  <block id="67aa8f84073b450b225b7d2830cc4e41" category="admonition">如果您根據修改日期範圍來包含檔案，只要日期範圍不滿足（檔案尚未在您指定的日期範圍內修改），檔案就會排除在定期掃描之外，而且資料來源也不會包含這些檔案。</block>
+  <block id="a036984d47253ddc828a04bc8ac85524" category="list-text">在 * 權限感知 * 區段中，只有當您選取的資料來源位於使用 SMB 通訊協定的磁碟區上時，才能使用此區段，您可以啟用或停用權限感知回應：</block>
+  <block id="77fd00559b8279b555e48d21e5e67c34" category="doc">資料來源的檔案類型篩選</block>
+  <block id="47cf5538cc85b7acf0e24098fc5bbffd" category="paragraph">GenAI 現在支援在新增資料來源時，選取要納入資料來源掃描的特定檔案類型。</block>
+  <block id="e57c1e86c82776cdcb9c50b4e82943f8" category="paragraph"><block ref="e57c1e86c82776cdcb9c50b4e82943f8" category="inline-link-macro-rx"></block></block>
+  <block id="f191d5f0a123d62966b3617a9d8c752c" category="section-title">資料來源的檔案修改日期篩選</block>
+  <block id="b1be3e2e5ab05373dbf3927507ea84d2" category="paragraph">GenAI 現在支援篩選檔案，可在新增資料來源時，依修改日期納入資料來源掃描。您可以為包含的檔案選擇修改日期範圍。</block>
+  <block id="7a7ba68ff13813a8c9d7413b67a91e34" category="section-title">支援影像檔案，並加強支援 PDF 檔案</block>
+  <block id="02edd7a4065e5f73535b550150fc46f2" category="paragraph">GenAI 現在支援掃描 PDF 檔案中的影像檔案和影像（也稱為多模式檔案支援）。如果您選擇影像檔案，則會將影像中的文字掃描至資料來源，並作為資料使用。此功能包括 PDF 文件中的影像；如果您包含 PDF 檔案類型，則會掃描每個 PDF 中的影像以尋找文字，並將該文字包含在資料來源的資訊中。</block>
+  <block id="b9a5ff8382cbb9f5609b8bff25344245" category="section-title">混合式搜尋與重新部署支援</block>
+  <block id="429b63d212adaceb6de8dae934d76ea4" category="paragraph">GenAI 現在使用混合式搜尋並重新排列結果的順序，以增強搜尋結果的相關性。混合式搜尋將關鍵字搜尋與向量和語義搜尋結合在一起。標準關鍵字搜尋結果會以接近的相符項目和語言差異加以擴充，以增強相關性。GenAI 重新排列搜尋結果，只會傳回最相關的結果。</block>
+  <block id="397adcec169a6ce17f0abfc941258c0f" category="paragraph"><block ref="397adcec169a6ce17f0abfc941258c0f" category="inline-link-macro-rx"></block></block>
+  <block id="c009fe342f72cc06fe63760e2eaa701c" category="list-text">利用 GenAI 提供的混合式搜尋和重新排名功能，從您的資料中獲得高品質結果。混合式搜尋結合重新排名，可大幅提升搜尋結果的相關性。這些功能可透過 Amazon AWS 取得，且因地區而定。</block>
+  <block id="e1201f675c705c74b856dba391a68602" category="paragraph">某些多模式作業（例如掃描影像以取得文字資訊）可能會使用更多資源，因此會產生較高的成本。某些組態作業（例如變更知識庫的設定）可能會導致重新掃描資料來源，而且資料來源掃描也會產生較高的成本。</block>
+  <block id="0a2b76d9cf1a9ffdd3b88e030e038252" category="example-title">IAM 角色權限</block>
+  <block id="216304eb42158c57d4ec762a309c7df6" category="list-text">Bedrock</block>
+  <block id="12789b4d0bdf3d54be09051f154d5eba" category="list-text">Bedrock-runtime</block>
+  <block id="ca6c1f270eb3bc12524f0c3ad6af0765" category="list-text">bedrock-agent-runtime</block>
+  <block id="db974238714ca8de634a7ce1d083a14f" category="list-text">API</block>
+  <block id="05b6053c41a2130afd6fc3b158bda4e6" category="list-text">Docker</block>
+  <block id="078aab7ae8c1a0df339ac8525790d5e1" category="list-text">SSM)</block>
+  <block id="627597c7a47356c5c9f55a4854a59ff3" category="list-text">ec2messages</block>
+  <block id="25f6388206f436c2d1de63216302b13d" category="list-text">ssmmessages</block>
+  <block id="907e06a16862d82ca6907a28a68d0ad6" category="cell">JPEG</block>
+  <block id="8106d47388a74c58448d40c84de6fd91" category="cell">.jpg or.jpeg</block>
+  <block id="7281c70f390b5e0f3c8827352c83f0b0" category="cell">可攜式網路圖形</block>
+  <block id="6446d860dbbfe540e9e2cbab5f98f1e3" category="cell">.png-</block>
+  <block id="a97aa4a947e531a7fa6f96a2b73876e3" category="cell">圖形交換格式</block>
+  <block id="03a46779cf1ed515b29e1c471efd4c0f" category="cell">.gif</block>
+  <block id="830b1d3b1096152076b8daa22a275a74" category="cell">WebP 映像</block>
+  <block id="f38a468e497336f7e3144a22393a4ca9" category="cell">webp</block>
+  <block id="0c05a373f02466ab8f502ea4b3b8e2e8" category="admonition">每次知識庫掃描、包括內嵌、成本。如果在建立知識庫之後啟用資料 guardrails 、則會再次掃描知識庫並產生成本。同樣地，如果您變更聊天模式， GenAI 也會重新掃描相關的資料來源（產生成本）。</block>
+  <block id="f7fb3b5dc06e03848b8f5ff23bbcd37d" category="paragraph">GenAI 預設會重新排列搜尋結果，以改善結果相關性。為獲得最佳結果，請確保 Amazon 基礎模型組態包括存取重新排名模型，例如 Cohere Rerank 或 Amazon Rerank （如果您所在地區有）。</block>
+  <block id="986aee2caba870111e5ce3c5571c82de" category="section-title">2025 年 02 月 2 日</block>
+  <block id="26e6f4cc71039ce95ddbb0acdad6891d" category="section-title">2024 年 9 月 29 日</block>
 </blocks>

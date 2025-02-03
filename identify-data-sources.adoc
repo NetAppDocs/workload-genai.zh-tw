@@ -65,4 +65,16 @@ summary: 識別或建立位於您的 FSX for ONTAP 檔案系統上的文件（�
 
 
 | 可攜式文件格式 | .pdf 
+
+
+| JPEG | .jpg or.jpeg 
+
+
+| 可攜式網路圖形 | .png- 
+
+
+| 圖形交換格式 | .gif 
+
+
+| WebP 映像 | webp 
 |===
