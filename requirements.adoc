@@ -50,21 +50,34 @@ https://aws.amazon.com/bedrock/titan/["深入瞭解 Amazon Titan"^]
 
 
 --
-聊天模式:: 您必須先啟用您計畫使用的基礎聊天模式、才能建立知識庫。支援下列 Claude 聊天模式：
+聊天模式:: 您必須先啟用您計畫使用的基礎聊天模式、才能建立知識庫。由於各 AWS 地區的機型支援不盡相同、請參閱 https://docs.aws.amazon.com/bedrock/latest/userguide/models-regions.html["AWS 文件"^] 、確認您可以在計畫部署知識庫的地區使用哪些機型。
 +
 --
-* Claude 3.5 Sonnet
-* Claude 3 Opus
-* Claude 3 Haiku
-* Claude 3 Sonnet
-* Claude 2.1
-* Claude 2.0
-+
-由於各 AWS 地區的機型支援不盡相同、請參閱 https://docs.aws.amazon.com/bedrock/latest/userguide/models-regions.html["此 AWS 文件頁面"^] 、確認您可以在計畫部署知識庫的地區使用哪些機型。
+GenAI 支援下列 Anthropic Claude 和 Amazon Nova 機型：
 
+* Anthropic Claude ：
 +
-深入瞭解可選擇的機型、協助您選擇： https://aws.amazon.com/bedrock/claude/["Anthropic 在 Amazon bedrock 的 Claude"^]
+** Claude 3.5 Sonnet
+** Claude 3 Opus
+** Claude 3 Haiku
+** Claude 3 Sonnet
+** Claude 2.1
+** Claude 2.0
 
+
+* Amazon Nova ：
++
+** Nova Micro
+** Nova Lite （支援影像和文字）
+** Nova Pro （支援影像和文字）
+
+
+
+
+深入瞭解如何將這些模型與 Amazon Bedrock 搭配使用：
+
+* https://aws.amazon.com/bedrock/claude/["Anthropic 在 Amazon bedrock 的 Claude"^]
+* https://docs.aws.amazon.com/nova/latest/userguide/getting-started-console.html["在 Amazon Bedrock 主控台開始使用 Amazon Nova"^]
 
 
 --

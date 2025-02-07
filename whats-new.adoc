@@ -19,6 +19,14 @@ summary: 瞭解工作負載工廠的 AI 工作負載功能有哪些新功能。
 
 
 
+=== 支援 Amazon Nova 基礎模式
+
+GenAI 現在支援 Amazon Nova 基礎模式。支援 Amazon Nova Micro ， Amazon Nova Lite 和 Amazon Nova Pro 。
+
+link:https://docs.netapp.com/us-en/workload-genai/requirements.html["GenAI 需求"]
+
+
+
 === 資料來源的檔案類型篩選
 
 GenAI 現在支援在新增資料來源時，選取要納入資料來源掃描的特定檔案類型。
