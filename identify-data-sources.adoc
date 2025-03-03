@@ -52,7 +52,16 @@ summary: 識別或建立位於您的 FSX for ONTAP 檔案系統上的文件（�
 | 檔案格式 | 擴充 
 
 
+| Apache Parquet | 硬地板 
+
+
 | 以逗號分隔的值檔案 | .csv 
+
+
+| 圖形交換格式 | .gif 
+
+
+| JPEG | .jpg or.jpeg 
 
 
 | 請下標 | .md 
@@ -67,13 +76,7 @@ summary: 識別或建立位於您的 FSX for ONTAP 檔案系統上的文件（�
 | 可攜式文件格式 | .pdf 
 
 
-| JPEG | .jpg or.jpeg 
-
-
 | 可攜式網路圖形 | .png- 
-
-
-| 圖形交換格式 | .gif 
 
 
 | WebP 映像 | webp 

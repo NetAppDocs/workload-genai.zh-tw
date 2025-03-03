@@ -832,4 +832,21 @@
   <block id="0dd1c2bf85c6e3f8ac28b8d5d343a230" category="list-text"><block ref="0dd1c2bf85c6e3f8ac28b8d5d343a230" category="inline-link-rx"></block></block>
   <block id="b6c678dfe5e31c8f081fa11ac56bff46" category="inline-link">在 Amazon Bedrock 主控台開始使用 Amazon Nova</block>
   <block id="cafb3db15a71932288c768a7beb404b4" category="list-text"><block ref="cafb3db15a71932288c768a7beb404b4" category="inline-link-rx"></block></block>
+  <block id="ca5a05186a2f243eb84efcf08152a8f2" category="doc">嵌入式聊天機器人程式增強功能</block>
+  <block id="362c473fe2757bda1e0d68b3c2cdfbc8" category="paragraph">您現在可以直接將問題和回應複製到剪貼簿，調整聊天視窗的大小，以及變更其標題。此外，聊天回應現在可以包含表格，這些表格也可以複製。</block>
+  <block id="b7def3234606fc50e35ddaf4c351fbe6" category="paragraph"><block ref="b7def3234606fc50e35ddaf4c351fbe6" category="inline-link-macro-rx"></block></block>
+  <block id="4842fdf5dae1e7a3fb7ea049a091be73" category="section-title">聊天回應引文支援</block>
+  <block id="c010ca64710d07e36327c27318c0303f" category="paragraph">聊天回應現在包含的引文會列出用來產生回應的檔案和資料區塊。</block>
+  <block id="312fbafda6b72e176a3eb6272e48d799" category="section-title">增強的檔案類型支援</block>
+  <block id="cb1c6d98111a4dc0f10d1914aabf97ff" category="paragraph">此版本的 GenAI 提供增強的檔案支援：</block>
+  <block id="20fae993429f53ad24302c4bea3332d1" category="list-text">聊天模式提供更好的 CSV 支援。這可在從 CSV 檔案查詢資料時，提供更有用的回應。</block>
+  <block id="820ddf0d1fd0a9cf5aaea49d2b400838" category="list-text">GenAI 現在可以從資料來源擷取 Apache Parquet 檔案。</block>
+  <block id="ce2ed264c43f0733c7c1ccbd1b06fdab" category="list-text">GenAI 現在支援擷取包含影像的 Microsoft Word DOCX 檔案。</block>
+  <block id="9e64c0f3360c80d2707e71b213c5fc58" category="paragraph"><block ref="9e64c0f3360c80d2707e71b213c5fc58" category="inline-link-macro-rx"></block></block>
+  <block id="bf971e4f3cc5d92890a57f57611a0107" category="cell">Apache Parquet</block>
+  <block id="2041784b912a2b2e72827a5e9c656f5f" category="cell">硬地板</block>
+  <block id="f1776184cd873aef06fc869138b3b776" category="admonition">您可以調整聊天機器人模擬器視窗的大小並重新設定標題，並將問題和回應複製到剪貼簿。</block>
+  <block id="e27f142520976de0e091895abd1a2b45" category="list-text">您可以在回應下方展開 * 來源 * 清單，以查看用來產生答案的來源。這會提供用來產生答案的檔案清單。您可以將游標移到檔案名稱上方，以檢視並複製從每個檔案和磁碟區路徑所使用的資料區塊到每個檔案。</block>
+  <block id="8e08c9e7067a8bc5d8828ba0b5a8a5b2" category="list-text">如果回應中包含表格，您可以排序每一欄中的資料，並將每個表格複製到剪貼簿。</block>
+  <block id="2d5a4b914acb6c2f03d312067c73ce32" category="section-title">2025 年 3 月 02 日</block>
 </blocks>
