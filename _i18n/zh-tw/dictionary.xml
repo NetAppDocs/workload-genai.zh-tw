@@ -849,4 +849,9 @@
   <block id="e27f142520976de0e091895abd1a2b45" category="list-text">您可以在回應下方展開 * 來源 * 清單，以查看用來產生答案的來源。這會提供用來產生答案的檔案清單。您可以將游標移到檔案名稱上方，以檢視並複製從每個檔案和磁碟區路徑所使用的資料區塊到每個檔案。</block>
   <block id="8e08c9e7067a8bc5d8828ba0b5a8a5b2" category="list-text">如果回應中包含表格，您可以排序每一欄中的資料，並將每個表格複製到剪貼簿。</block>
   <block id="2d5a4b914acb6c2f03d312067c73ce32" category="section-title">2025 年 3 月 02 日</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">部落格與社群</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
+  <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP部落格</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">雲端網路研討會</block>
+  <block id="8accc316c27ade20e4acbe4aa6c6742b" category="sidebar">利用您的資料解除 GenAI 的鎖定</block>
 </blocks>

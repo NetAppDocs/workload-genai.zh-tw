@@ -27,3 +27,13 @@ indexpage:
     links:
     - title: 管理知識庫基礎架構
       url: manage-infrastructure.html
+  - title: 部落格與社群
+    links:
+    - title: NetApp社群
+      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
+    - title: BlueXP部落格
+      url: https://bluexp.netapp.com/blog
+    - title: 雲端網路研討會
+      url: https://bluexp.netapp.com/events
+    - title: 利用您的資料解除 GenAI 的鎖定
+      url: https://community.netapp.com/t5/Tech-ONTAP-Blogs/Unlocking-GenAI-with-your-data-using-Amazon-FSx-for-NetApp-ONTAP-and-BlueXP/ba-p/456394
