@@ -60,17 +60,22 @@ https://aws.amazon.com/bedrock/titan/["深入瞭解 Amazon Titan"^]
 
 
 
-.. * 聊天模式 * ：選擇與 Amazon bedrock 整合的 Claude 聊天模式。請注意、您必須已啟用 Amazon Bedrock 的聊天模式。
+.. * 聊天模式 * ：從整合在 Amazon bedrock 中的 Anthropic Claude 或 Amazon Nova 聊天模式中選擇。請注意、您必須已啟用 Amazon Bedrock 的聊天模式。
 +
-深入瞭解可選擇的機型、協助您選擇： https://aws.amazon.com/bedrock/claude/["Anthropic 在 Amazon bedrock 的 Claude"^]
+深入瞭解如何將這些模型與 Amazon Bedrock 搭配使用：
+
++
+*** https://aws.amazon.com/bedrock/claude/["Anthropic 在 Amazon bedrock 的 Claude"^]
+*** https://docs.aws.amazon.com/nova/latest/userguide/getting-started-console.html["在 Amazon Bedrock 主控台開始使用 Amazon Nova"^]
+
 
 .. * 資料欄 * ：選擇是否要啟用或停用資料欄。link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["瞭解採用 BlueXP  分類技術的資料欄"^]。
 +
-必須完成下列先決條件、才能啟用資料欄。
+必須符合下列先決條件，才能啟用資料欄。
 
 +
 *** 必須有服務帳戶才能與 BlueXP  分類通訊。您必須在 BlueXP  租賃帳戶上擁有 _ 組織管理員 _ 角色、才能建立服務帳戶。擁有組織管理員角色的成員可以在 BlueXP  中完成所有動作。link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["瞭解如何在 BlueXP  中新增角色至成員"^]
-*** AI 引擎必須能夠存取 BlueXP  API 端點： \https://api ， BlueXP  ， NetApp 。
+*** AI 引擎必須能夠存取link:https://api.bluexp.netapp.com["BlueXP  API 端點"^]。
 *** 您需要執行下列步驟、如所述link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html#quick-start["BlueXP 分類文件"^]：
 +
 .... 建立 BlueXP Connector
@@ -80,6 +85,13 @@ https://aws.amazon.com/bedrock/titan/["深入瞭解 Amazon Titan"^]
 
 
 
+
+
++
+
+NOTE: 擷取 CSV ， JSON ， JSONP 或 Parquet 等結構化資料檔案時，不支援資料欄功能。
+
++
 .. * 對話開場白 * ：選擇是否要提供最多四個對話啟動器提示、讓與使用此知識庫的聊天機器人程式互動的使用者看到。建議您啟用此設定。
 +
 如果您啟動交談啟動器、預設會選取「自動模式」。只有在您將資料來源新增至知識庫之後、才能啟用「手動模式」。link:manage-knowledgebase.html["瞭解如何修改知識庫設定"]。

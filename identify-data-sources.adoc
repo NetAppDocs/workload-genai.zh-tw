@@ -52,16 +52,19 @@ summary: 識別或建立位於您的 FSX for ONTAP 檔案系統上的文件（�
 | 檔案格式 | 擴充 
 
 
-| Apache Parquet | 硬地板 
+| Apache 參數註腳：免責聲明 [ 擷取結構化資料檔案時不支援資料 guardrails 功能。 ] | 硬地板 
 
 
-| 以逗號分隔的值檔案 | .csv 
+| 以逗號分隔的值檔案說明：免責聲明 [] | .csv 
 
 
 | 圖形交換格式 | .gif 
 
 
 | JPEG | .jpg or.jpeg 
+
+
+| JSON 與 JSONP 註腳：免責聲明 [] | json 
 
 
 | 請下標 | .md 

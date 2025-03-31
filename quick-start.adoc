@@ -26,7 +26,11 @@ link:requirements.html["深入瞭解 GenAI 需求"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]識別包含資料來源的 ONTAP 檔案系統的 FSX
 [role="quick-margin-para"]
-您將整合至知識庫的資料來源可以位於單一適用於 ONTAP 檔案系統的 FSX 、或是多個適用於 ONTAP 檔案系統的 FSX 上。這些系統可以位於不同的 VPC 中、但必須可在同一個網路中存取。
+您將整合至知識庫的資料來源可以位於單一適用於 ONTAP 檔案系統的 FSX 、或是多個適用於 ONTAP 檔案系統的 FSX 上。如果這些系統使用不同的 VPC ，則必須使用下列兩種組態之一：
+
+* 可在同一個網路中存取
+* VPC 必須與 AI 引擎使用相同的區域和 AWS 帳戶
+
 
 [role="quick-margin-para"]
 link:identify-data-sources.html["瞭解如何識別資料來源"^]。

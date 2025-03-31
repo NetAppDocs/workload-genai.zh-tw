@@ -55,9 +55,7 @@
   <block id="b6306206c9c2b9f0903b5bfc5872066e" category="paragraph">請注意、您必須已啟用 Amazon bedrock 的內嵌模型。</block>
   <block id="6034693f6588a087cd6872b5c42ea4d6" category="inline-link">深入瞭解 Amazon Titan</block>
   <block id="558b7a3f6f7e506377040f9194ff098b" category="paragraph"><block ref="558b7a3f6f7e506377040f9194ff098b" category="inline-link-rx"></block></block>
-  <block id="eedd3619a786f9c1261bba5f49d4f821" category="list-text">* 聊天模式 * ：選擇與 Amazon bedrock 整合的 Claude 聊天模式。請注意、您必須已啟用 Amazon Bedrock 的聊天模式。</block>
   <block id="d6444760a98aae63c256572c582cbe80" category="inline-link">Anthropic 在 Amazon bedrock 的 Claude</block>
-  <block id="c6a0e7101f0906d1498552ff723709e5" category="paragraph">深入瞭解可選擇的機型、協助您選擇：<block ref="56cf03ef03ec9048e7282cdb73fcf2fd" category="inline-link-rx"></block></block>
   <block id="bb75c182eff66bee3c76899d41fc8e8f" category="list-text">* 對話開場白 * ：選擇是否要提供最多四個對話啟動器提示、讓與使用此知識庫的聊天機器人程式互動的使用者看到。建議您啟用此設定。</block>
   <block id="fd6f710773f79577a44d128bb3df27cc" category="inline-link-macro">瞭解如何修改知識庫設定</block>
   <block id="7311e81ffb665c2ec2a4c996ce693887" category="list-text">選取 * 建立知識庫 * 、將知識庫新增至 GenAI 。</block>
@@ -203,7 +201,6 @@
   <block id="be4117b0c842c4be8f9960294bdc2cd1" category="cell">.txt</block>
   <block id="abdf095626d4a4ab2bcd4167b128c1f1" category="cell">.pdf</block>
   <block id="d241ed446445a725f6362568f61cc6c3" category="cell">Microsoft Word</block>
-  <block id="68dfdbe39ab30356a21fe4db773d9589" category="cell">以逗號分隔的值檔案</block>
   <block id="01b1b6ebeb388697cca6712b58439069" category="cell">.csv</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律聲明提供版權聲明、商標、專利等存取權限。</block>
@@ -322,7 +319,6 @@
   <block id="35f6f80cfc19636641dd85bbae19edee" category="doc">GenAI 快速入門</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
-  <block id="10986db05c15b94a4d13e32858a6e26e" category="paragraph">您將整合至知識庫的資料來源可以位於單一適用於 ONTAP 檔案系統的 FSX 、或是多個適用於 ONTAP 檔案系統的 FSX 上。這些系統可以位於不同的 VPC 中、但必須可在同一個網路中存取。</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三</block>
   <block id="ad6f5ec13ed51e48bce763e25a9c69ce" category="inline-link-macro">部署知識庫基礎架構</block>
   <block id="41c27d3fbdf0cdc6aab23df489fe4c94" category="paragraph">啟動基礎架構部署精靈、在 AWS 環境中部署知識庫基礎架構。此程序會部署 NetApp GenAI 引擎的 EC2 執行個體、以及 ONTAP 檔案系統的 FSX 上的磁碟區、以包含 NetApp AI 引擎資料庫。該 Volume 用於儲存知識庫所使用的向量資料庫。</block>
@@ -568,7 +564,6 @@
   <block id="2abf45f9ff5a74918b97267cd4e59d6a" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block>。</block>
   <block id="1be907baab24daef236be08a55d381ce" category="inline-link-macro">瞭解採用 BlueXP  分類技術的資料欄</block>
   <block id="239980b6c377cd208cd4875dd11871a7" category="list-text">* 資料欄 * ：選擇是否要啟用或停用資料欄。<block ref="705e589dc60832aba1b9593eb1d26a9a" category="inline-link-macro-rx"></block>。</block>
-  <block id="5d78af30e91e495d74cbd3cac7a282db" category="paragraph">必須完成下列先決條件、才能啟用資料欄。</block>
   <block id="069e9a4c876c108cc9f27ee13170ed16" category="inline-link-macro">瞭解如何在 BlueXP  中新增角色至成員</block>
   <block id="f271e30d6a375057fa3075f037ab44e5" category="list-text">必須有服務帳戶才能與 BlueXP  分類通訊。您必須在 BlueXP  租賃帳戶上擁有 _ 組織管理員 _ 角色、才能建立服務帳戶。擁有組織管理員角色的成員可以在 BlueXP  中完成所有動作。<block ref="9ba9a2df720ef49e9efc4ba4af6ca608" category="inline-link-macro-rx"></block></block>
   <block id="44b34442167c9611792529867ee76d90" category="inline-link-macro">BlueXP 分類文件</block>
@@ -724,7 +719,6 @@
   <block id="e8293cb4f1909d8329e31cefdfb4dba4" category="doc">啟動 GenAI 知識庫的外部驗證</block>
   <block id="b05735c6e4c6d503ad9f93af6e740fa9" category="doc">建立 RAG 型 GenAI 應用程式</block>
   <block id="16cb0b733a26e9afa11f388e6d83aec1" category="doc">建立 GenAI 知識庫</block>
-  <block id="79cee61f29eb5a0e2dd156871eb70a40" category="list-text">AI 引擎必須能夠存取 BlueXP  API 端點： \https://api ， BlueXP  ， NetApp 。</block>
   <block id="e63e0ed616c63ed724e592b04e608826" category="doc">使用 GenAI 外部範例 chatbot 應用程式</block>
   <block id="52f26f0fff3bae61240c4b3a43f3624d" category="doc">取得 GenAI BlueXP  工作負載工廠的協助</block>
   <block id="e1cdd82a2918ba1a2c0ff51770aad51e" category="doc">識別要整合至 GenAI 知識庫的資料來源</block>
@@ -843,7 +837,6 @@
   <block id="820ddf0d1fd0a9cf5aaea49d2b400838" category="list-text">GenAI 現在可以從資料來源擷取 Apache Parquet 檔案。</block>
   <block id="ce2ed264c43f0733c7c1ccbd1b06fdab" category="list-text">GenAI 現在支援擷取包含影像的 Microsoft Word DOCX 檔案。</block>
   <block id="9e64c0f3360c80d2707e71b213c5fc58" category="paragraph"><block ref="9e64c0f3360c80d2707e71b213c5fc58" category="inline-link-macro-rx"></block></block>
-  <block id="bf971e4f3cc5d92890a57f57611a0107" category="cell">Apache Parquet</block>
   <block id="2041784b912a2b2e72827a5e9c656f5f" category="cell">硬地板</block>
   <block id="f1776184cd873aef06fc869138b3b776" category="admonition">您可以調整聊天機器人模擬器視窗的大小並重新設定標題，並將問題和回應複製到剪貼簿。</block>
   <block id="e27f142520976de0e091895abd1a2b45" category="list-text">您可以在回應下方展開 * 來源 * 清單，以查看用來產生答案的來源。這會提供用來產生答案的檔案清單。您可以將游標移到檔案名稱上方，以檢視並複製從每個檔案和磁碟區路徑所使用的資料區塊到每個檔案。</block>
@@ -854,4 +847,30 @@
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP部落格</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">雲端網路研討會</block>
   <block id="8accc316c27ade20e4acbe4aa6c6742b" category="sidebar">利用您的資料解除 GenAI 的鎖定</block>
+  <block id="f3a4976ab2464242211263cea7e247f9" category="paragraph">此版本的 GenAI 在從資料來源建立檔案時，會提供 JSON 和 JSONP 檔案格式支援<block ref="cc8f0c0e5a5cef9b33f236a0a9c19ca0" prefix=" " category="inline-code"></block>。支援含有巢狀物件的 JSON 檔案，但巢狀陣列的支援有限。</block>
+  <block id="0a8f6f086d5f30a416a61fd3606f1025" category="section-title">外部 chatbot 範例應用程式的國際化支援</block>
+  <block id="a2f4023c744ab1521036ee54ec2e15ba" category="paragraph">現在您可以輕鬆地將 GenAI 範例外部聊天機器人應用程式的使用者介面變更為不同的語言或地區設定。</block>
+  <block id="5b8a8facbec8623a03d7cae8b62bfeb7" category="inline-link-macro">GenAI 外部樣本聊天機器人應用程式</block>
+  <block id="4d79fade08f1e8c2d92bbdf0e3237924" category="paragraph"><block ref="4d79fade08f1e8c2d92bbdf0e3237924" category="inline-link-macro-rx"></block></block>
+  <block id="26ea891fa4f63d071728537d886e0f6c" category="section-title">支援 Anthropic Claude Sonnet 3.7 聊天模式</block>
+  <block id="4c58515c1bd9657f223b7731d306475c" category="paragraph">GenAI 現在支援 Anthromic Claude 3.7 Sonnet 聊天模式。Claude 3.7 Sonnet 的測試版功能，每個要求最多可允許 128K 個輸出權杖，並支援新的電腦使用動作。未來的 GenAI 版本將支援 Claude 3.7 Sonnet 延伸思考模式。</block>
+  <block id="fe72cb2aff5f7bf6138e806921c5d3d6" category="paragraph"><block ref="fe72cb2aff5f7bf6138e806921c5d3d6" category="inline-link-macro-rx"></block></block>
+  <block id="40bd8fe426c37e97f38be2c5a2728752" category="section-title">支援從一般 NFS/SMB 共用新增資料來源</block>
+  <block id="1813c42a79840f7d495281cf050a30dc" category="paragraph">使用工作負載原廠 API ，您現在可以從一般 NFSv3 ， NFSv4 或 SMB 共用新增資料來源。當您從 NFS 或 SMB 共用新增資料來源時，知識庫磁碟區仍會保留在 Amazon FSX for NetApp ONTAP Volume 上。工作負載工廠 Web UI 將在未來版本中支援此功能。</block>
+  <block id="fbc7eedf5c13a549330a0c3f52777db8" category="section-title">VPC 對等支援</block>
+  <block id="52bc46202bc9013e258f32f66b8bf88a" category="inline-link-macro">對等虛擬私有雲（ VPC ）</block>
+  <block id="93dbde0ee04c36dce05b96f3551f8606" category="paragraph">您現在可以在同一個區域中的 GenAI 基礎架構上部署<block ref="f008838004ac43a2c4a5b39672df7daf" category="inline-link-macro-rx"></block>，並使用相同的 AWS 帳戶。您可以在 VPC 中部署 AI 引擎，然後在對等 VPC 中建立知識庫，然後選取位於對等 VPC 中的 Amazon FSX for NetApp ONTAP 檔案系統。</block>
+  <block id="b36fca5a6a45d6da3c01e23792f8a153" category="list-text">* 聊天模式 * ：從整合在 Amazon bedrock 中的 Anthropic Claude 或 Amazon Nova 聊天模式中選擇。請注意、您必須已啟用 Amazon Bedrock 的聊天模式。</block>
+  <block id="7b64cb38404993f8db85b46fa460e3f1" category="paragraph">必須符合下列先決條件，才能啟用資料欄。</block>
+  <block id="b687386681bc74afd9f1f05a81484454" category="inline-link-macro">BlueXP  API 端點</block>
+  <block id="52840142bc9ae1cec5ab47f43451b7f2" category="list-text">AI 引擎必須能夠存取<block ref="0d55c5152a345809ffefdd3a1a629e2a" category="inline-link-macro-rx"></block>。</block>
+  <block id="b3e25fad7a8f45ec59f40a0eaf7b74ea" category="admonition">擷取 CSV ， JSON ， JSONP 或 Parquet 等結構化資料檔案時，不支援資料欄功能。</block>
+  <block id="71e83c676c8b3aea9726262e97dd0c14" category="cell">Apache 參數註腳：免責聲明 [ 擷取結構化資料檔案時不支援資料 guardrails 功能。 ]</block>
+  <block id="230703a919b034364b970a5ee5c5ab76" category="cell">以逗號分隔的值檔案說明：免責聲明 []</block>
+  <block id="33555d9ae9e8936cbd995ec23836ef0a" category="cell">JSON 與 JSONP 註腳：免責聲明 []</block>
+  <block id="cc8f0c0e5a5cef9b33f236a0a9c19ca0" category="cell">json</block>
+  <block id="ff9da638fe97b0c6f7deb173e8ea9623" category="paragraph">您將整合至知識庫的資料來源可以位於單一適用於 ONTAP 檔案系統的 FSX 、或是多個適用於 ONTAP 檔案系統的 FSX 上。如果這些系統使用不同的 VPC ，則必須使用下列兩種組態之一：</block>
+  <block id="6c654e9590c6b2b6a77fcf4553b9fc79" category="list-text">可在同一個網路中存取</block>
+  <block id="277e6e0f8a7c91992d2766d798ab5915" category="list-text">VPC 必須與 AI 引擎使用相同的區域和 AWS 帳戶</block>
+  <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">2025 年 3 月 30 日</block>
 </blocks>

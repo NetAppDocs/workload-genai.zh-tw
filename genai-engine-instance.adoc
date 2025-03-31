@@ -87,7 +87,7 @@ IAM角色:: GenAI 引擎執行個體需要權限、才能將資料區塊傳送�
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai:c92e9ed6-dcbb-45f7-95f0-58647ebec9d7:kbId": "*"
+          "aws:ResourceTag/netapp:wlmai:8529f2ac-b443-4224-9abe-f42dc418ab8d:kbId": "*"
         }
       },
       "Action": "fsx:DeleteVolume",
@@ -100,7 +100,7 @@ IAM角色:: GenAI 引擎執行個體需要權限、才能將資料區塊傳送�
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai:c92e9ed6-dcbb-45f7-95f0-58647ebec9d7": "*"
+          "aws:ResourceTag/netapp:wlmai:8529f2ac-b443-4224-9abe-f42dc418ab8d": "*"
         }
       },
       "Action": "fsx:UntagResource",
@@ -110,7 +110,7 @@ IAM角色:: GenAI 引擎執行個體需要權限、才能將資料區塊傳送�
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai:c92e9ed6-dcbb-45f7-95f0-58647ebec9d7:kbId": "*"
+          "aws:ResourceTag/netapp:wlmai:8529f2ac-b443-4224-9abe-f42dc418ab8d:kbId": "*"
         }
       },
       "Action": "fsx:UntagResource",
@@ -120,18 +120,11 @@ IAM角色:: GenAI 引擎執行個體需要權限、才能將資料區塊傳送�
     {
       "Action": [
         "bedrock:InvokeModel",
-        "bedrock:Rerank"
+        "bedrock:Rerank",
+        "bedrock:GetFoundationModel",
+        "bedrock:GetInferenceProfile"
       ],
       "Resource": "*",
-      "Effect": "Allow"
-    },
-    {
-      "Action": [
-        "iam:PassRole"
-      ],
-      "Resource": [
-        "arn:aws:iam::*:role/NetApp_AI_Bedrock_wlmai-*"
-      ],
       "Effect": "Allow"
     },
     {
