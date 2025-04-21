@@ -833,7 +833,6 @@
   <block id="cb1c6d98111a4dc0f10d1914aabf97ff" category="paragraph">此版本的 GenAI 提供增強的檔案支援：</block>
   <block id="20fae993429f53ad24302c4bea3332d1" category="list-text">聊天模式提供更好的 CSV 支援。這可在從 CSV 檔案查詢資料時，提供更有用的回應。</block>
   <block id="820ddf0d1fd0a9cf5aaea49d2b400838" category="list-text">GenAI 現在可以從資料來源擷取 Apache Parquet 檔案。</block>
-  <block id="9e64c0f3360c80d2707e71b213c5fc58" category="paragraph"><block ref="9e64c0f3360c80d2707e71b213c5fc58" category="inline-link-macro-rx"></block></block>
   <block id="2041784b912a2b2e72827a5e9c656f5f" category="cell">硬地板</block>
   <block id="f1776184cd873aef06fc869138b3b776" category="admonition">您可以調整聊天機器人模擬器視窗的大小並重新設定標題，並將問題和回應複製到剪貼簿。</block>
   <block id="e27f142520976de0e091895abd1a2b45" category="list-text">您可以在回應下方展開 * 來源 * 清單，以查看用來產生答案的來源。這會提供用來產生答案的檔案清單。您可以將游標移到檔案名稱上方，以檢視並複製從每個檔案和磁碟區路徑所使用的資料區塊到每個檔案。</block>
@@ -873,4 +872,5 @@
   <block id="0fcf305133bffed241e3ea17efbba5fc" category="inline-link-macro">使用工作負載原廠 API</block>
   <block id="a6efc6ca3aa5af2c7a8cad1239df17c0" category="paragraph"><block ref="a6efc6ca3aa5af2c7a8cad1239df17c0" category="inline-link-macro-rx"></block></block>
   <block id="1013a9a62eb4667e6ae35cbe4e298de6" category="paragraph">您將整合至知識庫的資料來源可以位於單一適用於 ONTAP 檔案系統的 FSX 、或是多個適用於 ONTAP 檔案系統的 FSX 上。如果這些系統位於不同的 VPC ，則必須可在同一個網路中存取，或是必須使用與 AI 引擎相同的區域和 AWS 帳戶來連接 VPC 。</block>
+  <block id="b70e34d229298faea8d481f1cfdd32a9" category="paragraph"><block ref="b70e34d229298faea8d481f1cfdd32a9" category="inline-link-macro-rx"></block></block>
 </blocks>
