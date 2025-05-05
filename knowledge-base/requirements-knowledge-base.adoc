@@ -1,31 +1,43 @@
 ---
 sidebar: sidebar 
-permalink: requirements.html 
+permalink: knowledge-base/requirements-knowledge-base.html 
 keywords: ai, chatbot, prerequisites, bedrock, fsx for ontap, prerequisites, requirements 
 summary: 在您建置知識庫之前，請先確定工作負載工廠和 AWS 已正確設定。這包括擁有 AWS 登入認證、部署的 ONTAP 檔案系統 FSX 、其中包含您想要整合至知識庫的資料來源、存取 Amazon bedrock AI 服務等。 
 ---
-= GenAI 需求
+= GenAI 知識庫需求
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
 在您建置知識庫之前，請先確定工作負載工廠和 AWS 已正確設定。這包括擁有 AWS 登入認證、部署的 ONTAP 檔案系統 FSX 、其中包含您想要整合至知識庫的資料來源、存取 Amazon bedrock AI 服務等。
 
+
+
+== 基本 GenAI 需求
+
+GenAI 的一般需求是您開始使用前所需的環境。
+
 工作負載工廠登入與帳戶:: 您需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在工作負載工廠設定帳戶"^]使用其中一項登入 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
-AWS 認證與權限:: 您需要使用自動化權限將 AWS 認證新增至工作負載工廠，這表示您將在 GenAI 的工作負載工廠中使用 _AIL_ 模式。
+AWS 認證與權限:: 您需要將 AWS 認證新增至具有讀取 / 寫入權限的工作負載工廠，這表示您將在 GenAI 的讀取 / 寫入模式下使用工作負載工廠。
 +
 --
-目前不支援 _ 基本 _ 模式和 _ 讀取 _ 模式權限。
+目前不支援 _ 基本 _ 模式和 _ 唯讀 _ 模式權限。
 
 設定認證時、如下所示選取權限、可讓您完全存取以管理 ONTAP 檔案系統的 FSX 、並部署及管理知識庫和 chatbot 所需的 GenAI EC2 執行個體和其他 AWS 資源。
-
-image:screenshot-ai-permissions.png["顯示完整管理 AI 資源權限設定的螢幕擷取畫面。"]
 
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["瞭解如何將 AWS 認證新增至工作負載工廠"^]
 
 --
+
+
+
+
+== GenAI 知識庫需求
+
+如果您計畫使用知識庫，請確保您的環境符合下列需求。
+
 Amazon bedrock:: Amazon 基礎架構可讓您使用基礎模型、並提供建置泛用 AI 應用程式的功能。
 +
 --
@@ -44,6 +56,8 @@ GenAI 預設會重新排列搜尋結果，以改善結果相關性。為獲得�
 * Titan 嵌入式 G1 - 文字
 * Titan 內嵌文字 v2
 * Titan Multic形式 嵌入式 G1
+* 內嵌英文
+* 內嵌多國語言
 +
 https://aws.amazon.com/bedrock/titan/["深入瞭解 Amazon Titan"^]
 
@@ -53,38 +67,24 @@ https://aws.amazon.com/bedrock/titan/["深入瞭解 Amazon Titan"^]
 聊天模式:: 您必須先啟用您計畫使用的基礎聊天模式、才能建立知識庫。由於各 AWS 地區的機型支援不盡相同、請參閱 https://docs.aws.amazon.com/bedrock/latest/userguide/models-regions.html["AWS 文件"^] 、確認您可以在計畫部署知識庫的地區使用哪些機型。
 +
 --
-GenAI 支援下列 Anthropic Claude 和 Amazon Nova 機型：
+GenAI 支援 Anthropic ， Amazon ， Mistral AI ， Meta ， Jamba 和 Cohere 等多種機型。
 
-* Anthropic Claude ：
-+
-** Claude 3.5 Sonnet
-** Claude 3 Opus
-** Claude 3 Haiku
-** Claude 3 Sonnet
-** Claude 2.1
-** Claude 2.0
-
-
-* Amazon Nova ：
-+
-** Nova Micro
-** Nova Lite （支援影像和文字）
-** Nova Pro （支援影像和文字）
-
-
-
-
-深入瞭解如何將這些模型與 Amazon Bedrock 搭配使用：
+深入瞭解如何在 Amazon Bedrock 中使用這些模型：
 
 * https://aws.amazon.com/bedrock/claude/["Anthropic 在 Amazon bedrock 的 Claude"^]
 * https://docs.aws.amazon.com/nova/latest/userguide/getting-started-console.html["在 Amazon Bedrock 主控台開始使用 Amazon Nova"^]
+* https://aws.amazon.com/bedrock/mistral/["Mistral AI 機型"^]
+* https://docs.aws.amazon.com/bedrock/latest/userguide/titan-text-models.html["Amazon Titan 文字模型"^]
+* https://aws.amazon.com/bedrock/llama/["中繼 Llama 機型"^]
+* https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-jamba.html["Jamba 機型"^]
+* https://aws.amazon.com/bedrock/cohere/["Cohere Command 模型"^]
 
 
 --
 適用於 ONTAP 檔案系統的 FSX:: 您至少需要一個適用於 ONTAP 檔案系統的 FSX ：
 +
 --
-* NetApp GenAI 引擎將使用一個檔案系統來儲存知識庫所使用的向量資料庫。
+* NetApp GenAI 引擎將使用一個檔案系統（或建立一個檔案系統，如果不存在）來儲存知識庫所使用的向量資料庫。
 +
 此適用於 ONTAP 檔案系統的 FSX 必須使用 FlexVol Volume 。不支援支援的支援。FlexGroup
 

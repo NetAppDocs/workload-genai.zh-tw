@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: genai-engine-instance.html 
+permalink: general/genai-engine-instance.html 
 keywords: genai engine, instance, ec2, role, iam role, permissions, security group, inbound, outbound, private endpoints 
 summary: 當您部署 GenAI 基礎架構時，工作負載工廠會為 GenAI 引擎建立一個 EC2 執行個體。它也會為此執行個體建立 IAM 角色、安全性群組和私有端點。您可能想要瞭解更多有關工作負載工廠在 AWS 環境中建立的這些元件的詳細資料。 
 ---
 = NetApp GenAI 引擎的元件
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
@@ -87,7 +87,7 @@ IAM角色:: GenAI 引擎執行個體需要權限、才能將資料區塊傳送�
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai:8529f2ac-b443-4224-9abe-f42dc418ab8d:kbId": "*"
+          "aws:ResourceTag/netapp:wlmai: :<ai-engine-id>:kbId": "*"
         }
       },
       "Action": "fsx:DeleteVolume",
@@ -100,7 +100,20 @@ IAM角色:: GenAI 引擎執行個體需要權限、才能將資料區塊傳送�
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai:8529f2ac-b443-4224-9abe-f42dc418ab8d": "*"
+          "aws:ResourceTag/netapp:wlmai: :<ai-engine-id>:qConnectorId": "*"
+        }
+      },
+      "Action": "fsx:DeleteVolume",
+      "Resource": [
+        "arn:aws:fsx:*:*:volume/*/*",
+        "arn:aws:fsx:*:*:backup/*"
+      ],
+      "Effect": "Allow"
+    },
+    {
+      "Condition": {
+        "StringLike": {
+          "aws:ResourceTag/netapp:wlmai:<ai-engine-id>": "*"
         }
       },
       "Action": "fsx:UntagResource",
@@ -110,7 +123,17 @@ IAM角色:: GenAI 引擎執行個體需要權限、才能將資料區塊傳送�
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai:8529f2ac-b443-4224-9abe-f42dc418ab8d:kbId": "*"
+          "aws:ResourceTag/netapp:wlmai:<ai-engine-id>:kbId": "*"
+        }
+      },
+      "Action": "fsx:UntagResource",
+      "Resource": "arn:aws:fsx:*:*:volume/*/*",
+      "Effect": "Allow"
+    },
+    {
+      "Condition": {
+        "StringLike": {
+          "aws:ResourceTag/netapp:wlmai:<ai-engine-id>:qConnectorId": "*"
         }
       },
       "Action": "fsx:UntagResource",
@@ -135,6 +158,22 @@ IAM角色:: GenAI 引擎執行個體需要權限、才能將資料區塊傳送�
         "ec2messages:DeleteMessage",
         "ec2messages:FailMessage",
         "ec2messages:SendReply"
+      ],
+      "Resource": "*",
+      "Effect": "Allow"
+    },
+    {
+      "Action": [
+        "qbusiness:ListWebExperiences",
+        "qbusiness:GetApplication",
+        "qbusiness:CreateDataSource",
+        "qbusiness:DeleteDataSource",
+        "qbusiness:ListIndices",
+        "qbusiness:StartDataSourceSyncJob",
+        "qbusiness:StopDataSourceSyncJob",
+        "qbusiness:ListDataSourceSyncJobs",
+        "qbusiness:BatchPutDocument",
+        "qbusiness:BatchDeleteDocument"
       ],
       "Resource": "*",
       "Effect": "Allow"

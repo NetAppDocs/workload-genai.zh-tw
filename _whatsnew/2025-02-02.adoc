@@ -8,7 +8,7 @@
 
 GenAI 現在支援 Amazon Nova 基礎模式。支援 Amazon Nova Micro ， Amazon Nova Lite 和 Amazon Nova Pro 。
 
-link:https://docs.netapp.com/us-en/workload-genai/requirements.html["GenAI 需求"]
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/requirements-knowledge-base.html["GenAI 需求"]
 
 
 
@@ -16,7 +16,7 @@ link:https://docs.netapp.com/us-en/workload-genai/requirements.html["GenAI 需�
 
 GenAI 現在支援在新增資料來源時，選取要納入資料來源掃描的特定檔案類型。
 
-link:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html#add-data-sources-to-the-knowledge-base["將資料來源新增至知識庫"]
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledgebase.html#add-data-sources-to-the-knowledge-base["將資料來源新增至知識庫"]
 
 
 
@@ -24,7 +24,7 @@ link:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html#add-
 
 GenAI 現在支援篩選檔案，可在新增資料來源時，依修改日期納入資料來源掃描。您可以為包含的檔案選擇修改日期範圍。
 
-link:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html#add-data-sources-to-the-knowledge-base["將資料來源新增至知識庫"]
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledgebase.html#add-data-sources-to-the-knowledge-base["將資料來源新增至知識庫"]
 
 
 
@@ -32,7 +32,7 @@ link:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html#add-
 
 GenAI 現在支援強化對知識庫查詢的回應，從影像和圖表說明以及文件文字中獲得深入見解，進而提供更豐富，更高品質的答案。GenAI 現在可以掃描 PDF 檔案中的影像檔案和影像（也稱為多模式檔案支援）。如果您選擇掃描影像或 PDF 檔案，則會將影像中的文字（包括內嵌於 PDF 文件中的影像）掃描至資料來源，而掃描結果中的洞見則會包含在知識庫查詢的回應中。
 
-link:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html#add-data-sources-to-the-knowledge-base["將資料來源新增至知識庫"]
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledgebase.html#add-data-sources-to-the-knowledge-base["將資料來源新增至知識庫"]
 
 
 
@@ -40,4 +40,4 @@ link:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html#add-
 
 GenAI 現在可以使用混合式搜尋並重新排列結果的順序，大幅提升搜尋結果的相關性和準確度。混合式搜尋結合了傳統關鍵字型搜尋的優勢，以及進階密集向量型語義搜尋技術。標準關鍵字搜尋結果會以接近的相符項目和語言差異加以擴充，以增強相關性。然後 GenAI 使用進階重新排名模型（例如 Cohere Rerank 和 Amazon Rerank ）進一步精簡這些結果，並傳回最相關的結果。這項功能適用於新建立的知識庫。
 
-link:https://docs.netapp.com/us-en/workload-genai/ai-workloads-overview.html#benefits-of-using-genai-to-create-generative-ai-applications["瞭解 GenAI 的 BlueXP  工作負載工廠"]
+link:https://docs.netapp.com/us-en/workload-genai/general/ai-workloads-overview.html#benefits-of-using-genai-to-create-generative-ai-applications["瞭解 GenAI 的 BlueXP  工作負載工廠"]

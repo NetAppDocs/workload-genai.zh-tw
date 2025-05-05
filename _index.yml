@@ -8,25 +8,33 @@ indexpage:
   - title: 開始使用
     links:
     - title: 瞭解 GenAI 的 BlueXP  工作負載工廠
-      url: ai-workloads-overview.html
-    - title: 快速入門
-      url: quick-start.html
-    - title: GenAI 需求
-      url: requirements.html
+      url: general/ai-workloads-overview.html
     - title: 部署知識庫基礎架構
-      url: deploy-infrastructure.html
-  - title: 建立知識庫
+      url: knowledge-base/deploy-infrastructure.html
+  - title: 建立 Amazon 基礎知識庫
     links:
+    - title: 快速入門以瞭解知識庫
+      url: knowledge-base/quick-start-knowledge-base.html
     - title: 建立知識庫
-      url: create-knowledgebase.html
+      url: knowledge-base/create-knowledgebase.html
     - title: 測試知識庫
-      url: test-knowledgebase.html
+      url: knowledge-base/test-knowledgebase.html
     - title: 發佈知識庫
-      url: publish-knowledgebase.html
+      url: knowledge-base/publish-knowledgebase.html
+  - title: 為 Amazon Q Business 建立連接器
+    links:
+    - title: 連接器快速入門
+      url: connector/quick-start-connector.html
+    - title: 為 Amazon Q Business 建立連接器
+      url: connector/define-connector.html
   - title: 管理 GenAI
     links:
-    - title: 管理知識庫基礎架構
-      url: manage-infrastructure.html
+    - title: 管理 GenAI 基礎架構
+      url: general/manage-infrastructure.html
+    - title: 管理知識庫
+      url: knowledge-base/manage-knowledgebase.html
+    - title: 管理連接器
+      url: connector/manage-connector.html
   - title: 部落格與社群
     links:
     - title: NetApp社群

@@ -19,50 +19,68 @@ sidebar:
     entries:
     - title: 新增功能
       url: "/whats-new.html"
-  - title: 開始使用
+  - title: 瞭解 GenAI 的 BlueXP  工作負載工廠
     entries:
     - title: 瞭解 GenAI 的 BlueXP  工作負載工廠
-      url: "/ai-workloads-overview.html"
-    - title: 快速入門
-      url: "/quick-start.html"
-    - title: GenAI 需求
-      url: "/requirements.html"
-    - title: 識別知識庫的資料來源
-      url: "/identify-data-sources.html"
-    - title: 部署知識庫基礎架構
-      url: "/deploy-infrastructure.html"
-    - title: 使用外部的 chatbot 應用程式範例
-      url: "/example-chatbot-application.html"
+      url: "/general/ai-workloads-overview.html"
     - title: NetApp GenAI 引擎的元件
-      url: "/genai-engine-instance.html"
-  - title: 使用 GenAI 建立知識庫
+      url: "/general/genai-engine-instance.html"
+  - title: 使用 GenAI 為 Amazon Bedrock 建立知識庫
     entries:
+    - title: 開始使用
+      entries:
+      - title: 快速入門
+        url: "/knowledge-base/quick-start-knowledge-base.html"
+      - title: 知識庫需求
+        url: "/knowledge-base/requirements-knowledge-base.html"
+      - title: 識別要新增至知識庫的資料來源
+        url: "/knowledge-base/identify-data-sources-knowledge-base.html"
+      - title: 部署 GenAI 基礎架構
+        url: "/knowledge-base/deploy-infrastructure.html"
     - title: 建立知識庫
-      url: "/create-knowledgebase.html"
+      url: "/knowledge-base/create-knowledgebase.html"
     - title: 測試知識庫
-      url: "/test-knowledgebase.html"
+      url: "/knowledge-base/test-knowledgebase.html"
     - title: 啟動驗證
-      url: "/activate-authentication.html"
+      url: "/knowledge-base/activate-authentication.html"
     - title: 發佈知識庫
-      url: "/publish-knowledgebase.html"
+      url: "/knowledge-base/publish-knowledgebase.html"
+    - title: 使用外部的 chatbot 應用程式範例
+      url: "/knowledge-base/example-chatbot-application.html"
     - title: 建立以 RAG 為基礎的 AI 應用程式
-      url: "/create-application.html"
+      url: "/knowledge-base/create-application.html"
     - title: 接下來您可以做什麼
-      url: "/whats-next.html"
+      url: "/knowledge-base/whats-next.html"
+  - title: 使用 GenAI 為 Amazon Q Business 建立連接器
+    entries:
+    - title: 開始使用
+      entries:
+      - title: 快速入門
+        url: "/connector/quick-start-connector.html"
+      - title: 知識庫需求
+        url: "/connector/requirements-connector.html"
+      - title: 識別要新增至知識庫的資料來源
+        url: "/connector/identify-data-sources-connector.html"
+      - title: 部署 GenAI 基礎架構
+        url: "/connector/deploy-infrastructure.html"
+    - title: 為 Amazon Q 建立 NetApp ONTAP Connector
+      url: "/connector/define-connector.html"
   - title: 管理 GenAI
     entries:
     - title: 管理 GenAI 基礎架構
-      url: "/manage-infrastructure.html"
+      url: "/general/manage-infrastructure.html"
     - title: 管理知識庫
-      url: "/manage-knowledgebase.html"
+      url: "/knowledge-base/manage-knowledgebase.html"
+    - title: 管理連接器
+      url: "/connector/manage-connector.html"
     - title: 管理資料來源
-      url: "/manage-data-source.html"
+      url: "/general/manage-data-source.html"
   - title: 知識與支援
     entries:
     - title: 註冊以取得支援
       url: "/support-registration.html"
     - title: 疑難排解
-      url: "/troubleshooting.html"
+      url: "/general/troubleshooting.html"
     - title: 取得協助
       url: "/get-help.html"
   - title: 法律聲明

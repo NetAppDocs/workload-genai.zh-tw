@@ -25,28 +25,18 @@
   <block id="e3fa845bdb32966ee960e79fc4cb6cf2" category="list-text">無需深入瞭解資料基礎架構、基礎和語言模型、 IT 管理員和開發人員就能利用 GenAI 提供的自動化功能來加速應用程式開發。資料管理員和開發人員可以輕鬆快速地建立企業知識庫、將組織的非結構化資料內嵌在其中、供泛化 AI 應用程式使用。</block>
   <block id="ce8128205284c384b430769caeb26741" category="list-text">保留內嵌於知識庫之檔案的使用者權限、以確保資料安全性與隱私權得以維持、進而提升安全性。開發應用程式（例如 chatbot ）時、只能根據使用者存取的資料、提供經過驗證的使用者答案。</block>
   <block id="3bc3038379ac11eb60388be943b76d65" category="list-text">將企業資料保密、安全地存放在 AWS 客戶帳戶內、讓您的組織資料永遠不會暴露在外部。</block>
-  <block id="2858795dda2f40fc08938e45130e6015" category="list-text">使用開放原始碼架構（例如 LangChain ）加速開發 GenAI 應用程式（例如 Q&amp;A 聊天機器人）、利用 GenAI API 來配置和管理知識庫、與知識庫聊天、以及儲存和擷取聊天記錄。</block>
   <block id="d7aa8c04a5852ad32f4df4ebc355d79b" category="list-text">透過在適用於 NetApp ONTAP 檔案系統的 FSX 上部署泛用 AI 資料基礎架構、並利用 ONTAP 功能（例如高可用度、用於本機資料保護與恢復的快照、用於災難恢復的 SnapMirror 、以及用於備份資料基礎架構的 SnapVault ）來改善資料保護與可用度。</block>
   <block id="258bfa564ea52ad2ae40702194995f18" category="list-text">利用 ONTAP 資料效率功能（例如重複資料刪除、壓縮和壓縮、資料分層和精簡配置）、降低通用 AI 資料基礎架構的整體儲存成本。</block>
   <block id="a2313dfd4d2d5baef4999beaa742689c" category="section-title">GenAI 的運作方式</block>
-  <block id="69fc349b2f7bd62d0e7765c8cc066234" category="paragraph">GenAI 使用貴組織的私有資料來輔助模型的智慧（根據訓練的資料）、針對貴組織中的使用者所提出的問題提供自訂答案。您先部署 RAG 架構所需的基礎架構、然後使用貴組織透過 Amazon bedrock 提供的資料來源和基礎模型來建立知識庫、然後將應用程式（例如 Q&amp;A 聊天機器人程式）連線至知識庫。</block>
   <block id="d70bac99beb52d5e093b391d08e80174" category="inline-image-macro">顯示 GenAI 關鍵元件、其功能及運作方式的圖表。</block>
-  <block id="ce3b45a4624ee79213529a063f3abb8c" category="paragraph"><block ref="ce3b45a4624ee79213529a063f3abb8c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ade2c068f72325046c5312c72ad3b430" category="paragraph">GenAI 以下列方式協助使用 RAG 建置泛型 AI 應用程式：</block>
-  <block id="fda814900dea98d0023eb0ecf6f36448" category="list-text">部署所需的基礎架構以擷取擴增產生（ RAG ）架構、以便與適用於 ONTAP 檔案系統和 Amazon bedrock 的 FSX 上的資料來源搭配使用。基礎架構包括用於管理資料的 NetApp GenAI Engine 執行個體、內嵌向量資料庫（ LanceDB ）、以及用於向量資料庫的 FSX for ONTAP 檔案系統上的儲存設備。</block>
-  <block id="cc56ccbbe7a4a4f1d99e1d08267a272b" category="list-text">協助將資料來源連接至 Amazon bedrock 提供的嵌入資料來源及擷取使用者查詢回應的內嵌資料和語言模型。資料來源及模型及其組態會顯示為適用於 ONTAP 知識庫的 FSX 。</block>
-  <block id="2ff04f7767fbbbb717b2d50acb89245d" category="list-text">將來源資料擷取到知識庫中、將來源檔案內嵌在 SMB 共用上、並將 NFS 匯出至 ONTAP 檔案系統的 FSX 、同時儲存 SMB 共用中檔案的檔案權限。</block>
-  <block id="80a4d47d289b6794b7af32bf0403d817" category="list-text">根據知識庫中的內容、自動建立對話入門問題。</block>
-  <block id="d115eba24b3d1be73af7f0952b82dc13" category="list-text">提供聊天模擬器、讓資料管理員測試與知識庫的聊天。</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
-  <block id="ca4fec9e2b2e873ba73dde822ed0fd02" category="paragraph">不過、您必須支付所部署的 AWS 資源、才能支援泛用 AI 基礎架構。例如、您將為 Amazon bedrock AI 服務、 ONTAP 檔案系統和儲存容量的 FSX 、以及 GenAI 引擎 EC2 執行個體支付 AWS 費用。</block>
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">授權</block>
   <block id="0da805b7cc0727848a84e995ab36cd76" category="doc">建立知識庫</block>
   <block id="ede259c54718066f429204cb187335ac" category="paragraph">您可以使用知識庫、而無需整合組織的資料來源。在這種情況下、與知識庫整合的應用程式只會提供來自網際網路上公開資訊的結果。這稱為 _public 模式 _ 整合。</block>
   <block id="9c5cf370721bfae38201d8aeb52e4022" category="paragraph">在大多數情況下、您會想要將組織的資料來源整合到知識庫中。這稱為 _ 企業模式 _ 整合、因為它能提供企業的知識。</block>
   <block id="3bd4cddbc7a98f5c9632a455eca8c27e" category="section-title">建立及設定知識庫</block>
   <block id="646df03c5fddafc8e9c4ed5aa7036edf" category="paragraph">知識庫定義了您想要用來建立知識庫的特性、例如基礎 AI 模型和內嵌格式。</block>
-  <block id="5b20d7e96740200c428376cbb5e7fdb4" category="list-text">從「知識庫」標籤中、選取 * 新增知識庫 * 。</block>
   <block id="53bdd4ba55043d3b20fafbaeddced95e" category="list-text">* 名稱 * ：輸入您要用於知識庫的名稱。</block>
   <block id="867a64928002194654eea40509536879" category="list-text">* 說明 * ：輸入知識庫的詳細說明。</block>
   <block id="0edab7909500c21f42341384982d7dab" category="list-text">Titan 嵌入式 G1 - 文字</block>
@@ -67,12 +57,9 @@
   <block id="8817d70d4163473468fa1b2b6e498321" category="paragraph">資料來源開始內嵌到您的知識庫中。資料來源完全內嵌時、狀態會從「內嵌」變更為「內嵌」。</block>
   <block id="b9605cf748e4b8e1c97d786258a0be40" category="summary">您必須先在環境中部署 RAG 架構的基礎架構、才能為組織建置適用於 ONTAP 知識庫和應用程式的 FSX 。主要基礎架構元件為 Amazon 基礎架構 AI 服務、 NetApp GenAI 引擎的虛擬機器執行個體、以及 ONTAP 檔案系統的 FSX 。</block>
   <block id="e379b913896cf9bdd4e2d6717212215a" category="doc">部署 GenAI 基礎架構</block>
-  <block id="0cd805094b5dffd702d8e0faa10c927c" category="paragraph">您必須先在環境中部署適用於 RAG 架構的 GenAI 基礎架構、才能為組織建置適用於 ONTAP 知識庫和應用程式的 FSX 。主要基礎架構元件為 Amazon 基礎架構服務、 NetApp GenAI 引擎的虛擬機器執行個體、以及 ONTAP 檔案系統的 FSX 。</block>
-  <block id="acc7a3fda0820287411e8fb0e8b801f2" category="paragraph">部署的基礎架構可支援多個知識庫和聊天機器人程式、因此您通常只需要執行一次此工作。</block>
   <block id="352b67da62e25a1a8f45636930053f08" category="section-title">基礎架構詳細資料</block>
   <block id="8428644910b49210b6312a1abb433a99" category="inline-link">檢視支援區域的清單</block>
   <block id="e295768e822c8bd83198042fbb470661" category="paragraph">您的 GenAI 部署必須位於啟用 Amazon 基礎的 AWS 區域。<block ref="25581c78bc5f676a9b9f4743abf4f06f" category="inline-link-rx"></block></block>
-  <block id="0d5fdb6bfaa1c5a89c4128c1a8bb5b6c" category="paragraph">部署包含下列元件。</block>
   <block id="12c3d12e41194b32453a96f3a7e15e48" category="list-text">Amazon bedrock 服務</block>
   <block id="c79d103149669e7aa24ba1b487cccd34" category="list-text">Amazon bedrock 是一項完全託管的服務、可讓您透過單一 API 使用來自頂尖 AI 公司的基礎模型（ FMS ）。它也提供您建置安全泛用 AI 應用程式所需的功能。</block>
   <block id="8013da98e1db7396729f9e939983f21d" category="inline-link">深入瞭解 Amazon bedrock</block>
@@ -85,11 +72,7 @@
   <block id="cd4ca8fe4f8028f11146f93e0f114879" category="paragraph">您將整合至知識庫的資料來源可以位於 ONTAP 檔案系統的相同 FSX 或不同系統上。</block>
   <block id="e9f04a38bc1df3695df7675463dfe7d2" category="paragraph">NetApp GenAI 引擎會監控並與這兩個磁碟區互動。</block>
   <block id="cc573650532041ff5d41735ee141eab8" category="paragraph">下圖顯示 GenAI 基礎架構。編號 1 、 2 和 3 的元件會在此程序中部署。開始部署之前、必須先具備其他元素。</block>
-  <block id="ce783b25723548b58b44d3dde715476f" category="inline-image-macro">AI chatbot 元件的圖表。</block>
-  <block id="b7cef2c498d21a11e9176de11360774c" category="paragraph"><block ref="b7cef2c498d21a11e9176de11360774c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">開始之前</block>
-  <block id="567dcfd6302e5511c1b546a4df21a679" category="inline-link-macro">需求</block>
-  <block id="48b1a64ea0f002f28680bb1b8a8c87b2" category="paragraph">開始此程序之前、請確定您的環境符合 <block ref="b537f86d93b89f494a26572d1a60f4ef" category="inline-link-macro-rx"></block> 要求。</block>
   <block id="4d7ea1af041cca43906c5e490c0c1820" category="list-text">在 AI 工作負載方塊中、選取 * 部署與管理 * 。</block>
   <block id="6bb39c2a8e12d8e43ba94f5c10b515e3" category="list-text">檢閱基礎架構圖表、然後選取 * 下一步 * 。</block>
   <block id="ea04a0c1437f4ebc45564d8545775b59" category="list-text">完成「 * AWS 設定 * 」區段中的項目：</block>
@@ -103,7 +86,6 @@
   <block id="8f3d503d34aa6fe6a66b841b0bdd2996" category="list-text">網路與私有端點一起設定。</block>
   <block id="fc4ab898b1959c931605be5dfe62a71d" category="list-text">隨即建立 IAM 角色、執行個體設定檔和安全性群組。</block>
   <block id="216a480d552bd412d15e51cde6cbbf7a" category="list-text">已部署 GenAI 引擎的虛擬機器執行個體。</block>
-  <block id="44f33186e2b6baa4a697e5604c0a3863" category="doc">NetApp GenAI 引擎的元件</block>
   <block id="b7afd5ecab3ac597cbe300dd5827c445" category="list-text">EC2 執行個體類型</block>
   <block id="b592e89ca5722aab8bf77ae181e9fc0d" category="list-text">m5.large</block>
   <block id="759d9f0fdbf1b3fe124b8de48be0485b" category="list-text">IAM角色</block>
@@ -190,11 +172,9 @@
   <block id="a07dd9fe7465f7ec7d15135a3cfab3a4" category="paragraph">您可以將多個資料來源新增至每個知識庫、但這些資料來源都必須位於可從 AWS 帳戶存取的 ONTAP 檔案系統的 FSX 上。</block>
   <block id="ffbef7cfe7a8524b59851c8a1389ebcc" category="paragraph">每個資料來源的檔案大小上限為 50 MB 。</block>
   <block id="c84d4278eb32c7a089aea86ebf95ad39" category="section-title">支援的傳輸協定</block>
-  <block id="430170fe80b2fc2e8745819f3bf64b55" category="paragraph">知識庫可支援使用 NFS 或 SMB/CIFS 通訊協定之磁碟區的資料。選取使用 SMB 傳輸協定儲存的檔案時、您必須輸入 Active Directory 資訊、知識庫才能存取這些磁碟區上的檔案。其中包括 Active Directory 網域、 IP 位址、使用者名稱和密碼。</block>
   <block id="0c303dcbadd43e7fb595ff47ae13d713" category="paragraph">在透過 SMB 存取的共用（檔案或目錄）上儲存資料來源時、資料只能由具有存取該共用權限的聊天機器人使用者或群組存取。啟用此「權限感知功能」時、 AI 系統會將驗證 0 中的使用者電子郵件與允許檢視或使用 SMB 共用上檔案的使用者進行比較。chatbot 將根據內嵌檔案的使用者權限提供答案。</block>
   <block id="ccb61f3b531c53a6536d4968042eea99" category="paragraph">例如、如果您將 10 個檔案（資料來源）整合到知識庫、其中 2 個檔案是包含受限資訊的人力資源檔案、則只有通過驗證以存取這 2 個檔案的聊天機器人程式使用者、才會收到來自聊天機器人程式的回應、其中包含來自這些檔案的資料。</block>
   <block id="939bf2b00dbe77d4a65f4d265a755136" category="section-title">支援的資料來源檔案格式</block>
-  <block id="4a2c59aee6db61ec236539acdbc3b3e8" category="paragraph">目前支援下列資料來源檔案格式。</block>
   <block id="1bd7f72decec9fb5b51a58447b152d38" category="cell">檔案格式</block>
   <block id="63e4e92bb7d207ca577b11c07f827279" category="cell">擴充</block>
   <block id="f39a0720a929097afa9db4505cdf9669" category="cell">純文字</block>
@@ -223,12 +203,9 @@
   <block id="a76746a54be32982bbd6b113b4d88d95" category="summary">使用適用於 ONTAP 檔案系統的 FSX 上的資料來源建立知識庫之後、您可以檢視資料來源詳細資料、更新或變更資料來源內容、編輯資料來源設定、或刪除資料來源。</block>
   <block id="a184e20ed5e6a5b8da09e0b40c163e0c" category="doc">管理資料來源</block>
   <block id="185887c3ad19744e76bc5a84165858d0" category="section-title">檢視資料來源的相關資訊</block>
-  <block id="f6060e0bb20c0eff7193a80ac27e3036" category="paragraph">您可以檢視資料來源內容的相關資訊、也可以使用知識庫檢視其內嵌狀態。由於資料來源是知識庫的一部分、因此您必須先開啟知識庫、才能檢視資料來源詳細資料。</block>
-  <block id="2fb136b28c086b6b7bfc783f6e18f23b" category="list-text">選取資料來源所在的知識庫、然後選取 <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> 並選取 * 管理知識庫 * 。</block>
   <block id="b5d487e1e7e0dc1f35f129a112481d93" category="paragraph">頁面底部會列出屬於此知識庫的資料來源。</block>
   <block id="8a68fc9773461f136961ee1d6821c3c8" category="inline-image-macro">向下箭頭按鈕</block>
   <block id="24908e355d451004c7525900e1599a1f" category="list-text">選取以檢視每個資料來源的詳細資訊、例如 ONTAP 檔案系統的 FSX 、磁碟區和資料來源所在的路徑、以展開每一列 <block ref="0722c4ff5aff83b42b3212ce6356e926" category="inline-image-macro-rx" type="image"></block> 。</block>
-  <block id="e251df112fcfd5ceb227487e3e407e23" category="paragraph">同時也會列出內嵌資訊、以及該資料來源目前是否內嵌於知識庫中。</block>
   <block id="437e83696ee10276f1829979bc2001ee" category="section-title">編輯資料來源設定</block>
   <block id="d2e5a465dda010b6df10e906f7ceebf7" category="list-text">從知識庫庫存頁面中、選取資料來源所在的知識庫、然後選取 <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> 並選取 * 管理知識庫 * 。</block>
   <block id="16a3994ccc4796acb1b8e40635717ec3" category="list-text">在您要編輯的資料來源列中、選取 <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> 並選取 * 編輯資料來源 * 。</block>
@@ -316,20 +293,15 @@
   <block id="2cb94eb0648b9f93f300ea0aff833f95" category="paragraph">若要深入瞭解 API 端點、請移至<block ref="c0a9aa55ed57e2e15b2d20baa6a6e023" category="inline-link-rx"></block> 、然後選取「 * AI &gt; 外部 * 」。</block>
   <block id="404b6a1003edac169b0788bb3fe37d9f" category="paragraph">您必須先從驗證提供者取得使用者權杖、才能使用這些端點。</block>
   <block id="a0acd37c2eea374fd571fd7e5710e3ab" category="summary">開始使用貴組織在 Amazon FSX for NetApp ONTAP 檔案系統上的資料來建立知識庫。例如 chatbot 等應用程式將存取此知識庫、為終端使用者提供以組織為中心的回應。</block>
-  <block id="35f6f80cfc19636641dd85bbae19edee" category="doc">GenAI 快速入門</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三</block>
   <block id="ad6f5ec13ed51e48bce763e25a9c69ce" category="inline-link-macro">部署知識庫基礎架構</block>
-  <block id="41c27d3fbdf0cdc6aab23df489fe4c94" category="paragraph">啟動基礎架構部署精靈、在 AWS 環境中部署知識庫基礎架構。此程序會部署 NetApp GenAI 引擎的 EC2 執行個體、以及 ONTAP 檔案系統的 FSX 上的磁碟區、以包含 NetApp AI 引擎資料庫。該 Volume 用於儲存知識庫所使用的向量資料庫。</block>
   <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">下一步</block>
   <block id="8d126cd06a65751189e95006c972e173" category="paragraph">您現在可以建立知識庫、為終端使用者提供以組織為中心的回應。</block>
   <block id="43b842fd441ce1ce92d22fb0ca25a507" category="doc">GenAI 需求</block>
   <block id="97911b3c54a4e826b34c1f79026316c5" category="list-text">AWS 認證與權限</block>
-  <block id="b9696d94476cf594b0d0a85c749985c8" category="paragraph">目前不支援 _ 基本 _ 模式和 _ 讀取 _ 模式權限。</block>
   <block id="6acb98cae81ff4c3d668ee23eaf475ea" category="paragraph">設定認證時、如下所示選取權限、可讓您完全存取以管理 ONTAP 檔案系統的 FSX 、並部署及管理知識庫和 chatbot 所需的 GenAI EC2 執行個體和其他 AWS 資源。</block>
-  <block id="90971299f3c483d8dff23334303ec501" category="inline-image-macro">顯示完整管理 AI 資源權限設定的螢幕擷取畫面。</block>
-  <block id="b0508f9b3b98a787c9ffda5b7aec828c" category="paragraph"><block ref="b0508f9b3b98a787c9ffda5b7aec828c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="75925d950c87a7dc75f300f3d330e728" category="list-text">Amazon 基礎架構可讓您使用基礎模型、並提供建置泛用 AI 應用程式的功能。</block>
   <block id="42100945533643a01574ce6867f93337" category="inline-link">AWS 文件：設定 Amazon bedrock</block>
   <block id="c28dc65deb038c89921c82f97349e6b0" category="list-text"><block ref="c28dc65deb038c89921c82f97349e6b0" category="inline-link-rx"></block></block>
@@ -338,14 +310,7 @@
   <block id="e9d7e3888c0ecac6d332909618bf2a62" category="list-text">內嵌模型</block>
   <block id="52e64b029bc109efaa2d9ddf8bf95697" category="list-text">建立知識庫之前、您必須先啟用您計畫使用的內嵌模型。支援下列內嵌模型：</block>
   <block id="cffe100a2fafd4ed6df5c517d3a0c436" category="list-text">聊天模式</block>
-  <block id="91862a732427fcc9b0f3f7c7e8fd3ef1" category="list-text">Claude 3.5 Sonnet</block>
-  <block id="1ae4bf76ece2339f94382079fec8ea1b" category="list-text">Claude 3 Opus</block>
-  <block id="5cb902fc92ae2100fc949c459b29f2e0" category="list-text">Claude 3 Haiku</block>
-  <block id="dfd281025f82519d079a3bf3bfbabad2" category="list-text">Claude 3 Sonnet</block>
-  <block id="48a6d42b28f10b9387da7c0c33136030" category="list-text">Claude 2.1</block>
-  <block id="5e1e83b3913f32ce101decea051b2e89" category="list-text">Claude 2.0</block>
   <block id="c16810aa96ec44a060863610996db3f6" category="list-text">您至少需要一個適用於 ONTAP 檔案系統的 FSX ：</block>
-  <block id="ae0e1b2daa525e1e1109bf5c13627d7d" category="list-text">NetApp GenAI 引擎將使用一個檔案系統來儲存知識庫所使用的向量資料庫。</block>
   <block id="c076421513a5b28b674cdd0d818b4476" category="paragraph">此適用於 ONTAP 檔案系統的 FSX 必須使用 FlexVol Volume 。不支援支援的支援。FlexGroup</block>
   <block id="1f0befb829af39db4a0cbb499215915f" category="list-text">一或多個檔案系統將包含您要整合至知識庫的資料來源。</block>
   <block id="b56c72064b6e564dd0f3f703eff43db3" category="paragraph">一個適用於 ONTAP 檔案系統的 FSX 可同時用於上述兩種用途、或者您可以將多個 FSX 用於 ONTAP 檔案系統。</block>
@@ -419,14 +384,11 @@
   <block id="1995377d356d639f1a2e87a282280beb" category="sidebar">將適用於 ONTAP 檔案系統的 FSX 資料與 MLOps 平台和 GenAI 基礎模型整合、以使用組織資料建立功能性的聊天機器人程式。</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">快速入門</block>
-  <block id="3c26a99b89e3c7e6133ab9da9015f277" category="sidebar">建立知識庫</block>
   <block id="d6fd7e92747512219eb7bcf3b47fcaf9" category="sidebar">發佈知識庫</block>
   <block id="f2f80ac70883a1ae6f423f6eda663371" category="sidebar">管理 GenAI</block>
-  <block id="1e2d1b975cb59eff959e606ba60cffac" category="sidebar">管理知識庫基礎架構</block>
   <block id="c90fe540972fc3cdcef54526cc8386e2" category="sidebar">GenAI 文件</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">版本資訊</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
-  <block id="acbf2b120f060c765cc5fbfef7779840" category="sidebar">識別知識庫的資料來源</block>
   <block id="b032727d9e00be7e59aefec94a0972c2" category="sidebar">啟動驗證</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識與支援</block>
   <block id="a46c34e822b00eb49125943300225ec1" category="summary">在您建立知識庫並測試自己的聊天機器人程式之後、您就可以開始設定應用程式、讓使用者能夠查詢聊天機器人程式。</block>
@@ -438,7 +400,6 @@
   <block id="c83d7c23906c063b64dd22d30483cb24" category="list-text">Amazon bedrock 已設定為使用前置字元的記錄群組、將記錄傳送至 Amazon CloudWatch 記錄檔<block ref="26245dda4fa653114e9a41956171489d" prefix=" " category="inline-code"></block>。</block>
   <block id="6fbe5ae14d71eb3abafcfce8f7fe977a" category="inline-link">BlueXP 帳戶 ID</block>
   <block id="af270465b477b731bafe1e4859956cc4" category="list-text">GenAI 引擎已設定為使用名稱為的記錄群組、將記錄傳送至 Amazon CloudWatch 記錄檔<block ref="267ed14c989ee7da1da6b5683a1ba205" prefix=" " category="inline-code"></block>、其中<block ref="44014fe9a7dd0d34b59279b9206b84b3" prefix=" " category="inline-code"></block> 是<block ref="bffdd6286177ca86f99ccefe410268a2" category="inline-link-rx"></block> 目前使用者的。</block>
-  <block id="f48c3e82e3f3b9cc782fe1277e362ec5" category="paragraph">您將需要 AWS 認證來部署 AWS 基礎架構、部署並探索 ONTAP 檔案系統的 FSX 、您想要整合到知識庫中的資料來源清單、存取 Amazon bedrock AI 服務等。</block>
   <block id="691e71734464aaf43017f5b033e54559" category="section-title">2024 年 8 月 4 日</block>
   <block id="ec7827c2237ae7b863c9ba93b519cbc1" category="section-title">Amazon CloudWatch 記錄整合</block>
   <block id="64c1dd8cb5f86710c3293cc9807760fb" category="paragraph">現在、泛用 AI 工作負載已與 Amazon CloudWatch 記錄整合、可讓您監控泛用 AI 工作負載記錄檔。</block>
@@ -478,7 +439,6 @@
   <block id="b651dafbe972dff3ef00c60a522c2c08" category="paragraph">如果您啟動交談啟動器、預設會選取「自動模式」。只有在您將資料來源新增至知識庫之後、才能啟用「手動模式」。<block ref="787b3d64d417e723feebaf5fa5dbfeee" category="inline-link-macro-rx"></block>。</block>
   <block id="ced63c567878ed01730fce043c8ade96" category="inline-link">建立快照原則</block>
   <block id="ad36efe6c620944e32785812d09accd6" category="paragraph">如果您需要的快照原則不存在、您可以<block ref="7546e5b5141e2979fa53ccc7106931ca" category="inline-link-rx"></block>在包含該 Volume 的儲存 VM 上執行。</block>
-  <block id="d2efa843fffdf7f0b1400f4edeb08081" category="paragraph">您可以編輯已整合在知識庫中的資料來源相關資訊。將資料來源新增至知識庫之後、大部分的資訊都會修正、但您可以變更區塊定義和組態、以及權限認知（在資料來源磁碟區上使用 SMB 傳輸協定時）。</block>
   <block id="46f71814ee1d2e5bbe062c91635739cf" category="list-text">在「編輯資料來源」頁面中、選取<block ref="0722c4ff5aff83b42b3212ce6356e926" category="inline-image-macro-rx" type="image"></block>以展開區塊定義列。</block>
   <block id="c9ee341e3341c054d76e9a00e2455883" category="list-text">更新區塊策略和組態的設定、以及權限認知（ SMB 磁碟區）、然後選取 * 儲存 * 。</block>
   <block id="f3ee02a23f65c24a5b66f40deaa52796" category="list-text">基礎架構設定</block>
@@ -545,22 +505,14 @@
   <block id="f77361b272ce81d8275727f7b1a756a8" category="list-text">選擇*還原*。</block>
   <block id="75adfeedf06d70e0bc627133f85cd211" category="section-title">將資料來源與知識庫同步</block>
   <block id="44736bad98446163ecd5077653cbd105" category="paragraph">資料來源會每天自動與相關知識庫同步一次、以便在聊天機器人程式中反映任何資料來源變更。如果您變更任何資料來源、而且想要立即同步處理資料、您可以執行隨需同步。</block>
-  <block id="f8016d0e0375ce671e71803692cf105c" category="paragraph"><block ref="f8016d0e0375ce671e71803692cf105c" category="inline-link-rx"></block></block>
-  <block id="340b5c4d996cad6cf6d27d13faf94e89" category="paragraph"><block ref="340b5c4d996cad6cf6d27d13faf94e89" category="inline-link-rx"></block></block>
-  <block id="f951fa0f2608d186cd1f0bd8889ac232" category="paragraph"><block ref="f951fa0f2608d186cd1f0bd8889ac232" category="inline-link-rx"></block></block>
-  <block id="8afd34c2a29e7b6286f3ed0bf9e20c22" category="paragraph"><block ref="8afd34c2a29e7b6286f3ed0bf9e20c22" category="inline-link-rx"></block></block>
   <block id="4936442e55cb8f837f9616ca6aaf1e92" category="doc">快照與還原支援知識庫磁碟區</block>
-  <block id="ef3d62d3a83e208fec16cf94a1c9ef8b" category="paragraph">資料來源會每天自動與知識庫同步一次、以便在聊天機器人程式中反映任何資料來源變更。如果您對資料來源進行變更，並且想要立即同步處理資料，您可以 <block ref="a5f82761b74f2896160929ccd4ead00e" category="inline-link-macro-rx"></block>。</block>
-  <block id="3bd082f2a7c2961a682116b6ed9f43fc" category="sidebar">使用 GenAI 建立知識庫</block>
   <block id="17e908b1a02b6ec45f4e125877322d0f" category="doc">使用資料欄遮罩個人識別資訊</block>
   <block id="0f21cd7bd10e747bca7894a609acc04b" category="paragraph">泛用型 AI 工作負載採用 BlueXP  分類技術、引進資料 guardrails 功能。資料安全欄功能可識別及遮罩個人識別資訊（ PII ）、協助您維持法規遵循、並強化敏感組織資料的安全性。</block>
-  <block id="8137174f639d391921dfeb8ca6d792d1" category="paragraph"><block ref="8137174f639d391921dfeb8ca6d792d1" category="inline-link-macro-rx"></block></block>
   <block id="a686d5fa6b6925450f1b7fa2b4245d28" category="inline-link-macro">瞭解 BlueXP 分類</block>
   <block id="384713a8a1d5a2dd365da2851c50ad93" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block></block>
   <block id="ee538d8e0203b8c3e9bdb95ebee1162c" category="paragraph">知識庫有兩種資料整合模式： _ 公開模式 _ 和 _ 企業模式 _ 。</block>
   <block id="3b3458714be1e5c3f76dd200e4227588" category="list-text">公共模式</block>
   <block id="ab6bcff4b8fb91fe0c83c8ef83da1c6e" category="list-text">企業模式</block>
-  <block id="e168133413009827e06cf1b52bf82d2e" category="paragraph">貴組織的資料來源可能包含私人身分識別資訊（ PII ）。為了保護這項敏感資訊、您可以在建立和設定知識庫時啟用 _data guardardrails 。由 BlueXP  分類技術支援的資料欄可識別及遮罩 PII 、使其無法存取且無法擷取。</block>
   <block id="2abf45f9ff5a74918b97267cd4e59d6a" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block>。</block>
   <block id="1be907baab24daef236be08a55d381ce" category="inline-link-macro">瞭解採用 BlueXP  分類技術的資料欄</block>
   <block id="239980b6c377cd208cd4875dd11871a7" category="list-text">* 資料欄 * ：選擇是否要啟用或停用資料欄。<block ref="705e589dc60832aba1b9593eb1d26a9a" category="inline-link-macro-rx"></block>。</block>
@@ -579,16 +531,8 @@
   <block id="082d99c5d452c4b44edd8ec50926da9a" category="paragraph">NetApp 工作負載工廠 GenAI 範例應用程式可讓您在網路型的聊天應用程式中直接與 IT 互動，從已發佈的 NetApp 工作負載工廠知識庫測試驗證和擷取。</block>
   <block id="dcafe9cce796ce855e87b270f0a5af59" category="inline-link-macro">主控台體驗</block>
   <block id="eb788a90862825cc147ed3f85612a8cc" category="list-text">使用其中一項登入工作負載工廠<block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>。</block>
-  <block id="ba069bdc38a1ce5022a1e6d8b69882b8" category="summary">GenAI 的工作負載工廠可讓您將適用於 NetApp ONTAP 檔案系統的 Amazon FSX 與 GenAI 基礎模型整合。這可為您提供高效能儲存設備、並針對 AI 資料集提供豐富的保護、安全性和成本最佳化功能。</block>
   <block id="70cb57a8d5d75d8762d6b082d319dec7" category="inline-link">工作負載原廠總覽</block>
   <block id="41dde101808f5228034390c3766fcad7" category="paragraph">如需工作負載工廠的詳細資訊，請<block ref="5b162ed7e5df7e2d72a6505743e2b555" category="inline-link-rx"></block>參閱。</block>
-  <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">使用工作負載工廠的工具</block>
-  <block id="b5a374f3f5b31b5057808689d26fe2c4" category="paragraph">您可以搭配下列工具使用 BlueXP  工作負載工廠：</block>
-  <block id="becd2c66a018e594b787abb509da2fcb" category="list-text">* 工作負載原廠主控台 * ：工作負載原廠主控台提供視覺化介面，可讓您全面檢視應用程式和專案。</block>
-  <block id="590410b3a112ba2f531f9aae44e29ed1" category="list-text">* BlueXP  console* ： BlueXP  主控台提供混合式介面體驗，讓您可以將 BlueXP  工作負載工廠與其他 BlueXP  服務一起使用。</block>
-  <block id="3994718f6fdd9c0fd3f50884c4c05615" category="list-text">* REST API* ：工作負載原廠 REST API 可讓您部署及管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX 。</block>
-  <block id="870c2713113a9cc14410aec5475c932f" category="list-text">* CloudForgi38* ： AWS CloudForgation 程式碼可讓您執行工作負載原廠主控台中定義的動作，以建構，配置及管理 AWS 帳戶中 CloudForgation 堆疊中的 AWS 和第三方資源。</block>
-  <block id="531a2642b7c023ef8b4ec401d5c39c4b" category="list-text">* Terraform BlueXP  工作負載工廠供應商 * ： Terraform 可讓您建置及管理在工作負載工廠主控台產生的基礎架構工作流程。</block>
   <block id="eb2d717e4f7003bece96a54d9bfcab8c" category="paragraph">使用工作負載工廠的 GenAI 功能不需花費任何成本。</block>
   <block id="fe25da415465509a9a69d606dab870c0" category="paragraph">NetApp 不需要特殊授權即可使用工作負載工廠的 AI 功能。</block>
   <block id="f6a347d6bbcc84735a944fdcd256092f" category="summary">在您部署 AI 基礎架構，並從適用於 ONTAP 資料存放區的 FSX 中找出要整合到知識庫的資料來源之後，您就可以使用工作負載工廠來建置知識庫。在本步驟中、您也將定義 AI 特性、並建立對話前人。</block>
@@ -606,7 +550,6 @@
   <block id="894106a56db6962222de989043e29e02" category="summary">NetApp 以多種方式支援工作負載工廠。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
   <block id="e703cd6c7dd517a92f3648a2a1305e15" category="list-text">從工作負載原廠導覽功能表中，選取 * AI * 。</block>
   <block id="02c24f1607a88a7b66de312463a92ee0" category="paragraph">如果您不再需要為一或多個聊天機器人程式部署的聊天機器人程式基礎架構，您可以將其從工作負載工廠移除。</block>
-  <block id="e156182d12afe45e03e8d3deb27ba670" category="paragraph">此作業只會從工作負載工廠移除 AI 基礎架構的連結，並不會從 AWS 移除所有元件。您需要從 AWS 手動刪除下列基礎架構元件：</block>
   <block id="62daa906a9333be93a5e975044f666a1" category="paragraph">chatbot 基礎架構元件會從工作負載工廠移除。</block>
   <block id="86dbd1b84518abb5c7347546b8844b7e" category="paragraph">如果您不再需要知識庫、可以將其刪除。當您刪除知識庫時，知識庫會從工作負載原廠移除，並刪除內含知識庫的磁碟區。任何使用知識庫的應用程式或聊天機器人程式都將停止運作。刪除知識庫是不可還原的。</block>
   <block id="22f6a017871820df71fb38c6218efc2f" category="paragraph">知識庫會從工作負載工廠移除，並刪除其相關的磁碟區。</block>
@@ -618,17 +561,13 @@
   <block id="113933a0a6b3eb57d22f707e6384bd49" category="paragraph">您需要<block ref="5eb9de2715b74ed434f03d8a9fef9b70" category="inline-link-rx"></block>使用其中一項登入<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block>。</block>
   <block id="7c42a251218f29f59dd7dbf0987115c8" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>設定您的環境以符合 GenAI 需求</block>
   <block id="fca2fd00582f9c7c4a5a7f66db5c76d7" category="inline-link-macro">深入瞭解 GenAI 需求</block>
-  <block id="0efa8e5eec015c7557fa0d66656108d5" category="paragraph"><block ref="048bf8a63d18514c61565bf7fbdd1a56" category="inline-link-macro-rx"></block>。</block>
   <block id="13a3df270bbff43d6e9a3cda00e93bf6" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>識別包含資料來源的 ONTAP 檔案系統的 FSX</block>
   <block id="21d5bccbbe925613c0af5324543c58b1" category="inline-link-macro">瞭解如何識別資料來源</block>
-  <block id="70d15316e3e767964ed59c8ffa7502da" category="paragraph"><block ref="7388636e3703309ce48a47f5a2c06fbc" category="inline-link-macro-rx"></block>。</block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">四</block>
-  <block id="67544fe024b8f9a36d65dad6756df3ae" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block>部署知識庫基礎架構</block>
   <block id="20ec4ab4fcf35b65157df141218adeb4" category="inline-link-macro">瞭解如何部署知識庫基礎架構</block>
   <block id="821dd0baa6265d27edc6fde0f7f8a2a7" category="paragraph"><block ref="cf103609479325827138f1030380ee71" category="inline-link-macro-rx"></block>。</block>
   <block id="7da236f1583acd597958e11defdd0aed" category="summary">在您建置知識庫之前，請先確定工作負載工廠和 AWS 已正確設定。這包括擁有 AWS 登入認證、部署的 ONTAP 檔案系統 FSX 、其中包含您想要整合至知識庫的資料來源、存取 Amazon bedrock AI 服務等。</block>
   <block id="7881e5952d93ca1a1396ec11c08fa645" category="list-text">工作負載工廠登入與帳戶</block>
-  <block id="c3c0f7069bfe59c5a67dd6f1fd5d2301" category="list-text">您需要使用自動化權限將 AWS 認證新增至工作負載工廠，這表示您將在 GenAI 的工作負載工廠中使用 _AIL_ 模式。</block>
   <block id="5145374f219e1c177ab5588a5344aa6e" category="inline-link">瞭解如何將 AWS 認證新增至工作負載工廠</block>
   <block id="ced1a4827b1ea3c1da0273c3d73fdd46" category="paragraph"><block ref="ced1a4827b1ea3c1da0273c3d73fdd46" category="inline-link-rx"></block></block>
   <block id="056634bec4a153903ebb9b769277f4d7" category="summary">您必須先將 NetApp 支援網站帳戶新增至工作負載工廠，然後註冊取得支援，才能使用 NetApp 技術支援開啟支援案例。</block>
@@ -641,7 +580,6 @@
   <block id="f8a21101d47aa852f29a4be35904736e" category="doc">從快照複製知識庫</block>
   <block id="c711d2f72cc16ad2c0919ebe70292834" category="paragraph">GenAI 的 BlueXP  工作負載工廠現在支援從快照複製知識庫。這可快速恢復知識庫，並利用現有資料來源建立新的知識庫，有助於資料恢復與開發。</block>
   <block id="53ea9e78bbaa3e1c3ead030a954216c8" category="inline-link-macro">複製知識庫</block>
-  <block id="23899d33da818933cc59017a222d3f1f" category="paragraph"><block ref="23899d33da818933cc59017a222d3f1f" category="inline-link-macro-rx"></block></block>
   <block id="aadb8a2a44b75c1333f5a52c2ceb1516" category="section-title">內部部署 ONTAP 叢集探索與複寫</block>
   <block id="490a30e9496a9d55f2cfdb934812658b" category="paragraph">探索內部部署的 ONTAP 叢集資料，並將其複寫至適用於 ONTAP 檔案系統的 FSX ，以便用於豐富 AI 知識庫。所有內部部署探索和複寫工作流程都可以從儲存設備詳細目錄中的全新 * 內部部署 ONTAP （ * ）標籤中進行。</block>
   <block id="c6f905e067bdaa7ba33a58a907e59477" category="inline-link-macro">探索內部部署 ONTAP 的叢集</block>
@@ -649,8 +587,6 @@
   <block id="b83113ab8d9d4c69dfb32e9034617513" category="summary">BlueXP  Workload Factory for GenAI 可讓您將適用於 NetApp ONTAP 檔案系統的 Amazon FSX 與 GenAI 基礎模型整合。這可為您提供高效能儲存設備、並針對 AI 資料集提供豐富的保護、安全性和成本最佳化功能。</block>
   <block id="77c129bd3271a24d7bdf27f4904c52f4" category="doc">瞭解 GenAI 的 BlueXP  工作負載工廠</block>
   <block id="766c4de0717e832db67cb7e35ee5df4b" category="section-title">什麼是 GenAI 的 BlueXP  工作負載工廠？</block>
-  <block id="847fc7565e14d8fa93f26cd789e29cb5" category="paragraph">BlueXP  Workload Factory for GenAI 可讓您在 Amazon FSX for NetApp ONTAP 上使用企業資料來源，搭配泛用 AI 應用程式。利用擷取螺旋產生（ RAG ）架構、您可以將資料來源快速連線至 Amazon 基礎模型、以開發採用 AI 技術的泛用應用程式、例如虛擬助理、問答聊天機器人程式、文件摘要、內容建立等</block>
-  <block id="586d1c82027100a85b2c840e10585fd4" category="paragraph">適用於 GenAI 的 BlueXP  工作負載工廠，利用擷取擴增產生（ RAG ）來簡化部署基礎架構所需的程序，以建置泛用 AI 應用程式。具體而言、 GenAI 提供下列優點：</block>
   <block id="daadd89cd1fba3fd8665e4d598faa29e" category="section-title">GenAI 的 BlueXP  工作負載工廠如何協助建置泛用 AI 應用程式</block>
   <block id="6849617ada590bcd67ec5c42f527dbca" category="paragraph">您需要輸入 AWS 認證資料，然後選取適用於 ONTAP 檔案系統的 FSX ，以部署擷取擴增產生（ RAG ）基礎架構。</block>
   <block id="29c02ba7cbd3c64fafa4c7eab2de837a" category="admonition">如果部署失敗並出現認證錯誤，您可以選取錯誤訊息中的超連結，以取得進一步的錯誤詳細資料。您可以查看遺失或封鎖的權限清單，以及 GenAI 工作負載需要的權限清單，以便部署 GenAI 基礎架構。</block>
@@ -721,7 +657,6 @@
   <block id="16cb0b733a26e9afa11f388e6d83aec1" category="doc">建立 GenAI 知識庫</block>
   <block id="e63e0ed616c63ed724e592b04e608826" category="doc">使用 GenAI 外部範例 chatbot 應用程式</block>
   <block id="52f26f0fff3bae61240c4b3a43f3624d" category="doc">取得 GenAI BlueXP  工作負載工廠的協助</block>
-  <block id="e1cdd82a2918ba1a2c0ff51770aad51e" category="doc">識別要整合至 GenAI 知識庫的資料來源</block>
   <block id="fe1e8231ce0909884a561100cafd30a8" category="doc">GenAI 法律聲明的 BlueXP  工作負載工廠</block>
   <block id="dd3ed9192bf4d0d55741ed48bf8a6695" category="doc">管理 GenAI 資料來源</block>
   <block id="10f8936c8a58bcff3825995f8d31ea40" category="doc">管理 GenAI 知識庫</block>
@@ -733,13 +668,10 @@
   <block id="988a487756dcb4e1605a4e07dc7dbd42" category="doc">GenAI 的後續功能</block>
   <block id="a117d99fd0597e840921767ec50fe791" category="doc">自訂快照名稱</block>
   <block id="34df51ccce053f8aef051fe069f6004a" category="paragraph">您現在可以為臨機操作快照提供快照名稱。</block>
-  <block id="2cbaa1be80e354895c4d9e497cad82ad" category="paragraph"><block ref="2cbaa1be80e354895c4d9e497cad82ad" category="inline-link-macro-rx"></block></block>
   <block id="63713d130d6ced83e06b8a2f84ca4236" category="section-title">自訂 AI 引擎執行個體名稱</block>
   <block id="5a22f1756638135653917db715aeec43" category="paragraph">您現在可以在部署期間為 AI 引擎執行個體提供自訂名稱。</block>
-  <block id="c3e29d6f9db8b5f89b548e4659ce60ad" category="paragraph"><block ref="c3e29d6f9db8b5f89b548e4659ce60ad" category="inline-link-macro-rx"></block></block>
   <block id="cc78f676d3193b6273b428bb17c26dd7" category="section-title">重建毀損或遺失的 GenAI 基礎架構</block>
   <block id="1691fa3a19bfaa3082dd2f6e01934960" category="paragraph">如果您的 AI 引擎執行個體毀損或遭到刪除，您可以讓工作負載在出廠時重新建置。工作負載原廠會在重建完成後，自動將您的知識庫重新附加到基礎架構，以便準備好使用。</block>
-  <block id="b23e4d787bd591292c1d5f10247e0e53" category="paragraph"><block ref="b23e4d787bd591292c1d5f10247e0e53" category="inline-link-macro-rx"></block></block>
   <block id="22d9005388d9e535daefed3f2e693f8c" category="inline-link-macro">敏感個人資料的類型</block>
   <block id="9c5f697c48859cff8ee185f1b8ac3722" category="admonition">GenAI 的 BlueXP  工作負載工廠不會遮罩敏感的個人資訊（ SPii ）。如需此類型資料的詳細資訊，請參閱<block ref="0cdb750dab1dfb2fce5dd1cc6f558f0e" category="inline-link-macro-rx"></block>。</block>
   <block id="634af6b3fd334eee66435e4f2e04ce47" category="admonition">資料欄可隨時啟用或停用。如果您切換資料防護功能，工作負載工廠會從頭開始掃描整個知識庫，這會產生成本。</block>
@@ -780,12 +712,10 @@
   <block id="a036984d47253ddc828a04bc8ac85524" category="list-text">在 * 權限感知 * 區段中，只有當您選取的資料來源位於使用 SMB 通訊協定的磁碟區上時，才能使用此區段，您可以啟用或停用權限感知回應：</block>
   <block id="77fd00559b8279b555e48d21e5e67c34" category="doc">資料來源的檔案類型篩選</block>
   <block id="47cf5538cc85b7acf0e24098fc5bbffd" category="paragraph">GenAI 現在支援在新增資料來源時，選取要納入資料來源掃描的特定檔案類型。</block>
-  <block id="e57c1e86c82776cdcb9c50b4e82943f8" category="paragraph"><block ref="e57c1e86c82776cdcb9c50b4e82943f8" category="inline-link-macro-rx"></block></block>
   <block id="f191d5f0a123d62966b3617a9d8c752c" category="section-title">資料來源的檔案修改日期篩選</block>
   <block id="b1be3e2e5ab05373dbf3927507ea84d2" category="paragraph">GenAI 現在支援篩選檔案，可在新增資料來源時，依修改日期納入資料來源掃描。您可以為包含的檔案選擇修改日期範圍。</block>
   <block id="7a7ba68ff13813a8c9d7413b67a91e34" category="section-title">支援影像檔案，並加強支援 PDF 檔案</block>
   <block id="b9a5ff8382cbb9f5609b8bff25344245" category="section-title">混合式搜尋與重新部署支援</block>
-  <block id="397adcec169a6ce17f0abfc941258c0f" category="paragraph"><block ref="397adcec169a6ce17f0abfc941258c0f" category="inline-link-macro-rx"></block></block>
   <block id="c009fe342f72cc06fe63760e2eaa701c" category="list-text">利用 GenAI 提供的混合式搜尋和重新排名功能，從您的資料中獲得高品質結果。混合式搜尋結合重新排名，可大幅提升搜尋結果的相關性。這些功能可透過 Amazon AWS 取得，且因地區而定。</block>
   <block id="e1201f675c705c74b856dba391a68602" category="paragraph">某些多模式作業（例如掃描影像以取得文字資訊）可能會使用更多資源，因此會產生較高的成本。某些組態作業（例如變更知識庫的設定）可能會導致重新掃描資料來源，而且資料來源掃描也會產生較高的成本。</block>
   <block id="0a2b76d9cf1a9ffdd3b88e030e038252" category="example-title">IAM 角色權限</block>
@@ -811,22 +741,13 @@
   <block id="26e6f4cc71039ce95ddbb0acdad6891d" category="section-title">2024 年 9 月 29 日</block>
   <block id="9a7d43c72f0d1a35c2a2cdfb58c6cc0d" category="doc">支援 Amazon Nova 基礎模式</block>
   <block id="ba0908c46e81d6dfcc41f1af42be123c" category="paragraph">GenAI 現在支援 Amazon Nova 基礎模式。支援 Amazon Nova Micro ， Amazon Nova Lite 和 Amazon Nova Pro 。</block>
-  <block id="5ddfb412189af7bcce0a056c9fcef326" category="paragraph"><block ref="5ddfb412189af7bcce0a056c9fcef326" category="inline-link-macro-rx"></block></block>
   <block id="1b72fbdbed811fb02ab7310c71e79ab2" category="inline-link">AWS 文件</block>
   <block id="c3321626512a416bb22de0f62b8458bc" category="list-text">您必須先啟用您計畫使用的基礎聊天模式、才能建立知識庫。由於各 AWS 地區的機型支援不盡相同、請參閱<block ref="0bd10fd36efa0fd68b9fc8a53401f764" category="inline-link-rx"></block> 、確認您可以在計畫部署知識庫的地區使用哪些機型。</block>
-  <block id="1c61d246c37b3dd7fcf1e2812799ee53" category="paragraph">GenAI 支援下列 Anthropic Claude 和 Amazon Nova 機型：</block>
-  <block id="e37cca905470582668e8cf006efd3557" category="list-text">Anthropic Claude ：</block>
-  <block id="22e20ffc2045bc3420e2cb94c47a29ce" category="list-text">Amazon Nova ：</block>
-  <block id="39106736b72a09cf072c2dc73e847b86" category="list-text">Nova Micro</block>
-  <block id="5966dc23b01f7dbdf996a7a860ee9459" category="list-text">Nova Lite （支援影像和文字）</block>
-  <block id="d5c9ae773ceec77e2ca3ed0d6347bf9b" category="list-text">Nova Pro （支援影像和文字）</block>
-  <block id="ddbb727fa06553b8b9d4aab207332c7e" category="paragraph">深入瞭解如何將這些模型與 Amazon Bedrock 搭配使用：</block>
   <block id="0dd1c2bf85c6e3f8ac28b8d5d343a230" category="list-text"><block ref="0dd1c2bf85c6e3f8ac28b8d5d343a230" category="inline-link-rx"></block></block>
   <block id="b6c678dfe5e31c8f081fa11ac56bff46" category="inline-link">在 Amazon Bedrock 主控台開始使用 Amazon Nova</block>
   <block id="cafb3db15a71932288c768a7beb404b4" category="list-text"><block ref="cafb3db15a71932288c768a7beb404b4" category="inline-link-rx"></block></block>
   <block id="ca5a05186a2f243eb84efcf08152a8f2" category="doc">嵌入式聊天機器人程式增強功能</block>
   <block id="362c473fe2757bda1e0d68b3c2cdfbc8" category="paragraph">您現在可以直接將問題和回應複製到剪貼簿，調整聊天視窗的大小，以及變更其標題。此外，聊天回應現在可以包含表格，這些表格也可以複製。</block>
-  <block id="b7def3234606fc50e35ddaf4c351fbe6" category="paragraph"><block ref="b7def3234606fc50e35ddaf4c351fbe6" category="inline-link-macro-rx"></block></block>
   <block id="4842fdf5dae1e7a3fb7ea049a091be73" category="section-title">聊天回應引文支援</block>
   <block id="c010ca64710d07e36327c27318c0303f" category="paragraph">聊天回應現在包含的引文會列出用來產生回應的檔案和資料區塊。</block>
   <block id="312fbafda6b72e176a3eb6272e48d799" category="section-title">增強的檔案類型支援</block>
@@ -856,21 +777,252 @@
   <block id="fbc7eedf5c13a549330a0c3f52777db8" category="section-title">VPC 對等支援</block>
   <block id="52bc46202bc9013e258f32f66b8bf88a" category="inline-link-macro">對等虛擬私有雲（ VPC ）</block>
   <block id="93dbde0ee04c36dce05b96f3551f8606" category="paragraph">您現在可以在同一個區域中的 GenAI 基礎架構上部署<block ref="f008838004ac43a2c4a5b39672df7daf" category="inline-link-macro-rx"></block>，並使用相同的 AWS 帳戶。您可以在 VPC 中部署 AI 引擎，然後在對等 VPC 中建立知識庫，然後選取位於對等 VPC 中的 Amazon FSX for NetApp ONTAP 檔案系統。</block>
-  <block id="b36fca5a6a45d6da3c01e23792f8a153" category="list-text">* 聊天模式 * ：從整合在 Amazon bedrock 中的 Anthropic Claude 或 Amazon Nova 聊天模式中選擇。請注意、您必須已啟用 Amazon Bedrock 的聊天模式。</block>
   <block id="7b64cb38404993f8db85b46fa460e3f1" category="paragraph">必須符合下列先決條件，才能啟用資料欄。</block>
   <block id="b687386681bc74afd9f1f05a81484454" category="inline-link-macro">BlueXP  API 端點</block>
   <block id="52840142bc9ae1cec5ab47f43451b7f2" category="list-text">AI 引擎必須能夠存取<block ref="0d55c5152a345809ffefdd3a1a629e2a" category="inline-link-macro-rx"></block>。</block>
   <block id="b3e25fad7a8f45ec59f40a0eaf7b74ea" category="admonition">擷取 CSV ， JSON ， JSONP 或 Parquet 等結構化資料檔案時，不支援資料欄功能。</block>
-  <block id="71e83c676c8b3aea9726262e97dd0c14" category="cell">Apache 參數註腳：免責聲明 [ 擷取結構化資料檔案時不支援資料 guardrails 功能。 ]</block>
   <block id="230703a919b034364b970a5ee5c5ab76" category="cell">以逗號分隔的值檔案說明：免責聲明 []</block>
   <block id="33555d9ae9e8936cbd995ec23836ef0a" category="cell">JSON 與 JSONP 註腳：免責聲明 []</block>
   <block id="cc8f0c0e5a5cef9b33f236a0a9c19ca0" category="cell">json</block>
-  <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">2025 年 3 月 30 日</block>
   <block id="fdd252a657eafa925fe82da2c74ab41c" category="paragraph">GenAI 現在支援強化對知識庫查詢的回應，從影像和圖表說明以及文件文字中獲得深入見解，進而提供更豐富，更高品質的答案。GenAI 現在可以掃描 PDF 檔案中的影像檔案和影像（也稱為多模式檔案支援）。如果您選擇掃描影像或 PDF 檔案，則會將影像中的文字（包括內嵌於 PDF 文件中的影像）掃描至資料來源，而掃描結果中的洞見則會包含在知識庫查詢的回應中。</block>
   <block id="603e61783fa33cd04788f143e949760c" category="paragraph">GenAI 現在可以使用混合式搜尋並重新排列結果的順序，大幅提升搜尋結果的相關性和準確度。混合式搜尋結合了傳統關鍵字型搜尋的優勢，以及進階密集向量型語義搜尋技術。標準關鍵字搜尋結果會以接近的相符項目和語言差異加以擴充，以增強相關性。然後 GenAI 使用進階重新排名模型（例如 Cohere Rerank 和 Amazon Rerank ）進一步精簡這些結果，並傳回最相關的結果。這項功能適用於新建立的知識庫。</block>
   <block id="7c6f7e444c5d96b670cdcd189e2ee43a" category="list-text">GenAI 現在支援擷取包含影像的 Microsoft Word DOCX 檔案。系統會掃描 DOCX 文件中內嵌的影像，並在回應知識庫查詢時，納入內嵌影像的文字洞見。</block>
   <block id="0fcf305133bffed241e3ea17efbba5fc" category="inline-link-macro">使用工作負載原廠 API</block>
   <block id="a6efc6ca3aa5af2c7a8cad1239df17c0" category="paragraph"><block ref="a6efc6ca3aa5af2c7a8cad1239df17c0" category="inline-link-macro-rx"></block></block>
   <block id="1013a9a62eb4667e6ae35cbe4e298de6" category="paragraph">您將整合至知識庫的資料來源可以位於單一適用於 ONTAP 檔案系統的 FSX 、或是多個適用於 ONTAP 檔案系統的 FSX 上。如果這些系統位於不同的 VPC ，則必須可在同一個網路中存取，或是必須使用與 AI 引擎相同的區域和 AWS 帳戶來連接 VPC 。</block>
-  <block id="b70e34d229298faea8d481f1cfdd32a9" category="paragraph"><block ref="b70e34d229298faea8d481f1cfdd32a9" category="inline-link-macro-rx"></block></block>
+  <block id="3b0424c657d7f94d3576d4c275f58d4c" category="list-text">* 已啟用 * ：存取此連接器的聊天機器人程式使用者只能從其存取的資料來源取得查詢回應。</block>
+  <block id="cc969578d5af5249aced30698622b541" category="admonition">Amazon Q Business Connector 資料來源不支援 Active Directory 群組權限。</block>
+  <block id="8e7311e2a2a855dad7de8a56a0aa57d2" category="list-text">選取 * 新增 * ，將此資料來源新增至 Amazon Q Business Connector 。</block>
+  <block id="fa73e37938f52fcfcb0bf41200ec0ca8" category="paragraph">您必須先在環境中部署適用於 RAG 架構的 GenAI 基礎架構，才能為組織建置適用於 ONTAP 知識庫，連接器和應用程式的 FSX 。主要基礎架構元件為 Amazon 基礎架構服務、 NetApp GenAI 引擎的虛擬機器執行個體、以及 ONTAP 檔案系統的 FSX 。</block>
+  <block id="7b69380b59ab25a52a3890c0b595dcdb" category="paragraph">部署的基礎架構可支援多個知識庫，閒聊機器人程式和連接器，因此您通常只需要執行一次此工作。</block>
+  <block id="f18154a9b9be40fcdf149ed96215b72f" category="paragraph">基礎架構包含下列元件。</block>
+  <block id="be233e7542a4cdfd8f4db815899ffe55" category="list-text">Amazon Q Business</block>
+  <block id="fb51d22afce66d807de9a5ec0e57bb1f" category="list-text">Amazon Q 以 Amazon 為基礎，提供完全託管的泛型 AI 助理，可用於回答問題，並根據資料來源的資訊產生內容。</block>
+  <block id="3cd04df71a92b57e7e0b649c25c86144" category="inline-link">深入瞭解 Amazon Q Business</block>
+  <block id="7a0b82b29eab51c564d9f44ef3737aa4" category="paragraph"><block ref="7a0b82b29eab51c564d9f44ef3737aa4" category="inline-link-rx"></block></block>
+  <block id="0c6cf53f02bb16e6e4275c3b79966b50" category="inline-image-macro">GenAI 基礎架構元件的圖表。</block>
+  <block id="6f326b36284a4f3ce3de66ffc6167fc9" category="paragraph"><block ref="6f326b36284a4f3ce3de66ffc6167fc9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7759fb09c86e4287a63dc0f3aa2c871a" category="paragraph">開始此程序之前，請確定您的環境符合知識庫或連接器的需求，視您選擇的類型而定。</block>
+  <block id="138a61823952f938a9b70641d09cc13f" category="inline-link-macro">知識庫需求</block>
+  <block id="86dc36560e41f1c1ea72ceefa534f5a2" category="list-text"><block ref="86dc36560e41f1c1ea72ceefa534f5a2" category="inline-link-macro-rx"></block></block>
+  <block id="608448c2576128ccc8c2f959d59e20b4" category="inline-link-macro">連接器需求</block>
+  <block id="030ca7db294f16d68e8fdcf05bbcec53" category="list-text"><block ref="030ca7db294f16d68e8fdcf05bbcec53" category="inline-link-macro-rx"></block></block>
+  <block id="4ddb48cac9158bd3754bbde2dac725a1" category="paragraph"><block ref="4ddb48cac9158bd3754bbde2dac725a1" category="inline-link-rx"></block></block>
+  <block id="66dcbffa464e42a5a70549da95a9fce8" category="paragraph"><block ref="66dcbffa464e42a5a70549da95a9fce8" category="inline-link-rx"></block></block>
+  <block id="6e81aa0aaa9f90d486d9b10971c77d5b" category="paragraph"><block ref="6e81aa0aaa9f90d486d9b10971c77d5b" category="inline-link-rx"></block></block>
+  <block id="20b70c955d7e2ae1d32abf7981fa778d" category="paragraph"><block ref="20b70c955d7e2ae1d32abf7981fa778d" category="inline-link-rx"></block></block>
+  <block id="71a6e13d9246eebc4c665bd6856ef62e" category="paragraph"><block ref="71a6e13d9246eebc4c665bd6856ef62e" category="inline-link-macro-rx"></block></block>
+  <block id="c8cb32544f3421770987153c7b2dbac8" category="paragraph"><block ref="c8cb32544f3421770987153c7b2dbac8" category="inline-link-macro-rx"></block></block>
+  <block id="9eda245a8d0fc28bfa9439a2eeab7bf6" category="paragraph"><block ref="9eda245a8d0fc28bfa9439a2eeab7bf6" category="inline-link-macro-rx"></block></block>
+  <block id="5ee94025ca317a5dcb596db977e1213d" category="paragraph"><block ref="5ee94025ca317a5dcb596db977e1213d" category="inline-link-macro-rx"></block></block>
+  <block id="7dd2d826a181ea2f9a3b31239bf46de3" category="paragraph"><block ref="7dd2d826a181ea2f9a3b31239bf46de3" category="inline-link-macro-rx"></block></block>
+  <block id="2e3901c216301ff20bf1108a16ffab23" category="paragraph"><block ref="2e3901c216301ff20bf1108a16ffab23" category="inline-link-macro-rx"></block></block>
+  <block id="efaf8eeadceb43309e642a115859e2a0" category="paragraph"><block ref="efaf8eeadceb43309e642a115859e2a0" category="inline-link-macro-rx"></block></block>
+  <block id="4ea5a8d3b0067bf5307eb05137bce817" category="paragraph"><block ref="4ea5a8d3b0067bf5307eb05137bce817" category="inline-link-macro-rx"></block></block>
+  <block id="77a89cd0e5a14d8b8709467f579b8edc" category="paragraph"><block ref="77a89cd0e5a14d8b8709467f579b8edc" category="inline-link-macro-rx"></block></block>
+  <block id="c9cbd1d1d65e3b0d2ec2922daec8bddf" category="paragraph"><block ref="c9cbd1d1d65e3b0d2ec2922daec8bddf" category="inline-link-macro-rx"></block></block>
+  <block id="fa499afb5b0e71cede67d6430b479aad" category="doc">支援 NetApp ONTAP Connector for Amazon Q</block>
+  <block id="c77dd74f22a4c7346ab562d5eff0bc5a" category="paragraph">此版本的 GenAI 引進 NetApp ONTAP Connector for Amazon Q 的支援，可讓您為 Amazon Q Business 建立連接器。與為 Amazon Bedrock 建立 GenAI 知識庫相比，較少的初始組態，可快速輕鬆地利用 Amazon Q Business AI 助理。</block>
+  <block id="cf79fa4b0d1663f0ab76e8bc4b4e5ff3" category="inline-link-macro">為 Amazon Q Business 建立 GenAI Connector</block>
+  <block id="9e4085aea7ddf49d777bc0d6415232d0" category="paragraph"><block ref="9e4085aea7ddf49d777bc0d6415232d0" category="inline-link-macro-rx"></block></block>
+  <block id="535baaac5969b3bd7fd10592a2cb8e22" category="section-title">增強的聊天模式支援</block>
+  <block id="48ced6c80c0d41a7f68e3e9caece65d9" category="paragraph">GenAI 現在支援下列額外的聊天模式以供知識庫使用：</block>
+  <block id="ba7ee7dc8867588bd50d38f7762f4e93" category="inline-link-macro">Mistral AI 機型</block>
+  <block id="fffe8738239ad19b2e24fda4b92d99f8" category="list-text"><block ref="fffe8738239ad19b2e24fda4b92d99f8" category="inline-link-macro-rx"></block></block>
+  <block id="ac4754b088e15ec23e2e33942607b0db" category="inline-link-macro">Amazon Titan 文字模型</block>
+  <block id="91b642108b49f539aef5f1e7e8429b9a" category="list-text"><block ref="91b642108b49f539aef5f1e7e8429b9a" category="inline-link-macro-rx"></block></block>
+  <block id="3e431ea8f1bf6f1b755d11be49ab7215" category="inline-link-macro">中繼 Llama 機型</block>
+  <block id="957aa19111afb49cbdb72a75c11a7824" category="list-text"><block ref="957aa19111afb49cbdb72a75c11a7824" category="inline-link-macro-rx"></block></block>
+  <block id="025fda77b8ffb8c9e7812b66f625dcdb" category="inline-link-macro">Jamba 1.5 機型</block>
+  <block id="00be89811246b5f1554783fae811628a" category="list-text"><block ref="00be89811246b5f1554783fae811628a" category="inline-link-macro-rx"></block></block>
+  <block id="d5bedd5eb6b3c4a63a27527880abc5ae" category="inline-link-macro">Cohere Command 模型</block>
+  <block id="01f2d137c910887f5780defdf71aa720" category="list-text"><block ref="01f2d137c910887f5780defdf71aa720" category="inline-link-macro-rx"></block></block>
+  <block id="7af238b1ae959fcc9ca0417cb2d5f9a7" category="inline-link-macro">Deepseek 機型</block>
+  <block id="96734ae1eb62df22f906e39314369633" category="list-text"><block ref="96734ae1eb62df22f906e39314369633" category="inline-link-macro-rx"></block></block>
+  <block id="dbc68fe7976455ff2b6f2e5143dfd308" category="inline-link-macro">Amazon 基礎架構支援的基礎模型</block>
+  <block id="b198f4cca9409499187762bec5420672" category="paragraph">GenAI 支援 Amazon Bedrock 支援的每個供應商機型：<block ref="9f10081366e85554159ed4dc640b95c7" category="inline-link-macro-rx"></block></block>
+  <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">更新的權限術語</block>
+  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">工作負載原廠使用者介面與文件現在使用「唯讀」來指稱讀取權限，而「讀取寫入」則指自動化權限。</block>
+  <block id="da1f9b1e0d45e28b599d8f40c855f668" category="summary">在您部署 AI 基礎架構並找出將與 Amazon Q Business 整合的資料來源之後，您可以定義連接器。</block>
+  <block id="06576beecf0a3b501bd304361172e710" category="doc">為 Amazon Q 建立 NetApp ONTAP Connector</block>
+  <block id="eb56f84f8c7f39034f8b4f008276df54" category="paragraph">在您部署 AI 基礎架構，並識別要從適用於 ONTAP 資料存放區的 FSX 使用的資料來源之後，即可定義適用於 Amazon Q 的 NetApp ONTAP Connector</block>
+  <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link-macro">需求</block>
+  <block id="c544ac4406a53e3d89f1f777f49bd9ab" category="paragraph">繼續之前，請確保您的環境符合<block ref="e9a731368b15c5c87437cf87756c4dd9" category="inline-link-macro-rx"></block>適用於 Amazon Q Business 的。</block>
+  <block id="416b1ad25d5076e01c81a106a5183bb8" category="paragraph">貴組織的資料來源可能包含個人識別資訊（ PII ）。若要保護這項敏感資訊，您可以在定義連接器時啟用 _data guardrails 。由 BlueXP  分類技術支援的資料欄可識別及遮罩 PII 、使其無法存取且無法擷取。</block>
+  <block id="32a3d08b7aad0fea19d07c320ae1572b" category="admonition">GenAI 的 BlueXP  工作負載工廠不會遮罩敏感的個人資訊（ SPII ）。如需此類型資料的詳細資訊，請參閱<block ref="0cdb750dab1dfb2fce5dd1cc6f558f0e" category="inline-link-macro-rx"></block>。</block>
+  <block id="35c5b8334726059a903cf8e72acd6567" category="admonition">資料欄可隨時啟用或停用。如果您切換資料防護功能，工作負載工廠會從頭開始掃描整個資料來源，這可能會產生成本。</block>
+  <block id="7110ae9aea43e2e00725933a5f626fa1" category="section-title">定義連接器</block>
+  <block id="587c0510bec4ca8fb8c5c828596d2bf3" category="paragraph">為 Amazon Q 建立 NetApp ONTAP Connector 。此接頭可在 GenAI 和 Amazon Q Business 之間進行 API 和資料來源通訊。</block>
+  <block id="cef935b09c14a76911c2bc3b2878c1eb" category="list-text">從「知識庫與連接器」標籤中，選取「 * 建立新的 * 」下拉式清單，然後選擇「 * Amazon Q Business Connector* 」。</block>
+  <block id="e90a1e1cd02488bfade2709b90f749fd" category="list-text">在「定義連接器」頁面上，設定連接器設定：</block>
+  <block id="5e8ca8e597dc55a04039701d5dac2cf3" category="list-text">* 名稱 * ：輸入您要用於連接器的名稱。</block>
+  <block id="dffbc54d16e84507b04590e6d1c0c866" category="list-text">* 說明 * ：輸入連接器的詳細說明。</block>
+  <block id="c9feba567b8d3a8ba8747f88e19831cc" category="list-text">* Amazon Q* ：您想要整合的 Amazon Q Business 執行個體的地區和應用程式名稱。</block>
+  <block id="bf5ee3ec2f3e4b65913ce148dc85d307" category="admonition">當您啟用資料欄功能時， GenAI 只會擷取純文字（不包括內嵌影像或媒體文字）並遮罩任何私有或敏感資料，以處理 .txt ， .md ， .csv ， .dox 和 .pdf 檔案。所有其他檔案類型都會正常處理，而不會遮罩私有或敏感資料。</block>
+  <block id="48ca727fe38026867b97dd4a2615a41f" category="list-text">* 適用於 ONTAP 檔案系統 * 的 FSX ：當您定義新的 NetApp ONTAP Connector for Amazon Q 時，工作負載工廠會為 NetApp ONTAP Volume 建立新的 Amazon FSX 以儲存連接器資訊。選擇要在其中建立新磁碟區的現有檔案系統和 SVM （也稱為儲存 VM ）。</block>
+  <block id="5449bd448d32094e1be238f48844c03e" category="list-text">* Snapshot 原則 * ：從工作負載原廠儲存設備庫存中定義的現有原則清單中選擇快照原則。GenAI 會根據您選擇的快照原則，自動建立磁碟區的週期性快照，以頻率儲存連接器資訊。</block>
+  <block id="c5639571aa9605e9474435556c2b9258" category="paragraph">如果您需要的快照原則不存在、您可以<block ref="446afe1ef4f3740a216a777a896ec27c" category="inline-link-rx"></block>在包含該 Volume 的儲存 VM 上執行。</block>
+  <block id="c47b1f6ddc8b5b2b1c01ea580fdcbe2b" category="list-text">選取 * 建立連接器 * 以整合 Amazon Q Business 與 GenAI 。</block>
+  <block id="0fd1c37214b672806d1b01aaa5e711ad" category="paragraph">建立連接器時會出現進度指示器。</block>
+  <block id="b8f6d9f09bc1de45210a1757d02e6a64" category="paragraph">建立連接器之後，您可以選擇將資料來源新增至連接器，以便 Amazon Q Business 擷取您的資料並將其新增至索引。建議您選擇 * 新增資料來源 * 、然後立即新增一或多個資料來源。</block>
+  <block id="aa8ac1310c7d9b19ce03d24b5fc56dd3" category="section-title">將資料來源新增至連接器</block>
+  <block id="494e9d7617b206e4728ee8d4e943c436" category="paragraph">您可以新增一或多個資料來源，以便在 Amazon Q Business 索引中填入組織的資料。</block>
+  <block id="38948212cb1298a9a87847d80aff8ca3" category="inline-link">Amazon Q 商業文件</block>
+  <block id="e9f9ee2b178e9240eb07268c9b4fe3d4" category="list-text">如需 Amazon Q Business 索引的特定服務限制，請參閱<block ref="f859099ef55e8e981ddab6b409f06373" category="inline-link-rx"></block>。</block>
+  <block id="55fddc2bb52523580afe42caa9835fc7" category="paragraph">資料來源內嵌於 Amazon Q Business 索引中。資料來源完全內嵌時、狀態會從「內嵌」變更為「內嵌」。</block>
+  <block id="b6d85ca0ba60b5dd543710bc3ce9d8cf" category="paragraph">將單一資料來源新增至 Connector 之後，您可以在 Amazon Q Business chatbot 環境中測試，並在將服務提供給使用者之前進行任何必要的變更。您也可以依照相同步驟，將其他資料來源新增至連接器。</block>
+  <block id="aa33bca1874e3db584536f0f66cd3301" category="doc">識別要新增至連接器的資料來源</block>
+  <block id="ee92c82f76148f0f7c42c7d8935a4737" category="paragraph">識別或建立要整合到連接器中的適用於 ONTAP 檔案系統的 FSX 文件（資料來源）。這些資料來源可讓 Amazon Q Business 根據與貴組織相關的資料，為使用者查詢提供準確且個人化的答案。</block>
+  <block id="3b932b7a96c1eee4b65c70c231bb6e60" category="paragraph">您可以將多個資料來源新增至每個連接器，但這些資料來源都必須位於可從 AWS 帳戶存取的 ONTAP 檔案系統的 FSX 上。</block>
+  <block id="7072813121d82ae0d2bc05aaab425d4c" category="paragraph">連接器支援來自使用 NFS 或 SMB/CIFS 通訊協定之磁碟區的資料。選取使用 SMB 傳輸協定儲存的檔案時，您需要輸入 Active Directory 資訊，以便連接器存取這些磁碟區上的檔案。其中包括 Active Directory 網域、 IP 位址、使用者名稱和密碼。</block>
+  <block id="40ad80bd520fcb9c58d8bdf69bfeafe8" category="paragraph">例如，如果您已將 10 個檔案（資料來源）整合至您的 Connector ，而其中 2 個檔案是包含受限資訊的人力資源檔案，則只有通過驗證以存取這 2 個檔案的聊天機器人程式使用者，才會收到包含這些檔案資料的聊天機器人程式回應。</block>
+  <block id="7be29227377788a5b12c7a7e7a66cd65" category="admonition">當您將資料來源新增至 Amazon Q Business Connector 時，只有使用者權限會套用至資料來源檔案。未套用群組權限。</block>
+  <block id="93e9aea370504a46b95b2ec1db56c76c" category="admonition">如果您的資料來源中有不包含任何文字的檔案， Amazon Q Business 就不會索引這些檔案，而是在 Amazon CloudWatch 記錄中記錄一個項目，指出檔案中沒有要索引的文字。</block>
+  <block id="5004434ec8c79db151dd6e0c18edd6b3" category="paragraph">NetApp ONTAP Connector for Amazon Q 目前支援下列資料來源檔案格式</block>
+  <block id="68dfdbe39ab30356a21fe4db773d9589" category="cell">以逗號分隔的值檔案</block>
+  <block id="67cddf56c0ff55c79aee7dfa01b3d310" category="cell">JSON 和 JSONP</block>
+  <block id="8c7a7a618a6d4acfe85b4b4b1048846d" category="cell">.docx</block>
+  <block id="121333faad7b59b7a995b890be1e3928" category="cell">Microsoft PowerPoint</block>
+  <block id="520b3f8c79416a683bc233eb9e9a7466" category="cell">.ppt 或 .pptx</block>
+  <block id="4382267a4a500ad3c3689577cda2271a" category="cell">超文字標記語言</block>
+  <block id="8ff6ba7aa2917af91edd5ace8896cba2" category="cell">.html</block>
+  <block id="632b65116d554008b76c3be3c8c37f4e" category="cell">可延伸標記語言</block>
+  <block id="4e9f6c7fdef327a6b0e08505dc57a694" category="cell">.xml</block>
+  <block id="139e293a7146f23cd247c6be049ebf26" category="cell">xslt</block>
+  <block id="179b98294a9c7a64f9b40b9e9179e171" category="cell">.xslt</block>
+  <block id="28392dee72b88a917a72357aea20a3a5" category="cell">Microsoft Excel</block>
+  <block id="303e9d780912940ea6ade0981c37e23e" category="cell">xls</block>
+  <block id="f74d675f930739888116a4559aa93a52" category="cell">RTF 格式</block>
+  <block id="9e653a3b0c5a3f4648036d4881e875cd" category="cell">rtf</block>
+  <block id="61a6c15b1f4f2a575ac5f47d1fbfe6f2" category="doc">管理 Amazon Q Business 連接器</block>
+  <block id="fe9c0e854bb75d8d0368615c8b433c6f" category="paragraph">為 Amazon Q Business 建立連接器之後，您可以檢視連接器詳細資料，修改連接器，整合其他資料來源，或刪除連接器。</block>
+  <block id="23a31567db48e019d75bf325ea4fd33f" category="section-title">檢視連接器的相關資訊</block>
+  <block id="ce678abc65f85cf934579388d70bdda3" category="paragraph">您可以檢視連接器和整合資料來源的設定資訊。</block>
+  <block id="8f1455aac1b07c1a845480b659aeb292" category="list-text">選取您要檢視的連接器。</block>
+  <block id="5cc101287966e66cd99c9c6c0764d04b" category="list-text">若要檢視連接器詳細資料，請選取<block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block>並選取 * 管理連接器 * 。</block>
+  <block id="b0d4da1928debc3094d8b21648c0c3a3" category="paragraph">「 * 動作 * 」功能表可讓您在需要進行任何變更時，管理連接器。</block>
+  <block id="4f0c75d31e9e14362509657a4cc55a49" category="section-title">編輯連接器</block>
+  <block id="2875bbbc39d9cabdc6add56e715a7c04" category="paragraph">您可以變更某些設定來更新連接器，也可以新增或移除資料來源。</block>
+  <block id="20925e865e981be570599ec2328cd70a" category="paragraph">每當您從連接器新增，修改或移除資料來源時， GenAI 都需要將資料來源資訊傳送至 Amazon Q Business ，以便重新建立索引。同步是漸進式的，因此 Amazon Q Business 只會處理您的 FSX for ONTAP Volume 中自上次同步後已新增，修改或刪除的物件。</block>
+  <block id="3648f00c53d2df063c5880b5d296acfb" category="list-text">從「知識庫與連接器」庫存頁面中，選取您要更新的連接器。</block>
+  <block id="7200168818502116f24fc9a2c9aa8107" category="list-text">選取<block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block>並選取 * 管理連接器 * 。</block>
+  <block id="470d464d67629b6ff919ea8c9aae93bf" category="list-text">選取 * 動作 * 功能表，然後選取 * 編輯連接器 * 。</block>
+  <block id="aa946f0a678f73f74ff06250357c1799" category="list-text">在「編輯連接器」頁面中，您可以變更連接器名稱，說明，內嵌模型，啟用資料欄，以及用於包含連接器之磁碟區的快照原則。</block>
+  <block id="6e27ea0225699137ba2530c35a8f6d84" category="admonition">每次資料來源掃描（包括內嵌）都會產生成本。如果您在建立連接器之後啟用資料 guardrails ，則會再次掃描資料來源並產生成本。</block>
+  <block id="a57c1dc973ddd436afe9fcbc15a22c93" category="list-text">變更後請選擇 * 儲存 * 。</block>
+  <block id="4dc43722dfa1894b89c5e06558237389" category="section-title">新增其他資料來源至連接器</block>
+  <block id="14c12befe24a457bafec00515aa0e29d" category="paragraph">您可以在連接器中內嵌其他資料來源，以便將其他組織資料填入連接器中。</block>
+  <block id="d424d9565a0a56283e14fcec720f7b6a" category="list-text">從「知識庫與連接器」庫存頁面中，選取您要新增資料來源的連接器。</block>
+  <block id="bf90a209a79dde864f9804cf27edf4df" category="paragraph">資料來源已整合至您的連接器。</block>
+  <block id="e7977875f2273c9165fd47c3d3c3aee8" category="section-title">將資料來源與連接器同步</block>
+  <block id="3517d2b8ddd9b09d923867695e150fbf" category="paragraph">資料來源會每天自動與相關的連接器同步一次，以便在 Amazon Q Business 中反映任何資料來源變更。如果您變更任何資料來源，而且想要立即同步（掃描）資料，您可以執行隨需同步。</block>
+  <block id="c023f0c37e2395dfbcb86599990b54ce" category="paragraph">同步是漸進式的，因此 Amazon Q Business 只會處理資料來源中自上次同步以來已新增，修改或刪除的物件。</block>
+  <block id="d486ec04a4ff263da9129c2a5580442f" category="list-text">從「知識庫與連接器」標籤中，選取您要同步的連接器。</block>
+  <block id="d93801edfaf0b3ede0db39f53d95cf40" category="paragraph">連接器會與附加的資料來源同步， Amazon Q Business 會開始使用您資料來源的最新資訊。</block>
+  <block id="6b67d2366cdfceb53aeea58819331958" category="section-title">暫停或繼續排程的同步處理</block>
+  <block id="113b98024868773b6f70f39a7ddd716d" category="paragraph">如果您想要暫停或恢復資料來源的下一次同步（掃描），您可以隨時進行。如果您要變更資料來源，而不想在變更期間進行同步處理，則可能需要暫停下一次排程的同步處理。</block>
+  <block id="7f33995767e18921d242be1e1b3d4d92" category="list-text">從連接器庫存頁面中，選取您要暫停或恢復掃描的連接器。</block>
+  <block id="20fe7c74b98a61498f3b4cf9a0cedfe1" category="list-text">選取 * 動作 * 功能表，然後選取 * 掃描 &gt; 暫停排程掃描 * 或 * 掃描 &gt; 恢復排程掃描 * 。</block>
+  <block id="0d3742f512084e332df9cf3e01431604" category="paragraph">您會看到訊息，表示下一次排程掃描已暫停或恢復。</block>
+  <block id="bf5a484e29502a227f97ab9005183647" category="section-title">刪除連接器</block>
+  <block id="523be0bf702b821a1ff0d32a0a447edb" category="paragraph">如果您不再需要連接器，可以將其刪除。刪除連接器時，它會從工作負載工廠移除，並刪除包含連接器的磁碟區。刪除連接器是不可還原的。</block>
+  <block id="9c0f6136c0054738cd89f4434829341d" category="paragraph">刪除連接器時，您也應該解除連接器與任何與其相關的代理程式的關聯，以便完全刪除與連接器相關的所有資源。</block>
+  <block id="5f04e305e4afb373dd4222c101416421" category="list-text">從「知識庫與連接器」庫存頁面中，選取您要刪除的連接器。</block>
+  <block id="49ca25cc293d8eaea5abbc997a98b766" category="list-text">選取 * 動作 * 功能表，然後選取 * 刪除連接器 * 。</block>
+  <block id="fe4e9f24fd3a3e4e128adbeb8b1e4f63" category="list-text">在刪除連接器對話方塊中，確認您要刪除它，然後選取 * 刪除 * 。</block>
+  <block id="cd5654a62ac0ae4992fc556cbbfc385c" category="paragraph">連接器會從工作負載工廠移除，並刪除其相關的磁碟區。</block>
+  <block id="182e3e33bf92b5fae899ae295398f967" category="summary">開始使用貴組織在 Amazon FSX for NetApp ONTAP 檔案系統上的資料來建立連接器。</block>
+  <block id="450eb57f37211d072a7368e65c267a97" category="doc">GenAI 連接器快速入門</block>
+  <block id="3327960afa4d33a42952d6c7d8ed56ec" category="paragraph">開始使用貴組織在 Amazon FSX for NetApp ONTAP 檔案系統上的資料來建立 NetApp ONTAP Connector for Amazon Q 。建立連接器之後，終端使用者就可以存取 Amazon Q Business Assistant ，以針對組織的方式回應他們的問題。</block>
+  <block id="473b0d4489afb6847b3528470c283f5e" category="paragraph">您將需要 AWS 認證來部署 AWS 基礎架構，部署並探索 ONTAP 檔案系統的 FSX ，您想要整合至連接器的資料來源清單，存取 Amazon Q Business 應用程式等。</block>
+  <block id="ecce7b5245e843c6ae115994088db5e2" category="paragraph"><block ref="a4570bff78b2af8a7e4a27bf4959db8d" category="inline-link-macro-rx"></block>。</block>
+  <block id="aa9cd94a01409a2e0db1cfbaa2ff5574" category="paragraph">您將整合至連接器的資料來源可以位於單一適用於 ONTAP 檔案系統的 FSX ，或是多個適用於 ONTAP 檔案系統的 FSX 上。如果這些系統位於不同的 VPC ，則必須可在同一個網路中存取，或是必須使用與 AI 引擎相同的區域和 AWS 帳戶來連接 VPC 。</block>
+  <block id="ef33a25234aa2ece6646cb5739f4fde9" category="paragraph"><block ref="29010d60a361a26e7cccd39eeacb5588" category="inline-link-macro-rx"></block>。</block>
+  <block id="4f2775ca378d5c35a4a98b0bd3989d31" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block>部署 GenAI 基礎架構</block>
+  <block id="6b0e4831e3d99acb9ad23703e3360c01" category="paragraph">啟動基礎架構部署精靈，在 AWS 環境中部署 GenAI 基礎架構。此程序會部署 NetApp GenAI 引擎的 EC2 執行個體、以及 ONTAP 檔案系統的 FSX 上的磁碟區、以包含 NetApp AI 引擎資料庫。磁碟區用於儲存有關連接器的資訊。</block>
+  <block id="1c04a1a61ca2584ca8ea0e2661c59240" category="inline-link-macro">瞭解如何部署 GenAI 基礎架構</block>
+  <block id="a052f63c8b3d79d0e865981102e38253" category="paragraph"><block ref="0d6818cfcf477d8cb9e6d8498d1a9d44" category="inline-link-macro-rx"></block>。</block>
+  <block id="136533d4992078df7d1f45db41363ffc" category="paragraph">您現在可以為 Amazon Q Business 建立連接器，為終端使用者提供以組織為中心的回應。</block>
+  <block id="69c3ca978f076b54fa2030f25d3332fc" category="doc">GenAI 連接器需求</block>
+  <block id="a3b1269946165413b25e6bd3a003b6be" category="paragraph">在您建立 NetApp ONTAP Connector for Amazon Q 之前，請先確定工作負載工廠和 AWS 已正確設定</block>
+  <block id="a6390dd71ac213c8926f4e003361b1c7" category="section-title">基本 GenAI 需求</block>
+  <block id="d94f906cc0b4e822ea4cc6f7282c6f3f" category="paragraph">GenAI 的一般需求是您開始使用前所需的環境。</block>
+  <block id="5d077bd2e14c4e2191fcc692704a074c" category="list-text">您需要將 AWS 認證新增至具有讀取 / 寫入權限的工作負載工廠，這表示您將在 GenAI 的讀取 / 寫入模式下使用工作負載工廠。</block>
+  <block id="92b8944386b41a864c3b42d0a5f178da" category="paragraph">目前不支援 _ 基本 _ 模式和 _ 唯讀 _ 模式權限。</block>
+  <block id="595f56efdb431edfb5c98924891aa631" category="section-title">NetApp ONTAP Connector for Amazon Q 的需求</block>
+  <block id="dc24ca2a4507b8d4ffa56cd2f4ff7a5c" category="paragraph">確保您的環境符合 Amazon Q Business 連接器的下列特定要求。</block>
+  <block id="50a0042a7df9c6588a808141018da878" category="list-text">Amazon Q Business 應用程式</block>
+  <block id="89092e7ac04c4e6446bab5908228964d" category="list-text">您必須建立 Amazon Q Business 應用程式，或使用現有的應用程式。</block>
+  <block id="1d5720aeac7e3539d6efaa01161dfd21" category="list-text">確保應用程式存在於您的 AWS 區域之一。</block>
+  <block id="a1147b567cbdd1f301a37ed87c2afed7" category="inline-link">已建立索引</block>
+  <block id="dfe5f26168740e575faf08b9a2ef1ee7" category="list-text">確保您擁有<block ref="799ce02f9fcc74379f6eaf3c0d15ae7c" category="inline-link-rx"></block>應用程式。</block>
+  <block id="dde2cb934f19cc6792ef4202facc9d52" category="list-text">確保應用程式未處於故障狀態。</block>
+  <block id="5b7b71abf2920fafe6a621a8cd575f8c" category="list-text">NetApp GenAI 引擎將使用一個檔案系統（或建立一個檔案系統（如果不存在））來儲存有關連接器的資訊。</block>
+  <block id="f06479e214120da53f991b1af4eb0097" category="list-text">一或多個檔案系統將包含您要新增至連接器的資料來源。</block>
+  <block id="0d8ba413f648e51fef4fb209cc7b48a1" category="list-text">您需要知道 AWS 區域、 VPC 和子網路、這些都是 AWS FSX for ONTAP 檔案系統所在的位置。</block>
+  <block id="a6389fdd3aafc525ca961513074657c7" category="paragraph">BlueXP  Workload Factory for GenAI 可讓您將適用於 NetApp ONTAP 檔案系統的 Amazon FSX 與 GenAI 基礎模型整合。這可為您提供高效能儲存設備、並針對 AI 資料集提供豐富的保護、安全性和成本最佳化功能。</block>
+  <block id="60525997ca84017159be9ccc575fddc6" category="paragraph">BlueXP  Workload Factory for GenAI 可讓您在 Amazon FSX for NetApp ONTAP 上使用企業資料來源，搭配泛用 AI 應用程式。利用擷取擴增世代（ RAG ），您可以快速將資料來源連接至 Amazon Bedrock 或 Amazon Q Business 提供的基礎模型，以開發具泛用性的 AI 驅動應用程式，例如虛擬助理，問答聊天機器人程式，文件摘要，內容建立等</block>
+  <block id="9eac267e04135210fd13de3d35bf966f" category="inline-link-macro">建立知識庫</block>
+  <block id="7857532e4fb86ce943421b8f4c90279e" category="inline-link-macro">定義適用於 Amazon Q 的 NetApp ONTAP Connector</block>
+  <block id="816eaa71f63bd8cfa450e3a6a6a4e21b" category="paragraph">如果您<block ref="a1707f04689d949f85e4cb6db99b5c64" category="inline-link-macro-rx"></block>是， GenAI 會從資料來源擷取資料，將向量化的結果儲存在資料庫中，並讓您完全掌控如何使用擷取的資料來回答查詢。此方法需要更多初始設定，但可讓您針對不同的結果選擇不同的聊天模式。如果您<block ref="7e2e1fab0b17942f623c655a801494c8" category="inline-link-macro-rx"></block>是， Amazon Q Business 會擷取資料來源的資料，並儲存在索引中。這種方法需要較少的初始組態，但對結果的控制較少。</block>
+  <block id="33ce7f647f173acb7ace68da57d0ad93" category="paragraph">BlueXP  Workload Factory for GenAI 使用擷取擴充世代（ RAG ），簡化部署基礎架構所需的程序，以建置泛用 AI 應用程式。具體而言、 GenAI 提供下列優點：</block>
+  <block id="71aa508255eddc0938ca384c87a7c8a1" category="list-text">使用開放原始碼架構（例如 LangChain ）加速開發 GenAI 應用程式（例如 Q&amp;A 聊天機器人），利用 GenAI API 來配置和管理知識庫和連接器，與知識庫聊天，以及儲存和擷取聊天記錄。</block>
+  <block id="f0bdc00cfa448d8f15fa17aea3aee5fa" category="paragraph">GenAI 使用貴組織的私有資料來輔助模型的智慧（根據訓練的資料）、針對貴組織中的使用者所提出的問題提供自訂答案。您先部署 RAG 架構所需的基礎架構，然後建立知識庫，或使用貴組織透過 Amazon Bedrock 或 Amazon Q Business 提供的資料來源和基礎模型來定義連接器，然後將應用程式（例如 Q&amp;A 聊天機器人程式）連接到知識庫或連接器。</block>
+  <block id="3c7cdfc68dac7c9c2821a868ef7397e3" category="paragraph"><block ref="3c7cdfc68dac7c9c2821a868ef7397e3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b395d44923246b15b2cf6bbccefd488e" category="list-text">部署所需的基礎架構，以便擷取擴增型世代（ RAG ）架構，以處理適用於 ONTAP 檔案系統和 Amazon Beedrock 或 Amazon Q Business 的 FSX 資料來源。基礎架構包括用於管理資料的 NetApp GenAI Engine 執行個體、內嵌向量資料庫（ LanceDB ）、以及用於向量資料庫的 FSX for ONTAP 檔案系統上的儲存設備。</block>
+  <block id="6b2235dca5c2e5796c1881c49bdc02e1" category="list-text">協助將資料來源連接至 Amazon bedrock 或 Amazon Q Business 提供的嵌入資料來源和語言模型，以擷取使用者查詢的回應。資料來源及模型及其組態會顯示為適用於 ONTAP 知識庫的 FSX 。</block>
+  <block id="bac5e556932e341a4b9de98f3f120a5c" category="list-text">將來源資料擷取至知識庫或連接器，以便將來源檔案內嵌於 SMB 共用上，並將 NFS 匯出至 ONTAP 檔案系統的 FSX ，同時儲存 SMB 共用中檔案的檔案權限。</block>
+  <block id="1e99c460cf537bae167f699f72f10783" category="list-text">根據知識庫中的內容，自動建立對話入門問題。</block>
+  <block id="f7876b81c07b146c27fb7196bb0889f1" category="list-text">為資料管理員提供聊天模擬器，以測試與知識庫的聊天。</block>
+  <block id="183107db84b5d97e830561a02417467f" category="list-text">提供簡單的連接器介面，讓您可以快速輕鬆地使用此 AI 助理的功能，將 GenAI 與 Amazon Q Business 連線。</block>
+  <block id="1c9640aa9075334712c6c2b922771c50" category="paragraph"><block ref="1c9640aa9075334712c6c2b922771c50" category="inline-link-rx"></block></block>
+  <block id="3e037b952ced7d9d3d5f755278df683d" category="paragraph">不過、您必須支付所部署的 AWS 資源、才能支援泛用 AI 基礎架構。例如，您將為 Amazon Bedrock 或 Amazon Q Business ， ONTAP 檔案系統和儲存容量的 FSX ，以及 GenAI 引擎 EC2 執行個體支付 AWS 費用。</block>
+  <block id="eb172a4ea0ca9b00dbcb16f6401ade8d" category="doc">NetApp GenAI 引擎的元件</block>
+  <block id="9f6ab331f6e1b93cd7720e3b01290dfe" category="paragraph">使用適用於 ONTAP 檔案系統的 FSX 資料來源建立知識庫或連接器之後，您可以檢視資料來源詳細資料，更新或變更資料來源內容，編輯資料來源設定，或刪除資料來源。</block>
+  <block id="d1bd53c9c036a0a164289d39a5a4edea" category="paragraph">您可以檢視資料來源內容的相關資訊，也可以使用知識庫或連接器來檢視其內嵌狀態。由於資料來源與知識庫或連接器相關聯，因此您必須先選擇知識庫或連接器，才能檢視資料來源詳細資料。</block>
+  <block id="11bdb1b485383914846d0ec01ecbf8da" category="list-text">使用其中一項登入工作負載工廠<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block>。</block>
+  <block id="a4d7e53eade04c3be167cb91eb35875b" category="list-text">選取資料來源所在的知識庫或連接器，然後選取 * 管理知識庫 * 或 * 管理連接<block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block>器 * 。</block>
+  <block id="d18084c9cdad87027b728588d97de1d2" category="paragraph">頁面底部會列出相關的資料來源。</block>
+  <block id="75b4e172ba31c79bb7c96549ff633102" category="paragraph">它也會列出內嵌資訊，以及該資料來源目前是否內嵌於知識庫或連接器中。</block>
+  <block id="6a9319277b81fdcd682844204a1b8ddc" category="paragraph">您可以編輯與知識庫或連接器整合的資料來源相關資訊。在新增資料來源之後，大部分的資訊都是固定的，但您可以變更某些組態（例如分塊定義或權限感知）。</block>
+  <block id="d9a5be1c6e2136c44531327606633c19" category="paragraph">資料來源會每天自動與知識庫同步一次、以便在聊天機器人程式中反映任何資料來源變更。如果您對資料來源進行變更，並且想要立即同步處理資料，您可以 <block ref="0f5a728901202a758f49141d39e6d6c4" category="inline-link-macro-rx"></block>。</block>
+  <block id="8d1c283884ec2a2a9b912b6e070e8367" category="paragraph">此作業只會從工作負載工廠移除 AI 基礎架構的連結，並不會從 AWS 移除所有元件。您需要從 AWS 手動刪除下列基礎架構元件：</block>
+  <block id="e1750bb502afd54b5058d245599b0178" category="paragraph">請確保您的環境符合 <block ref="d4b380da98d3e217e1a1342547359af5" category="inline-link-macro-rx"></block>for 知識庫，然後再繼續。</block>
+  <block id="67018b2f9b0f536ad3b15e35baf7848f" category="paragraph">貴組織的資料來源可能包含個人識別資訊（ PII ）。為了保護這項敏感資訊、您可以在建立和設定知識庫時啟用 _data guardardrails 。由 BlueXP  分類技術支援的資料欄可識別及遮罩 PII 、使其無法存取且無法擷取。</block>
+  <block id="1353892c3200d5ef34ea39aff734e6b8" category="list-text">從「知識庫與連接器」標籤中，選取「 * 建立新 * 」下拉式清單，然後選擇 * NetApp GenAI 知識庫作為基礎 * 。</block>
+  <block id="4ecacb5c42fc3b13c2e7d2cc8f5b177c" category="list-text">內嵌英文</block>
+  <block id="675aea0734aa7d33f5b87dd79fb596ea" category="list-text">內嵌多國語言</block>
+  <block id="f407f3d1164313838fd95c2ed0e3ea37" category="list-text">* 聊天模式 * ：從 Amazon bedrock 整合的各種聊天模式中選擇。請注意、您必須已啟用 Amazon Bedrock 的聊天模式。</block>
+  <block id="088bdfcb190e7f5cbd74a7b7b0afc7ac" category="doc">識別要新增至知識庫或連接器的資料來源</block>
+  <block id="22ae6b53af9d033c916e5ac98cafe398" category="paragraph">知識庫可支援使用 NFS 或 SMB/CIFS 通訊協定之磁碟區的資料。選取使用 SMB 傳輸協定儲存的檔案時、您必須輸入 Active Directory 資訊、知識庫才能存取這些磁碟區上的檔案。其中包括 Active Directory 網域、 IP 位址、使用者名稱和密碼。</block>
+  <block id="144ed6dedc8fb9d6e8c267ed1b88f622" category="paragraph">工作負載工廠 GenAI 知識庫目前支援下列資料來源檔案格式。</block>
+  <block id="bc288de0017ed79e5ddf41186d5a7bac" category="cell">Apache Parquetfed腳 註：免責聲明 [ 將結構化資料檔案擷取至知識庫時，不支援資料 guardrails 功能。 ]</block>
+  <block id="b322ac739d190389142090c734961275" category="list-text">從「知識庫與連接器」標籤中，選取您要暫停或恢復掃描的知識庫。</block>
+  <block id="bcb256cc8db5d05b70f038b36e876110" category="doc">GenAI 知識庫快速入門</block>
+  <block id="d46ff87e524577f2d38bb349e94974b6" category="paragraph">開始使用貴組織在 Amazon FSX for NetApp ONTAP 檔案系統上的資料，建立知識庫或 Amazon Q Business Connector 。例如 chatbot 之類的應用程式將存取此知識庫或 Connector ，為終端使用者提供以組織為中心的回應。</block>
+  <block id="cccf2c6ba0366b925d6b91882c267b34" category="paragraph">您需要 AWS 認證才能部署 AWS 基礎架構，部署並探索 ONTAP 檔案系統的 FSX ，您想要整合到知識庫或連接器中的資料來源清單，存取 Amazon bedrock AI 服務或 Amazon Q Business 應用程式等。</block>
+  <block id="3e80efed95960189c2bbdd9f0dc01f65" category="paragraph"><block ref="1a5ee64d6d3db43ee72b882473d855ff" category="inline-link-macro-rx"></block>。</block>
+  <block id="976ae8ec2741e03587309f02abbe28d5" category="paragraph"><block ref="a3a2a716da35b02a285bb1f994ffa509" category="inline-link-macro-rx"></block>。</block>
+  <block id="d55d697bddbbc6a3065d07012cb084e6" category="paragraph">啟動基礎架構部署精靈，在 AWS 環境中部署 GenAI 基礎架構。此程序會部署 NetApp GenAI 引擎的 EC2 執行個體、以及 ONTAP 檔案系統的 FSX 上的磁碟區、以包含 NetApp AI 引擎資料庫。該 Volume 用於儲存知識庫所使用的向量資料庫。</block>
+  <block id="34dbaff8502e0c0b297561a24d1b6765" category="doc">GenAI 知識庫需求</block>
+  <block id="1c3f2d8f1a1781d6eacf4d82ed1ee08f" category="paragraph">如果您計畫使用知識庫，請確保您的環境符合下列需求。</block>
+  <block id="2d4ef9af630dcc509532eda57cc638d4" category="paragraph">GenAI 支援 Anthropic ， Amazon ， Mistral AI ， Meta ， Jamba 和 Cohere 等多種機型。</block>
+  <block id="95487d12af5aa12008b7fd4a9d240e39" category="paragraph">深入瞭解如何在 Amazon Bedrock 中使用這些模型：</block>
+  <block id="8360fdbf930670a5295cc4e86b6f3a09" category="list-text"><block ref="8360fdbf930670a5295cc4e86b6f3a09" category="inline-link-rx"></block></block>
+  <block id="b53fdb129cf3a36c249bc3c5d2b830e7" category="list-text"><block ref="b53fdb129cf3a36c249bc3c5d2b830e7" category="inline-link-rx"></block></block>
+  <block id="c448390d73c1d6f4b375f397a804f135" category="list-text"><block ref="c448390d73c1d6f4b375f397a804f135" category="inline-link-rx"></block></block>
+  <block id="c8398186389d88b81b56c6c802a6967f" category="inline-link">Jamba 機型</block>
+  <block id="104808a77a288cf2cec8ed60264d5d99" category="list-text"><block ref="104808a77a288cf2cec8ed60264d5d99" category="inline-link-rx"></block></block>
+  <block id="deecfeaef90201c45d9c17ee5edf836d" category="list-text"><block ref="deecfeaef90201c45d9c17ee5edf836d" category="inline-link-rx"></block></block>
+  <block id="ccf0e0b5c1efe2dabb282d608ba593dd" category="list-text">NetApp GenAI 引擎將使用一個檔案系統（或建立一個檔案系統，如果不存在）來儲存知識庫所使用的向量資料庫。</block>
+  <block id="822748e99c70e9162ce5432b2e1eff5c" category="section-title">2025 年 04 月 5 日</block>
+  <block id="95ab6a86600b31e05b001864adcc30f3" category="sidebar">建立 Amazon 基礎知識庫</block>
+  <block id="bbe0643c4c2515d0e740168fae1ac3a3" category="sidebar">快速入門以瞭解知識庫</block>
+  <block id="5c4a7a0d9d9ffc8363d3d3be4bfed390" category="sidebar">為 Amazon Q Business 建立連接器</block>
+  <block id="4434db0ad858887dd143bcf9ca54f677" category="sidebar">連接器快速入門</block>
+  <block id="c1e122c06e6fbdba97be83b62420f066" category="sidebar">管理 GenAI 基礎架構</block>
+  <block id="91e2b8d20f36e828f16fe4114f527899" category="sidebar">管理連接器</block>
+  <block id="5945e11d0d43ff54edbf52c73445991e" category="sidebar">使用 GenAI 為 Amazon Bedrock 建立知識庫</block>
+  <block id="04e72ad1a1f8c5d1bc6e9d9cd655d231" category="sidebar">識別要新增至知識庫的資料來源</block>
+  <block id="6d0922d38f508966c79ec8917c90f839" category="sidebar">使用 GenAI 為 Amazon Q Business 建立連接器</block>
 </blocks>

@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: manage-infrastructure.html 
+permalink: general/manage-infrastructure.html 
 keywords: ai, chatbot, creating, knowledge base 
 summary: 您可以檢視已部署 GenAI RAG 基礎架構的詳細資料、或是在不再需要時移除 chatbot 基礎架構。 
 ---
 = 管理 GenAI 基礎架構
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

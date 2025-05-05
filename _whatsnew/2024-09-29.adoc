@@ -8,9 +8,9 @@
 
 您現在可以取得知識庫的時間點複本、以保護您的泛用 AI 工作負載資料。這可讓您保護資料、避免意外遺失或測試知識庫設定的變更。您可以隨時還原舊版的知識庫磁碟區。
 
-https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html#take-a-snapshot-of-a-knowledge-base-volume["拍攝知識庫磁碟區的快照"]
+https://docs.netapp.com/us-en/workload-genai/knowledge-base/manage-knowledgebase.html#take-a-snapshot-of-a-knowledge-base-volume["拍攝知識庫磁碟區的快照"]
 
-https://review.docs.netapp.com/us-en/workload-genai_29-sept-24-release/manage-knowledgebase.html#restore-a-snapshot-of-a-knowledge-base-volume["還原知識庫磁碟區的快照"]
+https://docs.netapp.com/us-en/workload-genai/knowledge-base/manage-knowledgebase.html#restore-a-snapshot-of-a-knowledge-base-volume["還原知識庫磁碟區的快照"]
 
 
 
@@ -18,7 +18,7 @@ https://review.docs.netapp.com/us-en/workload-genai_29-sept-24-release/manage-kn
 
 您現在可以暫停排程的資料來源掃描。根據預設、泛化 AI 工作負載會每天掃描每個資料來源、以便將新資料擷取到每個知識庫中。如果您不想擷取最新的變更（例如在測試期間或還原快照時）、您可以暫停排程的掃描、並隨時繼續進行。
 
-https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html["管理知識庫"]
+https://docs.netapp.com/us-en/workload-genai/knowledge-base/manage-knowledgebase.html["管理知識庫"]
 
 
 
@@ -26,4 +26,4 @@ https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html["管理�
 
 選取知識庫磁碟區時、您現在可以選擇屬於 NetApp SnapMirror 複寫關係一部分的資料保護磁碟區。這可讓您將知識庫儲存在已受 SnapMirror 複寫保護的磁碟區上。
 
-https://docs.netapp.com/us-en/workload-genai/identify-data-sources.html["識別要整合到知識庫中的資料來源"]
+https://docs.netapp.com/us-en/workload-genai/knowledge-base/identify-data-sources-knowledge-base.html["識別要整合到知識庫中的資料來源"]

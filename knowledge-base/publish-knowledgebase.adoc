@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: publish-knowledgebase.html 
+permalink: knowledge-base/publish-knowledgebase.html 
 keywords: ai, chatbot, publishing, knowledge base 
 summary: 在您在本機建立並測試知識庫之後、您可以發佈知識庫、以便將其與聊天機器人應用程式整合、讓使用者能夠查詢知識庫。 
 ---
 = 發佈 GenAI 知識庫，並檢視獨特的端點
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

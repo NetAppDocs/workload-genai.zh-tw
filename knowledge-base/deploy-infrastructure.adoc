@@ -1,19 +1,19 @@
 ---
 sidebar: sidebar 
-permalink: deploy-infrastructure.html 
+permalink: knowledge-base/deploy-infrastructure.html 
 keywords: ai, chatbot, infrastructure, bedrock, fsx for ontap 
 summary: 您必須先在環境中部署 RAG 架構的基礎架構、才能為組織建置適用於 ONTAP 知識庫和應用程式的 FSX 。主要基礎架構元件為 Amazon 基礎架構 AI 服務、 NetApp GenAI 引擎的虛擬機器執行個體、以及 ONTAP 檔案系統的 FSX 。 
 ---
 = 部署 GenAI 基礎架構
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
-您必須先在環境中部署適用於 RAG 架構的 GenAI 基礎架構、才能為組織建置適用於 ONTAP 知識庫和應用程式的 FSX 。主要基礎架構元件為 Amazon 基礎架構服務、 NetApp GenAI 引擎的虛擬機器執行個體、以及 ONTAP 檔案系統的 FSX 。
+您必須先在環境中部署適用於 RAG 架構的 GenAI 基礎架構，才能為組織建置適用於 ONTAP 知識庫，連接器和應用程式的 FSX 。主要基礎架構元件為 Amazon 基礎架構服務、 NetApp GenAI 引擎的虛擬機器執行個體、以及 ONTAP 檔案系統的 FSX 。
 
-部署的基礎架構可支援多個知識庫和聊天機器人程式、因此您通常只需要執行一次此工作。
+部署的基礎架構可支援多個知識庫，閒聊機器人程式和連接器，因此您通常只需要執行一次此工作。
 
 
 
@@ -21,12 +21,18 @@ summary: 您必須先在環境中部署 RAG 架構的基礎架構、才能為組
 
 您的 GenAI 部署必須位於啟用 Amazon 基礎的 AWS 區域。 https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["檢視支援區域的清單"^]
 
-部署包含下列元件。
+基礎架構包含下列元件。
 
 Amazon bedrock 服務:: Amazon bedrock 是一項完全託管的服務、可讓您透過單一 API 使用來自頂尖 AI 公司的基礎模型（ FMS ）。它也提供您建置安全泛用 AI 應用程式所需的功能。
 +
 --
 https://aws.amazon.com/bedrock/["深入瞭解 Amazon bedrock"^]
+
+--
+Amazon Q Business:: Amazon Q 以 Amazon 為基礎，提供完全託管的泛型 AI 助理，可用於回答問題，並根據資料來源的資訊產生內容。
++
+--
+https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/what-is.html["深入瞭解 Amazon Q Business"^]
 
 --
 NetApp GenAI 引擎的虛擬機器:: NetApp GenAI 引擎會在此程序中部署。它提供從資料來源擷取資料的處理能力、然後將該資料寫入向量資料庫。
@@ -44,7 +50,7 @@ NetApp GenAI 引擎會監控並與這兩個磁碟區互動。
 
 下圖顯示 GenAI 基礎架構。編號 1 、 2 和 3 的元件會在此程序中部署。開始部署之前、必須先具備其他元素。
 
-image:diagram-chatbot-infrastructure.png["AI chatbot 元件的圖表。"]
+image:genai-infrastructure-diagram-numbered.png["GenAI 基礎架構元件的圖表。"]
 
 
 
@@ -53,7 +59,11 @@ image:diagram-chatbot-infrastructure.png["AI chatbot 元件的圖表。"]
 您需要輸入 AWS 認證資料，然後選取適用於 ONTAP 檔案系統的 FSX ，以部署擷取擴增產生（ RAG ）基礎架構。
 
 .開始之前
-開始此程序之前、請確定您的環境符合 link:requirements.html["需求"] 要求。
+開始此程序之前，請確定您的環境符合知識庫或連接器的需求，視您選擇的類型而定。
+
+* link:../knowledge-base/requirements-knowledge-base.html["知識庫需求"]
+* link:../connector/requirements-connector.html["連接器需求"]
+
 
 .步驟
 . 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。

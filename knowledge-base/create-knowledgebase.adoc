@@ -1,17 +1,19 @@
 ---
 sidebar: sidebar 
-permalink: create-knowledgebase.html 
+permalink: knowledge-base/create-knowledgebase.html 
 keywords: ai, chatbot, creating, knowledge base 
 summary: 在您部署 AI 基礎架構，並從適用於 ONTAP 資料存放區的 FSX 中找出要整合到知識庫的資料來源之後，您就可以使用工作負載工廠來建置知識庫。在本步驟中、您也將定義 AI 特性、並建立對話前人。 
 ---
 = 建立 GenAI 知識庫
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
 在您部署 AI 基礎架構，並從適用於 ONTAP 資料存放區的 FSX 中找出要整合到知識庫的資料來源之後，您就可以使用工作負載工廠來建置知識庫。在本步驟中、您也將定義 AI 特性、並建立對話前人。
+
+請確保您的環境符合 link:requirements-knowledge-base.html["需求"]for 知識庫，然後再繼續。
 
 .關於這項工作
 知識庫有兩種資料整合模式： _ 公開模式 _ 和 _ 企業模式 _ 。
@@ -20,7 +22,7 @@ summary: 在您部署 AI 基礎架構，並從適用於 ONTAP 資料存放區的
 企業模式:: 在大多數情況下、您會想要將組織的資料來源整合到知識庫中。這稱為 _ 企業模式 _ 整合、因為它能提供企業的知識。
 +
 --
-貴組織的資料來源可能包含私人身分識別資訊（ PII ）。為了保護這項敏感資訊、您可以在建立和設定知識庫時啟用 _data guardardrails 。由 BlueXP  分類技術支援的資料欄可識別及遮罩 PII 、使其無法存取且無法擷取。
+貴組織的資料來源可能包含個人識別資訊（ PII ）。為了保護這項敏感資訊、您可以在建立和設定知識庫時啟用 _data guardardrails 。由 BlueXP  分類技術支援的資料欄可識別及遮罩 PII 、使其無法存取且無法擷取。
 
 link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["瞭解 BlueXP 分類"^]。
 
@@ -42,7 +44,7 @@ NOTE: 資料欄可隨時啟用或停用。如果您切換資料防護功能，�
 .步驟
 . 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
 . 在 AI 工作負載方塊中、選取 * 部署與管理 * 。
-. 從「知識庫」標籤中、選取 * 新增知識庫 * 。
+. 從「知識庫與連接器」標籤中，選取「 * 建立新 * 」下拉式清單，然後選擇 * NetApp GenAI 知識庫作為基礎 * 。
 . 在「定義知識庫」頁面上、設定知識庫設定：
 +
 .. * 名稱 * ：輸入您要用於知識庫的名稱。
@@ -52,6 +54,8 @@ NOTE: 資料欄可隨時啟用或停用。如果您切換資料防護功能，�
 *** Titan 嵌入式 G1 - 文字
 *** Titan 內嵌文字 v2
 *** Titan Multic形式 嵌入式 G1
+*** 內嵌英文
+*** 內嵌多國語言
 +
 請注意、您必須已啟用 Amazon bedrock 的內嵌模型。
 
@@ -60,15 +64,7 @@ https://aws.amazon.com/bedrock/titan/["深入瞭解 Amazon Titan"^]
 
 
 
-.. * 聊天模式 * ：從整合在 Amazon bedrock 中的 Anthropic Claude 或 Amazon Nova 聊天模式中選擇。請注意、您必須已啟用 Amazon Bedrock 的聊天模式。
-+
-深入瞭解如何將這些模型與 Amazon Bedrock 搭配使用：
-
-+
-*** https://aws.amazon.com/bedrock/claude/["Anthropic 在 Amazon bedrock 的 Claude"^]
-*** https://docs.aws.amazon.com/nova/latest/userguide/getting-started-console.html["在 Amazon Bedrock 主控台開始使用 Amazon Nova"^]
-
-
+.. * 聊天模式 * ：從 Amazon bedrock 整合的各種聊天模式中選擇。請注意、您必須已啟用 Amazon Bedrock 的聊天模式。
 .. * 資料欄 * ：選擇是否要啟用或停用資料欄。link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["瞭解採用 BlueXP  分類技術的資料欄"^]。
 +
 必須符合下列先決條件，才能啟用資料欄。

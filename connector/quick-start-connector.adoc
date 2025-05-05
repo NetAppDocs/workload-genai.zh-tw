@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: connector/quick-start-connector.html 
+keywords: quick start, connector, chatbot 
+summary: 開始使用貴組織在 Amazon FSX for NetApp ONTAP 檔案系統上的資料來建立連接器。 
+---
+= GenAI 連接器快速入門
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+開始使用貴組織在 Amazon FSX for NetApp ONTAP 檔案系統上的資料來建立 NetApp ONTAP Connector for Amazon Q 。建立連接器之後，終端使用者就可以存取 Amazon Q Business Assistant ，以針對組織的方式回應他們的問題。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]登入工作負載工廠
+[role="quick-margin-para"]
+您需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在工作負載工廠設定帳戶"^]使用其中一項登入 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]設定您的環境以符合 GenAI 需求
+[role="quick-margin-para"]
+您將需要 AWS 認證來部署 AWS 基礎架構，部署並探索 ONTAP 檔案系統的 FSX ，您想要整合至連接器的資料來源清單，存取 Amazon Q Business 應用程式等。
+
+[role="quick-margin-para"]
+link:requirements-connector.html["深入瞭解 GenAI 需求"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]識別包含資料來源的 ONTAP 檔案系統的 FSX
+[role="quick-margin-para"]
+您將整合至連接器的資料來源可以位於單一適用於 ONTAP 檔案系統的 FSX ，或是多個適用於 ONTAP 檔案系統的 FSX 上。如果這些系統位於不同的 VPC ，則必須可在同一個網路中存取，或是必須使用與 AI 引擎相同的區域和 AWS 帳戶來連接 VPC 。
+
+[role="quick-margin-para"]
+link:identify-data-sources-connector.html["瞭解如何識別資料來源"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]部署 GenAI 基礎架構
+[role="quick-margin-para"]
+啟動基礎架構部署精靈，在 AWS 環境中部署 GenAI 基礎架構。此程序會部署 NetApp GenAI 引擎的 EC2 執行個體、以及 ONTAP 檔案系統的 FSX 上的磁碟區、以包含 NetApp AI 引擎資料庫。磁碟區用於儲存有關連接器的資訊。
+
+[role="quick-margin-para"]
+link:deploy-infrastructure.html["瞭解如何部署 GenAI 基礎架構"^]。
+
+.下一步
+您現在可以為 Amazon Q Business 建立連接器，為終端使用者提供以組織為中心的回應。

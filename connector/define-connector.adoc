@@ -1,0 +1,132 @@
+---
+sidebar: sidebar 
+permalink: connector/define-connector.html 
+keywords: ai, chatbot, connector, 
+summary: 在您部署 AI 基礎架構並找出將與 Amazon Q Business 整合的資料來源之後，您可以定義連接器。 
+---
+= 為 Amazon Q 建立 NetApp ONTAP Connector
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在您部署 AI 基礎架構，並識別要從適用於 ONTAP 資料存放區的 FSX 使用的資料來源之後，即可定義適用於 Amazon Q 的 NetApp ONTAP Connector
+
+繼續之前，請確保您的環境符合link:requirements-connector.html["需求"]適用於 Amazon Q Business 的。
+
+.關於這項工作
+貴組織的資料來源可能包含個人識別資訊（ PII ）。若要保護這項敏感資訊，您可以在定義連接器時啟用 _data guardrails 。由 BlueXP  分類技術支援的資料欄可識別及遮罩 PII 、使其無法存取且無法擷取。
+
+link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["瞭解 BlueXP 分類"^]。
+
+
+NOTE: GenAI 的 BlueXP  工作負載工廠不會遮罩敏感的個人資訊（ SPII ）。如需此類型資料的詳細資訊，請參閱link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-data["敏感個人資料的類型"^]。
+
+
+NOTE: 資料欄可隨時啟用或停用。如果您切換資料防護功能，工作負載工廠會從頭開始掃描整個資料來源，這可能會產生成本。
+
+
+
+== 定義連接器
+
+為 Amazon Q 建立 NetApp ONTAP Connector 。此接頭可在 GenAI 和 Amazon Q Business 之間進行 API 和資料來源通訊。
+
+.步驟
+. 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+. 在 AI 工作負載方塊中、選取 * 部署與管理 * 。
+. 從「知識庫與連接器」標籤中，選取「 * 建立新的 * 」下拉式清單，然後選擇「 * Amazon Q Business Connector* 」。
+. 在「定義連接器」頁面上，設定連接器設定：
++
+.. * 名稱 * ：輸入您要用於連接器的名稱。
+.. * 說明 * ：輸入連接器的詳細說明。
+.. * Amazon Q* ：您想要整合的 Amazon Q Business 執行個體的地區和應用程式名稱。
+.. * 資料欄 * ：選擇是否要啟用或停用資料欄。link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["瞭解採用 BlueXP  分類技術的資料欄"^]。
++
+必須符合下列先決條件，才能啟用資料欄。
+
++
+*** 必須有服務帳戶才能與 BlueXP  分類通訊。您必須在 BlueXP  租賃帳戶上擁有 _ 組織管理員 _ 角色、才能建立服務帳戶。擁有組織管理員角色的成員可以在 BlueXP  中完成所有動作。link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["瞭解如何在 BlueXP  中新增角色至成員"^]
+*** AI 引擎必須能夠存取link:https://api.bluexp.netapp.com["BlueXP  API 端點"^]。
+*** 您需要執行下列步驟、如所述link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html#quick-start["BlueXP 分類文件"^]：
++
+.... 建立 BlueXP Connector
+.... 確保您的環境符合先決條件
+.... 部署 BlueXP 分類
+
+
+
+
+
+
++
+
+NOTE: 當您啟用資料欄功能時， GenAI 只會擷取純文字（不包括內嵌影像或媒體文字）並遮罩任何私有或敏感資料，以處理 .txt ， .md ， .csv ， .dox 和 .pdf 檔案。所有其他檔案類型都會正常處理，而不會遮罩私有或敏感資料。
+
++
+.. * 適用於 ONTAP 檔案系統 * 的 FSX ：當您定義新的 NetApp ONTAP Connector for Amazon Q 時，工作負載工廠會為 NetApp ONTAP Volume 建立新的 Amazon FSX 以儲存連接器資訊。選擇要在其中建立新磁碟區的現有檔案系統和 SVM （也稱為儲存 VM ）。
+.. * Snapshot 原則 * ：從工作負載原廠儲存設備庫存中定義的現有原則清單中選擇快照原則。GenAI 會根據您選擇的快照原則，自動建立磁碟區的週期性快照，以頻率儲存連接器資訊。
++
+如果您需要的快照原則不存在、您可以 https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html["建立快照原則"^]在包含該 Volume 的儲存 VM 上執行。
+
+
+
+. 選取 * 建立連接器 * 以整合 Amazon Q Business 與 GenAI 。
++
+建立連接器時會出現進度指示器。
+
++
+建立連接器之後，您可以選擇將資料來源新增至連接器，以便 Amazon Q Business 擷取您的資料並將其新增至索引。建議您選擇 * 新增資料來源 * 、然後立即新增一或多個資料來源。
+
+
+
+
+
+== 將資料來源新增至連接器
+
+您可以新增一或多個資料來源，以便在 Amazon Q Business 索引中填入組織的資料。
+
+.關於這項工作
+* 支援的資料來源數量上限為 10 個。
+* 如需 Amazon Q Business 索引的特定服務限制，請參閱 https://docs.aws.amazon.com/kendra/latest/dg/quotas.html["Amazon Q 商業文件"^]。
+
+
+.步驟
+. 選取 * 新增資料來源 * 後、將會顯示 * 選取檔案系統 * 頁面。
+. * 選取檔案系統 * ：選取資料來源檔案所在的 ONTAP 檔案系統的 FSX ，然後選取 * 下一步 * 。
+. * 選取磁碟區 * ：選取資料來源檔案所在的磁碟區、然後選取 * 下一步 * 。
++
+選取使用 SMB 傳輸協定儲存的檔案時、您需要輸入 Active Directory 資訊、其中包括網域、 IP 位址、使用者名稱和密碼。
+
+. * 選取資料來源 * ：根據您儲存檔案的位置選取資料來源位置。這可以是整個磁碟區、或只是磁碟區中的特定資料夾或子資料夾、然後選取 * 下一步 * 。
+. * 組態 * ：設定資料來源如何從檔案中擷取資訊，以及其包含在掃描中的檔案：
++
+** * 檔案篩選 * ：設定掃描中包含哪些檔案：
++
+*** 在「 * 檔案類型支援 * 」區段中，選擇要包含所有類型的檔案，或選擇要包含在資料來源掃描中的個別檔案類型。
+*** 在 * 檔案修改時間篩選器 * 區段中，選擇根據檔案的修改時間來啟用或停用檔案的包含。如果啟用修改時間篩選，請從清單中選取日期範圍。
++
+
+NOTE: 如果您根據修改日期範圍來包含檔案，只要日期範圍不滿足（檔案尚未在您指定的日期範圍內修改），檔案就會排除在定期掃描之外，而且資料來源也不會包含這些檔案。
+
+
+
+
+
+. 在 * 權限感知 * 區段中，只有當您選取的資料來源位於使用 SMB 通訊協定的磁碟區上時，才能使用此區段，您可以啟用或停用權限感知回應：
++
+** * 已啟用 * ：存取此連接器的聊天機器人程式使用者只能從其存取的資料來源取得查詢回應。
+** * 停用 * ：聊天機器人程式的使用者將會使用所有整合式資料來源的內容接收回應。
++
+
+NOTE: Amazon Q Business Connector 資料來源不支援 Active Directory 群組權限。
+
+
+
+. 選取 * 新增 * ，將此資料來源新增至 Amazon Q Business Connector 。
+
+
+.結果
+資料來源內嵌於 Amazon Q Business 索引中。資料來源完全內嵌時、狀態會從「內嵌」變更為「內嵌」。
+
+將單一資料來源新增至 Connector 之後，您可以在 Amazon Q Business chatbot 環境中測試，並在將服務提供給使用者之前進行任何必要的變更。您也可以依照相同步驟，將其他資料來源新增至連接器。
