@@ -877,7 +877,6 @@
   <block id="7072813121d82ae0d2bc05aaab425d4c" category="paragraph">連接器支援來自使用 NFS 或 SMB/CIFS 通訊協定之磁碟區的資料。選取使用 SMB 傳輸協定儲存的檔案時，您需要輸入 Active Directory 資訊，以便連接器存取這些磁碟區上的檔案。其中包括 Active Directory 網域、 IP 位址、使用者名稱和密碼。</block>
   <block id="40ad80bd520fcb9c58d8bdf69bfeafe8" category="paragraph">例如，如果您已將 10 個檔案（資料來源）整合至您的 Connector ，而其中 2 個檔案是包含受限資訊的人力資源檔案，則只有通過驗證以存取這 2 個檔案的聊天機器人程式使用者，才會收到包含這些檔案資料的聊天機器人程式回應。</block>
   <block id="7be29227377788a5b12c7a7e7a66cd65" category="admonition">當您將資料來源新增至 Amazon Q Business Connector 時，只有使用者權限會套用至資料來源檔案。未套用群組權限。</block>
-  <block id="93e9aea370504a46b95b2ec1db56c76c" category="admonition">如果您的資料來源中有不包含任何文字的檔案， Amazon Q Business 就不會索引這些檔案，而是在 Amazon CloudWatch 記錄中記錄一個項目，指出檔案中沒有要索引的文字。</block>
   <block id="5004434ec8c79db151dd6e0c18edd6b3" category="paragraph">NetApp ONTAP Connector for Amazon Q 目前支援下列資料來源檔案格式</block>
   <block id="68dfdbe39ab30356a21fe4db773d9589" category="cell">以逗號分隔的值檔案</block>
   <block id="67cddf56c0ff55c79aee7dfa01b3d310" category="cell">JSON 和 JSONP</block>
@@ -1025,4 +1024,5 @@
   <block id="5945e11d0d43ff54edbf52c73445991e" category="sidebar">使用 GenAI 為 Amazon Bedrock 建立知識庫</block>
   <block id="04e72ad1a1f8c5d1bc6e9d9cd655d231" category="sidebar">識別要新增至知識庫的資料來源</block>
   <block id="6d0922d38f508966c79ec8917c90f839" category="sidebar">使用 GenAI 為 Amazon Q Business 建立連接器</block>
+  <block id="12195af943d3077522e0ef3c26f4b4fd" category="admonition">如果資料來源中的檔案缺少文字（例如，無文字影像）， Amazon Q Business 不會對其進行索引，而是會在 Amazon CloudWatch 記錄中記錄一個項目，指出沒有文字。</block>
 </blocks>

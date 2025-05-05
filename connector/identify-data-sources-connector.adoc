@@ -45,7 +45,7 @@ summary: 識別或建立位於您的 FSX for ONTAP 檔案系統上的文件（�
 NOTE: 當您將資料來源新增至 Amazon Q Business Connector 時，只有使用者權限會套用至資料來源檔案。未套用群組權限。
 
 
-NOTE: 如果您的資料來源中有不包含任何文字的檔案， Amazon Q Business 就不會索引這些檔案，而是在 Amazon CloudWatch 記錄中記錄一個項目，指出檔案中沒有要索引的文字。
+NOTE: 如果資料來源中的檔案缺少文字（例如，無文字影像）， Amazon Q Business 不會對其進行索引，而是會在 Amazon CloudWatch 記錄中記錄一個項目，指出沒有文字。
 
 
 
