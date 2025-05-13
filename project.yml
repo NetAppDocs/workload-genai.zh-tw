@@ -57,9 +57,9 @@ sidebar:
       entries:
       - title: 快速入門
         url: "/connector/quick-start-connector.html"
-      - title: 知識庫需求
+      - title: 連接器需求
         url: "/connector/requirements-connector.html"
-      - title: 識別要新增至知識庫的資料來源
+      - title: 識別要新增至連接器的資料來源
         url: "/connector/identify-data-sources-connector.html"
       - title: 部署 GenAI 基礎架構
         url: "/connector/deploy-infrastructure.html"
