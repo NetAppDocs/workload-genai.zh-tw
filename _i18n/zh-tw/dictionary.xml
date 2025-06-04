@@ -836,7 +836,6 @@
   <block id="dbc68fe7976455ff2b6f2e5143dfd308" category="inline-link-macro">Amazon 基礎架構支援的基礎模型</block>
   <block id="b198f4cca9409499187762bec5420672" category="paragraph">GenAI 支援 Amazon Bedrock 支援的每個供應商機型：<block ref="9f10081366e85554159ed4dc640b95c7" category="inline-link-macro-rx"></block></block>
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">更新的權限術語</block>
-  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">工作負載原廠使用者介面與文件現在使用「唯讀」來指稱讀取權限，而「讀取寫入」則指自動化權限。</block>
   <block id="da1f9b1e0d45e28b599d8f40c855f668" category="summary">在您部署 AI 基礎架構並找出將與 Amazon Q Business 整合的資料來源之後，您可以定義連接器。</block>
   <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link-macro">需求</block>
   <block id="c544ac4406a53e3d89f1f777f49bd9ab" category="paragraph">繼續之前，請確保您的環境符合<block ref="e9a731368b15c5c87437cf87756c4dd9" category="inline-link-macro-rx"></block>適用於 Amazon Q Business 的。</block>
@@ -933,7 +932,6 @@
   <block id="69c3ca978f076b54fa2030f25d3332fc" category="doc">GenAI 連接器需求</block>
   <block id="a6390dd71ac213c8926f4e003361b1c7" category="section-title">基本 GenAI 需求</block>
   <block id="d94f906cc0b4e822ea4cc6f7282c6f3f" category="paragraph">GenAI 的一般需求是您開始使用前所需的環境。</block>
-  <block id="5d077bd2e14c4e2191fcc692704a074c" category="list-text">您需要將 AWS 認證新增至具有讀取 / 寫入權限的工作負載工廠，這表示您將在 GenAI 的讀取 / 寫入模式下使用工作負載工廠。</block>
   <block id="92b8944386b41a864c3b42d0a5f178da" category="paragraph">目前不支援 _ 基本 _ 模式和 _ 唯讀 _ 模式權限。</block>
   <block id="dc24ca2a4507b8d4ffa56cd2f4ff7a5c" category="paragraph">確保您的環境符合 Amazon Q Business 連接器的下列特定要求。</block>
   <block id="50a0042a7df9c6588a808141018da878" category="list-text">Amazon Q Business 應用程式</block>
@@ -1076,4 +1074,7 @@
   <block id="65a16de587f6ba26884202bf406c26fe" category="section-title">NetApp Connector for Amazon Q Business 的要求</block>
   <block id="56daa392224e0cdcc6a69457c4094aa8" category="inline-link-macro">為 Amazon Q Business 定義 NetApp 連接器</block>
   <block id="7e8def5c748db55cfe2ebcc2c26543fd" category="paragraph">如果您<block ref="a1707f04689d949f85e4cb6db99b5c64" category="inline-link-macro-rx"></block>是， GenAI 會從資料來源擷取資料，將向量化的結果儲存在資料庫中，並讓您完全掌控如何使用擷取的資料來回答查詢。此方法需要更多初始設定，但可讓您針對不同的結果選擇不同的聊天模式。如果您<block ref="fbe77fd827b80e33ddc74f945f323ccb" category="inline-link-macro-rx"></block>是， Amazon Q Business 會擷取資料來源的資料，並儲存在索引中。這種方法需要較少的初始組態，但對結果的控制較少。</block>
+  <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">工作負載工廠使用者介面和文件現在使用“只讀”來指讀取權限，使用“讀取/寫入”來指稱自動化權限。</block>
+  <block id="2285d955a18bdde3d5780d04f48d58cd" category="list-text">您需要將 AWS 憑證新增至具有讀取/寫入權限的工作負載工廠，這表示您將在 GenAI 的讀取/寫入模式下使用工作負載工廠。</block>
+  <block id="c45d86a4185cef0bc3cadb7e6e9b46f4" category="paragraph">目前不支援_基本_模式和_唯讀_模式權限。</block>
 </blocks>

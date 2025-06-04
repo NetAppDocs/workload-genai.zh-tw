@@ -20,7 +20,7 @@ summary: 在您建置知識庫之前，請先確定工作負載工廠和 AWS 已
 GenAI 的一般需求是您開始使用前所需的環境。
 
 工作負載工廠登入與帳戶:: 您需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在工作負載工廠設定帳戶"^]使用其中一項登入 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
-AWS 認證與權限:: 您需要將 AWS 認證新增至具有讀取 / 寫入權限的工作負載工廠，這表示您將在 GenAI 的讀取 / 寫入模式下使用工作負載工廠。
+AWS 認證與權限:: 您需要將 AWS 憑證新增至具有讀取/寫入權限的工作負載工廠，這表示您將在 GenAI 的讀取/寫入模式下使用工作負載工廠。
 +
 --
 目前不支援 _ 基本 _ 模式和 _ 唯讀 _ 模式權限。
