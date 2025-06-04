@@ -4,14 +4,14 @@ permalink: connector/define-connector.html
 keywords: ai, chatbot, connector, 
 summary: 在您部署 AI 基礎架構並找出將與 Amazon Q Business 整合的資料來源之後，您可以定義連接器。 
 ---
-= 為 Amazon Q 建立 NetApp ONTAP Connector
+= 為 Amazon Q Business 建立 NetApp 連接器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-在您部署 AI 基礎架構，並識別要從適用於 ONTAP 資料存放區的 FSX 使用的資料來源之後，即可定義適用於 Amazon Q 的 NetApp ONTAP Connector
+部署 AI 基礎架構並確定將從 FSx for ONTAP 資料儲存區使用的資料來源後，您就可以為 Amazon Q Business 定義 NetApp 連接器了。
 
 繼續之前，請確保您的環境符合link:requirements-connector.html["需求"]適用於 Amazon Q Business 的。
 
@@ -30,7 +30,7 @@ NOTE: 資料欄可隨時啟用或停用。如果您切換資料防護功能，�
 
 == 定義連接器
 
-為 Amazon Q 建立 NetApp ONTAP Connector 。此接頭可在 GenAI 和 Amazon Q Business 之間進行 API 和資料來源通訊。
+為 Amazon Q Business 建立 NetApp 連接器。此連接器支援 GenAI 和 Amazon Q Business 之間的 API 和資料來源通訊。
 
 .步驟
 . 使用其中一項登入工作負載工廠link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
@@ -64,7 +64,7 @@ NOTE: 資料欄可隨時啟用或停用。如果您切換資料防護功能，�
 NOTE: 當您啟用資料欄功能時， GenAI 只會擷取純文字（不包括內嵌影像或媒體文字）並遮罩任何私有或敏感資料，以處理 .txt ， .md ， .csv ， .dox 和 .pdf 檔案。所有其他檔案類型都會正常處理，而不會遮罩私有或敏感資料。
 
 +
-.. * 適用於 ONTAP 檔案系統 * 的 FSX ：當您定義新的 NetApp ONTAP Connector for Amazon Q 時，工作負載工廠會為 NetApp ONTAP Volume 建立新的 Amazon FSX 以儲存連接器資訊。選擇要在其中建立新磁碟區的現有檔案系統和 SVM （也稱為儲存 VM ）。
+.. *FSx for ONTAP 檔案系統*：當您為 Amazon Q Business 定義新的 NetApp 連接器時，工作負載工廠會建立一個新的 Amazon FSx for NetApp ONTAP 磁碟區來儲存連接器資訊。選擇要在其中建立新磁碟區的現有檔案系統和 SVM （也稱為儲存 VM ）。
 .. * Snapshot 原則 * ：從工作負載原廠儲存設備庫存中定義的現有原則清單中選擇快照原則。GenAI 會根據您選擇的快照原則，自動建立磁碟區的週期性快照，以頻率儲存連接器資訊。
 +
 如果您需要的快照原則不存在、您可以 https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html["建立快照原則"^]在包含該 Volume 的儲存 VM 上執行。

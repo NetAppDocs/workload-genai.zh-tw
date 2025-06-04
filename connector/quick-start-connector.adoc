@@ -11,7 +11,7 @@ summary: 開始使用貴組織在 Amazon FSX for NetApp ONTAP 檔案系統上的
 
 
 [role="lead"]
-開始使用貴組織在 Amazon FSX for NetApp ONTAP 檔案系統上的資料來建立 NetApp ONTAP Connector for Amazon Q 。建立連接器之後，終端使用者就可以存取 Amazon Q Business Assistant ，以針對組織的方式回應他們的問題。
+開始使用您組織位於 Amazon FSx for NetApp ONTAP 檔案系統上的資料建立 NetApp Connector for Amazon Q Business。建立連接器之後，終端使用者就可以存取 Amazon Q Business Assistant ，以針對組織的方式回應他們的問題。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]登入工作負載工廠
 [role="quick-margin-para"]

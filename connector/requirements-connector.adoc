@@ -11,7 +11,7 @@ summary: 在您建置知識庫之前，請先確定工作負載工廠和 AWS 已
 
 
 [role="lead"]
-在您建立 NetApp ONTAP Connector for Amazon Q 之前，請先確定工作負載工廠和 AWS 已正確設定
+在為 Amazon Q Business 建立 NetApp 連接器之前，請確保工作負載工廠和 AWS 已正確設定。
 
 
 
@@ -34,7 +34,7 @@ https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["瞭解�
 
 
 
-== NetApp ONTAP Connector for Amazon Q 的需求
+== NetApp Connector for Amazon Q Business 的要求
 
 確保您的環境符合 Amazon Q Business 連接器的下列特定要求。
 

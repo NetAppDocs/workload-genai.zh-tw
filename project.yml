@@ -63,7 +63,7 @@ sidebar:
         url: "/connector/identify-data-sources-connector.html"
       - title: 部署 GenAI 基礎架構
         url: "/connector/deploy-infrastructure.html"
-    - title: 為 Amazon Q 建立 NetApp ONTAP Connector
+    - title: 為 Amazon Q Business 建立 NetApp 連接器
       url: "/connector/define-connector.html"
   - title: 管理與監控
     entries:

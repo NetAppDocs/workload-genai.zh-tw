@@ -51,7 +51,7 @@ NOTE: 如果資料來源中的檔案缺少文字（例如，無文字影像）�
 
 == 支援的資料來源檔案格式
 
-NetApp ONTAP Connector for Amazon Q 目前支援下列資料來源檔案格式
+NetApp Connector for Amazon Q Business 目前支援以下資料來源檔案格式。
 
 [cols="2*"]
 |===

@@ -23,7 +23,7 @@ BlueXP  Workload Factory for GenAI 可讓您在 Amazon FSX for NetApp ONTAP 上
 
 開發專為貴組織資料量身打造的 GenAI 應用程式、可讓您充分運用自己的知識與專業技能。這項自訂功能可確保準確且相關地回應組織特定問題、提高所有使用者的滿意度與生產力。
 
-如果您link:../knowledge-base/create-knowledgebase.html["建立知識庫"^]是， GenAI 會從資料來源擷取資料，將向量化的結果儲存在資料庫中，並讓您完全掌控如何使用擷取的資料來回答查詢。此方法需要更多初始設定，但可讓您針對不同的結果選擇不同的聊天模式。如果您link:../connector/define-connector.html["定義適用於 Amazon Q 的 NetApp ONTAP Connector"]是， Amazon Q Business 會擷取資料來源的資料，並儲存在索引中。這種方法需要較少的初始組態，但對結果的控制較少。
+如果您link:../knowledge-base/create-knowledgebase.html["建立知識庫"^]是， GenAI 會從資料來源擷取資料，將向量化的結果儲存在資料庫中，並讓您完全掌控如何使用擷取的資料來回答查詢。此方法需要更多初始設定，但可讓您針對不同的結果選擇不同的聊天模式。如果您link:../connector/define-connector.html["為 Amazon Q Business 定義 NetApp 連接器"]是， Amazon Q Business 會擷取資料來源的資料，並儲存在索引中。這種方法需要較少的初始組態，但對結果的控制較少。
 
 如需工作負載工廠的詳細資訊，請 https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["工作負載原廠總覽"^]參閱。
 

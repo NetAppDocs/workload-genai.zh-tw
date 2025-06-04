@@ -21,11 +21,11 @@ indexpage:
       url: knowledge-base/test-knowledgebase.html
     - title: 發佈知識庫
       url: knowledge-base/publish-knowledgebase.html
-  - title: 為 Amazon Q Business 建立連接器
+  - title: 為 Amazon Q Business 建立 NetApp 連接器
     links:
     - title: 連接器快速入門
       url: connector/quick-start-connector.html
-    - title: 為 Amazon Q Business 建立連接器
+    - title: 為 Amazon Q Business 建立 NetApp 連接器
       url: connector/define-connector.html
   - title: 管理 GenAI
     links:
