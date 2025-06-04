@@ -523,7 +523,6 @@
   <block id="a5085066220b6bc77291e8a3ba481c5a" category="list-text">建立 BlueXP Connector</block>
   <block id="3e3c8a56035df76e06772f4505dc58c7" category="list-text">確保您的環境符合先決條件</block>
   <block id="0ce4d42838344488f607ff306088fae9" category="list-text">部署 BlueXP 分類</block>
-  <block id="b91895758c5a35a75fd3e87dc1fa0741" category="list-text">在「編輯知識庫」頁面中、您可以變更知識庫名稱、說明、內嵌模式、聊天模式、資料規範啟用、選擇是自動或手動建立對話啟動器、以及用於包含知識庫之 Volume 的快照原則。</block>
   <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024 年 11 月 3 日</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">Amazon FSX for NetApp ONTAP 產品</block>
   <block id="4b88d56bd65ef92611ac63064c38369f" category="list-text">Amazon CloudWatch</block>
@@ -1032,5 +1031,52 @@
   <block id="e234d079cc2fccaeed8041a81e1e8122" category="list-text">* CloudShell CL1* ：工作負載工廠包含 CloudShell CLI ，可透過單一瀏覽器型 CLI ，跨帳戶管理及操作 AWS 和 NetApp 環境。從工作負載原廠主控台的頂端列存取 CloudShell 。</block>
   <block id="dfbf98e5a4263fb93c5b851bfc384ae3" category="list-text">* REST API* ：使用工作負載原廠 REST API 來部署及管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX 。</block>
   <block id="57f4ce64453b6cd8aa398c4f88d38c2e" category="list-text">* CloudForgius* ：使用 AWS CloudForgation 程式碼來執行您在工作負載工廠主控台中定義的動作，以便在 AWS 帳戶中建構，配置及管理 CloudForgation 堆疊中的 AWS 和第三方資源。</block>
-  <block id="06c2e2277da374dd2cc7b735a1d1e848" category="list-text">* Terraform BlueXP  工作負載工廠供應商 * ：使用 Terraform 建置及管理工作負載工廠主控台所產生的基礎架構工作流程。</block>
+  <block id="ea3d4df6f8aff21b2dfe549c5ecf9775" category="doc">Tracker 可用於監控及追蹤作業</block>
+  <block id="8daed4c7913162875cceb19ef5e0bf4c" category="paragraph">GenAI 現已提供 Tracker 監控功能。您可以使用 Tracker 監控和追蹤待處理、正在進行和已完成操作的進度和狀態，查看操作任務和子任務的詳細信息，診斷任何問題或故障，編輯失敗操作的參數，以及重試失敗的操作。</block>
+  <block id="27e9b8493c313885af8902ac1ae67e24" category="inline-link-macro">使用 BlueXP 工作負載工廠中的 Tracker 監控工作負載操作</block>
+  <block id="6cfb11211ef97bba3b2359a766b22994" category="paragraph"><block ref="6cfb11211ef97bba3b2359a766b22994" category="inline-link-macro-rx"></block></block>
+  <block id="a3a574ae48c14d14b1a16908815471f6" category="section-title">為知識庫選擇重新排序模型</block>
+  <block id="9e0cf47f3974a0b121f9381245ed8931" category="paragraph">現在，您可以透過選擇與知識庫配合使用的特定重排序模型來提高重排序查詢結果的相關性。 GenAI支援 Cohere Rerank 和 Amazon Rerank 模型。</block>
+  <block id="af06e2a95bd9706f705a4480e8f40846" category="list-text">* Terraform BlueXP  工作負載工廠供應商 * ：使用 Terraform 建置及管理在工作負載工廠主控台產生的基礎架構工作流程。</block>
+  <block id="5906134abb5c841402381fefad833fcc" category="summary">使用 BlueXP 工作負載工廠中的 Tracker 來追蹤工作負載操作並監控作業進度。</block>
+  <block id="3c83889f8bf9dcafe14392fafd21fe54" category="paragraph">使用 BlueXP  工作負載工廠中的 Tracker ，監控及追蹤工作負載作業的執行，並監控工作進度。</block>
+  <block id="2fc2f4d1cfd067d7b3d8b8baa3ccee57" category="paragraph">工作負載工廠提供 Tracker 這項監控功能，讓您能夠監控及追蹤工作負載作業的進度和狀態，檢閱作業工作和子任務的詳細資料，以及診斷任何問題或故障。</block>
+  <block id="4a60367cb1382179b571e891381eaf8d" category="paragraph">Tracker 中有幾個動作可供使用。您可以依時間範圍（過去 24 小時， 7 天， 14 天或 30 天），工作負載，狀態和使用者來篩選工作；使用搜尋功能尋找工作；並將工作表下載為 CSV 檔案。您可以隨時重新整理 Tracker ，快速重試失敗的作業或編輯失敗作業的參數，然後再試一次。</block>
+  <block id="9233b1148f18eb744b69d4d3620c296c" category="paragraph">Tracker 支援兩種監控層級，視作業而定。每項工作（例如檔案系統部署）都會顯示工作說明，狀態，開始時間，工作持續時間，使用者，區域， Proxy 資源，工作 ID 及所有相關的子工作。您可以檢視 API 回應，瞭解作業期間發生的情況。</block>
+  <block id="5cdbeb1c4cc65e8f551e161828701113" category="list-text">以範例追蹤工作層級</block>
+  <block id="21a1f3fb63f8e2b67d072b29080f89f9" category="list-text">層級 1 （工作）：追蹤檔案系統部署。</block>
+  <block id="5517abda6821fee1e969e9d59498b33e" category="list-text">層級 2 （子工作）：追蹤與檔案系統部署相關的子工作。</block>
+  <block id="88ebc1f479e6de47fd711c4be81c4d26" category="list-text">作業狀態</block>
+  <block id="afcc9733e2e2e0ce70f1ecee29c8f008" category="list-text">Tracker 中的作業狀態如下： _ 進行中 _ ， _ 成功 _ 及 _ 失敗 _ 。</block>
+  <block id="de32977622108a1960ab0fcf45adaf80" category="list-text">操作頻率</block>
+  <block id="a9853b6069302c4152781f48222c3541" category="list-text">作業頻率是根據工作類型和工作排程而定。</block>
+  <block id="01b0a4fcc33bdafd6e65537f24f463de" category="list-text">事件保留</block>
+  <block id="b3c382e94f4b4abcc049ce95e85dc998" category="list-text">事件會保留在使用者介面上 30 天。</block>
+  <block id="cfd98e00a6e308c04ab9f76a854b6989" category="section-title">追蹤及監控作業</block>
+  <block id="c82c26735f08b789c8bf574ab4962fcc" category="paragraph">使用 Tracker 追蹤和監控 BlueXP  中的作業。</block>
+  <block id="e1e54933838bb7ba662301d01c937d2d" category="list-text">使用其中一項登<block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>入。</block>
+  <block id="f6064bd4c17e4a2a2dcbd96f7ec83891" category="list-text">在工作負載中，選取帳戶設定功能表，然後選取 * Tracker * 。</block>
+  <block id="1c575ed3e5dce0a1d77706830609b278" category="inline-image-macro">帳戶設定功能表的螢幕擷取畫面，並反白顯示 Tracker 選項。</block>
+  <block id="7478b5abe2869b21138fe88cbd4d66da" category="paragraph"><block ref="7478b5abe2869b21138fe88cbd4d66da" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e443a93c9da9763cd15656814a7e0c2e" category="list-text">在 Tracker 標籤中，使用篩選器或搜尋來縮小工作結果範圍。您也可以下載工作報告。</block>
+  <block id="aa2a2cd452f8a71b2f2dcdae68114732" category="section-title">檢視 API 要求</block>
+  <block id="68538d555ae12c680ea428aaa850d90f" category="paragraph">在 Codebox 中檢視 Tracker 工作的 API 要求。</block>
+  <block id="968877018213bf42962084001c210472" category="list-text">在 Tracker 中，選取工作。</block>
+  <block id="2e6179b36329b65c38a5ca113ba0c81c" category="list-text">選取三點功能表，然後選取 * 檢視 API 要求 * 。</block>
+  <block id="1448fba076a066622a9f93a25ab170a2" category="section-title">重試失敗的作業</block>
+  <block id="89f1070b2ef1ba678a8cb4823fa74cb2" category="paragraph">在 Tracker 中重試失敗的作業。您也可以複製失敗作業的錯誤訊息。</block>
+  <block id="25f39cb1a1fb7c5e04993249b6cabc32" category="admonition">您最多可以重試 10 次失敗的作業。</block>
+  <block id="b866b632b7f32ded2a0a0907100641bf" category="list-text">在 Tracker 中，選取失敗的作業。</block>
+  <block id="5d0eaa0ad00baabb57cbc22969070918" category="list-text">選擇三點選單，然後選擇 * 重試 * 。</block>
+  <block id="121145d60db2324903b129ae74d6c0a9" category="paragraph">作業將重新啟動。</block>
+  <block id="bde5076ae2a993de9042a7e1dd4dc445" category="section-title">編輯並重試失敗的作業</block>
+  <block id="2ae5a8ae85adca2aebf16aa81130c9c5" category="paragraph">編輯失敗作業的參數，然後在 Tracker 外重試作業。</block>
+  <block id="524ab960a72817bd7f9f107dc357d1bd" category="list-text">選取三點選單，然後選取 * 編輯並重試 * 。</block>
+  <block id="a071e4310b0dbc18ec326c217f47692f" category="paragraph">系統會將您重新導向至作業頁面，您可以在其中編輯參數，然後重試作業。</block>
+  <block id="49814788ce382c87a117a40e54ae858b" category="paragraph">作業將重新啟動。前往 Tracker 以檢視作業狀態。</block>
+  <block id="214e3d2c555829629cd286071bc00b1f" category="list-text">*重新排名*：啟用或停用重新排名功能，此功能可提高查詢結果的相關性和品質。您可以選擇標準聊天模型或專用的重新排名模型進行重新排名。只有您所在地區支援的重新排名模型選項才會顯示。</block>
+  <block id="d86905965032add94b3c2374f18bf8a0" category="list-text">在編輯知識庫頁面中，您可以變更知識庫名稱、描述、嵌入模型、聊天模型、功能啟用，選擇是自動或手動建立對話啟動器，以及包含知識庫的磁碟區所使用的快照策略。</block>
+  <block id="4aa37f4d9a391345e9a54c68333e2503" category="section-title">2025 年 6 月 03 日</block>
+  <block id="5eb43e1edd4f0757c83c6d6f6632ff94" category="sidebar">管理與監控</block>
+  <block id="2e0c4c64c2671f5575eb184e577dcdae" category="sidebar">使用 Tracker 監控作業</block>
 </blocks>

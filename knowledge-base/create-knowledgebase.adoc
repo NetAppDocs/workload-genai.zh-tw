@@ -65,6 +65,7 @@ https://aws.amazon.com/bedrock/titan/["深入瞭解 Amazon Titan"^]
 
 
 .. * 聊天模式 * ：從 Amazon bedrock 整合的各種聊天模式中選擇。請注意、您必須已啟用 Amazon Bedrock 的聊天模式。
+.. *重新排名*：啟用或停用重新排名功能，此功能可提高查詢結果的相關性和品質。您可以選擇標準聊天模型或專用的重新排名模型進行重新排名。只有您所在地區支援的重新排名模型選項才會顯示。
 .. * 資料欄 * ：選擇是否要啟用或停用資料欄。link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["瞭解採用 BlueXP  分類技術的資料欄"^]。
 +
 必須符合下列先決條件，才能啟用資料欄。

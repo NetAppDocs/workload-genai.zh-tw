@@ -87,7 +87,7 @@ IAM角色:: GenAI 引擎執行個體需要權限、才能將資料區塊傳送�
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai: :<ai-engine-id>:kbId": "*"
+          "aws:ResourceTag/netapp:wlmai: <ai-engine-id>:kbId": "*"
         }
       },
       "Action": "fsx:DeleteVolume",
@@ -100,7 +100,7 @@ IAM角色:: GenAI 引擎執行個體需要權限、才能將資料區塊傳送�
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai: :<ai-engine-id>:qConnectorId": "*"
+          "aws:ResourceTag/netapp:wlmai: <ai-engine-id>:qConnectorId": "*"
         }
       },
       "Action": "fsx:DeleteVolume",
@@ -113,7 +113,7 @@ IAM角色:: GenAI 引擎執行個體需要權限、才能將資料區塊傳送�
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai:<ai-engine-id>": "*"
+          "aws:ResourceTag/netapp:wlmai: <ai-engine-id>": "*"
         }
       },
       "Action": "fsx:UntagResource",
@@ -123,7 +123,7 @@ IAM角色:: GenAI 引擎執行個體需要權限、才能將資料區塊傳送�
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai:<ai-engine-id>:kbId": "*"
+          "aws:ResourceTag/netapp:wlmai: <ai-engine-id>:kbId": "*"
         }
       },
       "Action": "fsx:UntagResource",
@@ -133,7 +133,7 @@ IAM角色:: GenAI 引擎執行個體需要權限、才能將資料區塊傳送�
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai:<ai-engine-id>:qConnectorId": "*"
+          "aws:ResourceTag/netapp:wlmai: <ai-engine-id>:qConnectorId": "*"
         }
       },
       "Action": "fsx:UntagResource",
@@ -196,6 +196,22 @@ IAM角色:: GenAI 引擎執行個體需要權限、才能將資料區塊傳送�
         "arn:aws:logs:*:*:log-group:/netapp/wlmai/*:log-stream:*",
         "arn:aws:logs:*:*:log-group:/netapp/wlmai/*"
       ],
+      "Effect": "Allow"
+    },
+    {
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject"
+      ],
+      "Resource": "*",
+      "Effect": "Allow"
+    },
+    {
+      "Action": [
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
+      ],
+      "Resource": "*",
       "Effect": "Allow"
     }
   ]
