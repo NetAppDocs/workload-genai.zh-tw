@@ -53,7 +53,6 @@
   <block id="831e8ddab4c3e70bcfe67a3e58aaf8cc" category="paragraph">您可以新增一或多個資料來源、以便將組織的資料填入知識庫。</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">關於這項工作</block>
   <block id="443fa995d0ec899357a7e519e2055b98" category="paragraph">支援的資料來源數量上限為 10 個。</block>
-  <block id="10031d73287aadb6c5f8b3dae7b23860" category="list-text">選取 * 新增資料來源 * 後、將會顯示 * 選取檔案系統 * 頁面。</block>
   <block id="8817d70d4163473468fa1b2b6e498321" category="paragraph">資料來源開始內嵌到您的知識庫中。資料來源完全內嵌時、狀態會從「內嵌」變更為「內嵌」。</block>
   <block id="b9605cf748e4b8e1c97d786258a0be40" category="summary">您必須先在環境中部署 RAG 架構的基礎架構、才能為組織建置適用於 ONTAP 知識庫和應用程式的 FSX 。主要基礎架構元件為 Amazon 基礎架構 AI 服務、 NetApp GenAI 引擎的虛擬機器執行個體、以及 ONTAP 檔案系統的 FSX 。</block>
   <block id="e379b913896cf9bdd4e2d6717212215a" category="doc">部署 GenAI 基礎架構</block>
@@ -757,7 +756,6 @@
   <block id="f1776184cd873aef06fc869138b3b776" category="admonition">您可以調整聊天機器人模擬器視窗的大小並重新設定標題，並將問題和回應複製到剪貼簿。</block>
   <block id="e27f142520976de0e091895abd1a2b45" category="list-text">您可以在回應下方展開 * 來源 * 清單，以查看用來產生答案的來源。這會提供用來產生答案的檔案清單。您可以將游標移到檔案名稱上方，以檢視並複製從每個檔案和磁碟區路徑所使用的資料區塊到每個檔案。</block>
   <block id="8e08c9e7067a8bc5d8828ba0b5a8a5b2" category="list-text">如果回應中包含表格，您可以排序每一欄中的資料，並將每個表格複製到剪貼簿。</block>
-  <block id="2d5a4b914acb6c2f03d312067c73ce32" category="section-title">2025 年 3 月 02 日</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">部落格與社群</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP部落格</block>
@@ -1077,4 +1075,30 @@
   <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">工作負載工廠使用者介面和文件現在使用“只讀”來指讀取權限，使用“讀取/寫入”來指稱自動化權限。</block>
   <block id="2285d955a18bdde3d5780d04f48d58cd" category="list-text">您需要將 AWS 憑證新增至具有讀取/寫入權限的工作負載工廠，這表示您將在 GenAI 的讀取/寫入模式下使用工作負載工廠。</block>
   <block id="c45d86a4185cef0bc3cadb7e6e9b46f4" category="paragraph">目前不支援_基本_模式和_唯讀_模式權限。</block>
+  <block id="7d906e58a1354072160e6ed36352865a" category="open-title">新增 FSx for ONTAP 檔案系統</block>
+  <block id="6d74c0f67ca2ffc7e802992699848ce7" category="open-title">新增通用 NFS 檔案系統</block>
+  <block id="47f6d5704c1ced6391a6f696c9715d6f" category="list-text">*選擇檔案系統*：輸入資料來源檔案所在的檔案系統主機的 IP 位址或 FQDN，選擇網路共用的 NFS 協議，然後選擇*下一步*。</block>
+  <block id="f877eadc66897f3228392ce8c7190a3b" category="admonition">在某些情況下，您可能需要手動輸入 NFS 匯出名稱，然後選擇「擷取目錄」以顯示可用目錄。您可以選擇整個匯出，或僅選擇匯出中的特定資料夾。</block>
+  <block id="d6cc21a7239c70140c4fe9e5d219835f" category="list-text">選擇*新增資料來源*將此資料來源新增至您的知識庫。</block>
+  <block id="72d08830496d7cb22679d7006ceb540d" category="open-title">新增通用 SMB 檔案系統</block>
+  <block id="8dc6eb4b595b0f73bfb84bc0ff3bbe68" category="list-text">*選擇檔案系統*：</block>
+  <block id="cff886b73f836ffbb81637a1582026d6" category="list-text">輸入資料來源檔案所在的檔案系統主機的 IP 位址或 FQDN。</block>
+  <block id="097fffee0ff7b9dc84809630d58d9921" category="list-text">為網路共享選擇 SMB 協定。</block>
+  <block id="3a38971888a2c2f134ec4c4fe6164859" category="list-text">輸入 Active Directory 訊息，包括網域、IP 位址、使用者名稱和密碼。</block>
+  <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">選擇*下一步*。</block>
+  <block id="50e87b511edc21ffba5ebba81a768f04" category="admonition">在某些情況下，您可能需要手動輸入 SMB 共享名稱，然後選擇「檢索目錄」以顯示可用目錄。您可以選擇整個共享，或僅選擇共享中的特定資料夾。</block>
+  <block id="0065452defb4a4481c8fe8db6f74a038" category="list-text">*權限感知*：啟用或停用權限感知回應：</block>
+  <block id="944ee388209d33a3bf1b309c6acdf693" category="doc">支援通用 NFS/SMB 檔案系統上託管的資料來源</block>
+  <block id="9a7d241f00b55d0e00761313cced5dd8" category="paragraph">現在您可以從通用 SMB 或 NFS 共用中新增資料來源。這使您能夠包含儲存在 Amazon FSx for NetApp ONTAP 以外的檔案系統所託管的磁碟區上的檔案。</block>
+  <block id="5cba57d460e5683815517b44a7811760" category="inline-link">在知識庫中新增資料來源</block>
+  <block id="b37629096d44c6fda917848365c84ebe" category="paragraph"><block ref="b37629096d44c6fda917848365c84ebe" category="inline-link-rx"></block></block>
+  <block id="6320af7d92cd5d357460c5cbc5f642a9" category="inline-link">新增資料來源</block>
+  <block id="5cd676bef1867c904c092c33ad4a8f2d" category="paragraph"><block ref="5cd676bef1867c904c092c33ad4a8f2d" category="inline-link-rx"></block></block>
+  <block id="68548c26cece20bcf93105ea4fe89e88" category="list-text">選擇*新增資料來源*後，將出現*選擇檔案系統*頁面。</block>
+  <block id="cf398eb273d2634893193d0e955a4fa2" category="list-text">選擇要新增的資料來源類型：</block>
+  <block id="c0f70038820005956aaf78b931d681c4" category="list-text">新增 FSx for ONTAP 檔案系統（使用現有 FSx for ONTAP 磁碟區中的檔案）</block>
+  <block id="63e19fdc4a09680278ff2270264b3005" category="list-text">新增檔案系統（使用來自通用 SMB 或 NFS 共享的檔案）</block>
+  <block id="438852e39ff5e2c7366e67dde7cfdab4" category="list-text">選擇*新增資料來源*後，選擇要新增的資料來源類型：</block>
+  <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">2025 年 6 月 29 日</block>
+  <block id="84cd46ec8d4d2d63881ed3e5d98fe218" category="paragraph">工作負載工廠使用者介面和文件現在使用“只讀”來指讀取權限，使用“讀取/寫入”來指稱自動化權限。= 2025 年 3 月 02 日</block>
 </blocks>

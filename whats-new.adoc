@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, genai' 
 summary: 瞭解工作負載工廠的 AI 工作負載功能有哪些新功能。 
 ---
 = GenAI BlueXP  工作負載工廠的新功能
@@ -12,6 +12,20 @@ summary: 瞭解工作負載工廠的 AI 工作負載功能有哪些新功能。
 
 [role="lead"]
 瞭解工作負載工廠的通用 AI 工作負載功能有哪些新功能。
+
+
+
+== 2025 年 6 月 29 日
+
+
+
+=== 支援通用 NFS/SMB 檔案系統上託管的資料來源
+
+現在您可以從通用 SMB 或 NFS 共用中新增資料來源。這使您能夠包含儲存在 Amazon FSx for NetApp ONTAP 以外的檔案系統所託管的磁碟區上的檔案。
+
+https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledgebase.html#add-data-sources-to-the-knowledge-base["在知識庫中新增資料來源"]
+
+https://docs.netapp.com/us-en/workload-genai/connector/define-connector.html#add-data-sources-to-the-connector["新增資料來源"]
 
 
 
@@ -67,11 +81,7 @@ link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledg
 
 === 更新的權限術語
 
-工作負載工廠使用者介面和文件現在使用“只讀”來指讀取權限，使用“讀取/寫入”來指稱自動化權限。
-
-
-
-== 2025 年 3 月 02 日
+工作負載工廠使用者介面和文件現在使用“只讀”來指讀取權限，使用“讀取/寫入”來指稱自動化權限。= 2025 年 3 月 02 日
 
 
 
