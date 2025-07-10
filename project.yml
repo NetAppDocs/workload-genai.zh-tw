@@ -1,7 +1,6 @@
 ---
 settings:
   name: GenAI
-  platform: cloud
   internal:
     pdf_enabled: true
   prod:
